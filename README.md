@@ -32,4 +32,7 @@ To set up your environment, all you need to do is run:
     
 Then, all the dependencies will be installed for the book. You won't need to install anything else. 
 
-
+## References 
+* [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis)
+* [librosa](https://github.com/librosa/librosa)
+* [speechrecognition](https://pypi.org/project/SpeechRecognition/)
