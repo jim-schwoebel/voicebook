@@ -2,13 +2,14 @@
 
 This is an assortment of all the scripts associated with Intro to Voice Computing. These scripts should give you a jumpstart in learning how to write python code for voice-related applications. 
 
-## setting up environment
+## Getting started: setting up environment
 
 ### mac computers
 
 To set up your environment, all you need to do is run:
 
     cd ~
+    git clone 
     python3 setup.py 
     
 Then, all the dependencies will be installed for the book. You won't need to install anything else. 
@@ -26,6 +27,7 @@ Then you're ready to go to install.
 To set up your environment, all you need to do is run:
 
     cd ~
+    git clone 
     python3 setup.py 
     
 Then, all the dependencies will be installed for the book. You won't need to install anything else. 
