@@ -25,6 +25,7 @@ Diarization is done with the pyaudioanalysis3 library but could be done with LIU
 
 import os, json, importlib, scipy, shutil, ffmpy, time, sys, getpass, zipfile
 #import pymongo
+import speech_recognition as sr_audio
 from pydub import AudioSegment
 import numpy as np 
 
@@ -46,6 +47,8 @@ def exportfile(newAudio,time1,time2,filename,i,speaknum):
     newAudio2 = newAudio[time1:time2]
     print('making '+filename[0:-4]+'_'+str(speaknum)+'_'+str(i)+'_'+str(time1/1000)+'_'+str(time2/1000)+'.wav')
     newAudio2.export(filename[0:-4]+'_'+str(speaknum)+'_'+str(i)+'_'+str(time1/1000)+'_'+str(time2/1000)+'.wav', format="wav")
+
+    return filename[0:-4]+'_'+str(speaknum)+'_'+str(i)+'_'+str(time1/1000)+'_'+str(time2/1000)+'.wav'
 
 def stitchtogether(dirlist,dirloc,filename):
     try:
@@ -86,6 +89,15 @@ def zipdir(path, ziph):
     for root, dirs, files in os.walk(path):
         for file in files:
             ziph.write(os.path.join(root, file))
+
+def transcribe_audio_google(filename):
+    # transcribe the audio (note this is only done if a voice sample)
+    r=sr_audio.Recognizer()
+    with sr_audio.AudioFile(filename) as source:
+        audio = r.record(source) 
+    text=r.recognize_google_cloud(audio)
+
+    return text    
 
 ##GO TO HOST DIRECTORY AND BEGIN BULK PROCESSING 
 ####################################################################################
@@ -180,6 +192,7 @@ while t>0:
 
                             s0seg=list()
                             s1seg=list()
+                            allseg=list()
 
                             for i in range(len(g)-1):
                                 if i==0:
@@ -187,16 +200,18 @@ while t>0:
                                 else:
                                     if g[i]==g[i+1]:
                                         pass
-                                        #continue where left off to find start length
+                                        #continue where left off to find start length, 20 milliseconds 
                                     else:
                                         if g[i+1]==0:
                                             end=i/5.0
                                             s1seg.append([start,end])
+                                            allseg.append([0,[start,end]])
                                             start=(i+1)/5.0
                                             
                                         elif g[i+1]==1:
                                             end=i/5.0
                                             s0seg.append([start,end])
+                                            allseg.append([1, [start,end]])
                                             start=(i+1)/5.0
                                                 
                                         else:
@@ -286,7 +301,49 @@ while t>0:
                             s2stitchedsize=0
                             for i in range(len(keptfilelist2)):
                                 s2stitchedsize=s2stitchedsize+int(keptfilelist2[i][1])
-                                
+
+                            # all segments 
+                            os.chdir(diarizedir)
+                            curdir=os.getcwd()
+                            newdir3=curdir+'/all'
+
+                            try:
+                                os.mkdir(newdir3)
+                                os.chdir(newdir3)
+                            except:
+                                os.chdir(newdir3)
+
+                            print('transcribing session')
+                            master_transcript=open('transcript.txt','w')
+
+                            for i in range(len(allseg)):
+                                print(('making file @ %s to %s')%(str(allseg[i][1][0]),str(allseg[i][1][1])))
+                                filename2=str(i)+'_'+str(allseg[i][0])+'.wav'
+                                filename2=exportfile(newAudio,allseg[i][1][0]*1000,allseg[i][1][1]*1000,filename,i,2)
+                                new_filename=str(i)+'_'+str(allseg[i][0])+'.wav'
+                                os.rename(filename2,new_filename)
+                                os.system('ffmpeg -i %s -ac 1 -acodec pcm_s16le -ar 16000 %s -y'%(new_filename,new_filename))
+
+                                if i == 0:
+                                    speaker='102334'
+
+                                try:
+                                    transcript=transcribe_audio_google(new_filename)
+                                    if str(allseg[i][0]) != speaker:
+                                        speaker=str(allseg[i][0])
+                                        master_transcript.write('\n\nspeaker %s: %s '%(str(allseg[i][0]), transcript))
+                                        print('\n\nspeaker %s: %s '%(str(allseg[i][0]), transcript))
+                                    else:
+                                        speaker=str(allseg[i][0])
+                                        master_transcript.write('%s'%(transcript))
+                                        print(transcript)
+                                        
+                                except:
+                                    print('failed transcript')
+
+                            master_transcript.close()
+                            transcript=open('transcript.txt').read()
+
                             #calculate processing time
                             end_time=time.time()
                             processtime=end_time-start_time 
@@ -302,6 +359,8 @@ while t>0:
                                 'processcount':processcount,
                                 'errorcount':errorcount,
                                 'data':list(g),
+                                'master transcript': transcript,
+                                'allseg': allseg,
                                 'speaker 1':s0seg,
                                 'speaker 2':s1seg,
                                 'speaker 1 kept segments':keptfilelist1,

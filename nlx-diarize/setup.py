@@ -1,41 +1,41 @@
-import pip
+import os
 
 try:
   import kafka-python
 except:
-  pip.main(["install","kafka-python"])
+  os.system('pip3 install kafka-python')
   
 try:
   import pymongo
 except:
-  pip.main(["install","pymongo"])
+  os.system('pip3 install pymongo')
   
 try:
   import importlib
 except:
-  pip.main(["install","importlib"])
+  os.system('pip3 install importlib')
     
 try:
   import scipy
 except:
-  pip.main(["install","scipy"])
+  os.system('pip3 install scipy')
   
 try:
   import ffmpy
 except:
-  pip.main(["install","ffmpy"])
+  os.system('pip3 install ffmpy')
   
 try:
   import getpass
 except:
-  pip.main(["install","getpass"])
+  os.system('pip3 install getpass')
   
 try:
   import pydub
 except:
-  pip.main(["install","pydub"])
+  os.system('pip3 install pydub')
   
 try:
-  import 
+  import numpy
 except:
-  pip.main(["install","numpy"])
+  os.system('pip3 install numpy ')
