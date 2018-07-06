@@ -1,0 +1,9 @@
+pymongo
+kafka-python
+webbrowser
+pygame 
+ftplib
+pyttsx3 
+speechRecognition 
+pyaudio
+wave

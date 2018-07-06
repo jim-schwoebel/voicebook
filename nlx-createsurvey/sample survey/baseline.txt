@@ -1,0 +1,3 @@
+gender: mayo
+age: twenty seven
+ethnicity: caucasian
