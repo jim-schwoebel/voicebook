@@ -1,0 +1,380 @@
+'''
+NLX-diarize microservice
+@Author: Jim Schwoebel
+
+This microservice takes in a speech sample and diarizes it for 2 speakers.
+
+The output files are stored in a folder structure with Speaker A and Speaker B.
+
+It is assumed to be a 2 speaker diarization problem.
+
+The output .zip file is named filename[0:-4]+'diarization.zip' and contains:
+
+--->filename[0:-4]+'.json'
+--> speaker 1 folder
+    --> speaker 1 sections (multiple .wav files)
+    --> speaker 1 stiched togetehr (single .wav file)
+--> speaker 2 folder
+    --> speaker 2 sections (multiple .wav files)
+    --> speaker 2 stich (single .wav file)
+
+Diarization is done with the pyaudioanalysis3 library but could be done with LIUM into the future.
+
+(C) NeuroLex Laboratories, Inc.
+'''
+
+import os, json, importlib, scipy, shutil, ffmpy, time, sys, getpass, zipfile
+#import pymongo
+from pydub import AudioSegment
+import numpy as np 
+
+if 'pyAudioAnalysis3' not in os.listdir():
+    os.system("git clone git@github.com:NeuroLexDiagnostics/pyAudioAnalysis3.git")
+    
+sys.path.append(os.getcwd()+'/pyAudioAnalysis3')
+
+import audioTrainTest as aT
+import audioBasicIO 
+import audioFeatureExtraction as aF
+import audioSegmentation as aS
+
+##INITIALIZE FUNCTIONS FOR DIARIZATION
+####################################################################################
+
+def exportfile(newAudio,time1,time2,filename,i,speaknum):
+    #Exports to a wav file in the current path.
+    newAudio2 = newAudio[time1:time2]
+    print('making '+filename[0:-4]+'_'+str(speaknum)+'_'+str(i)+'_'+str(time1/1000)+'_'+str(time2/1000)+'.wav')
+    newAudio2.export(filename[0:-4]+'_'+str(speaknum)+'_'+str(i)+'_'+str(time1/1000)+'_'+str(time2/1000)+'.wav', format="wav")
+
+def stitchtogether(dirlist,dirloc,filename):
+    try:
+        #assumes already in proper directory 
+        for i in range(len(dirlist)):
+            if i ==0:
+                sound=AudioSegment.from_wav(dirloc+'/'+str(dirlist[i]))
+            else:
+                sound=sound+AudioSegment.from_wav(dirloc+'/'+str(dirlist[i]))
+        sound.export(dirloc+'/'+filename, format="wav")
+
+    except:
+        print('error stitching...')
+
+def stereo2mono(audiodata,filename):
+    newaudiodata = list()
+    
+    for i in range(len(audiodata)):
+        d = audiodata[i][0]/2 + audiodata[i][1]/2
+        newaudiodata.append(d)
+    
+    return np.array(newaudiodata, dtype='int16')
+    #to apply this function, SR=sample rate usually 44100
+    #wavfile.write(newfilename, sr, newaudiodata)
+
+def convertformat(filename):
+    newfilename=filename[0:-4]+'.wav'
+    ff = ffmpy.FFmpeg(
+        inputs={filename:None},
+        outputs={newfilename: None}
+        )
+    ff.run()
+
+    return newfilename
+
+def zipdir(path, ziph):
+    # ziph is zipfile handle
+    for root, dirs, files in os.walk(path):
+        for file in files:
+            ziph.write(os.path.join(root, file))
+
+##GO TO HOST DIRECTORY AND BEGIN BULK PROCESSING 
+####################################################################################
+
+#host directory in app is likely /usr/app/...
+hostdir=os.getcwd()
+curdir=os.listdir()
+
+#now create some folders if they have not already been created 
+incoming_dir=hostdir+'/nlx-diarize-incoming/'
+processed_dir=hostdir+'/nlx-diarize-processed/'
+
+try:
+    os.chdir(incoming_dir)
+    curdir=os.listdir()
+    if 'data' not in curdir:
+        #this is necessary for diarnization
+        shutil.copytree(hostdir+'/pyaudioanalysis3/data/',os.getcwd()+'/data/')
+except:
+    os.mkdir(incoming_dir)
+    os.chdir(incoming_dir)
+    curdir=os.listdir()
+    if 'data' not in curdir:
+        #this is necessary for diarization 
+        shutil.copytree(hostdir+'/pyaudioanalysis3/data/',os.getcwd()+'/data/')
+
+try:
+    os.chdir(processed_dir)
+except:
+    os.mkdir(processed_dir)
+
+#change to incoming directory to look for samples
+os.chdir(incoming_dir)
+
+#initialize sleep time for worker (default is 1 second)
+sleeptime=1
+
+# now initialize process list with files already in the directory
+processlist=os.listdir()
+convertformat_list=list()
+
+#error counts will help us debug later
+errorcount=0
+processcount=0
+
+#initialize t for infinite loop
+t=1
+
+#infinite loop for worker now begins with while loop...
+
+while t>0:
+
+    #go to incoming directory
+    os.chdir(incoming_dir)
+    listdir=os.listdir()
+    print(listdir)
+
+    #try statement to avoid errors
+    try:
+        if listdir==['.DS_Store'] or listdir == ['data'] or listdir==['data','.DS_Store'] or listdir==[]:
+            #pass if no files are processible
+            print('no files found...')
+        
+        else:
+            #look for any files that have not been previously in the directory
+            for i in range(len(listdir)):
+                if listdir[i]=='.DS_Store' or listdir[i]=='data':
+                    pass
+                
+                else:
+                    #convert format if not .wav
+                    if listdir[i][-4:] != '.wav':
+                        filename=convertformat(listdir[i])
+                        os.remove(listdir[i])
+                    else:
+                        filename=listdir[i]
+                    
+                    #log start time for later 
+                    start_time=time.time()
+                    
+                    if filename not in processlist:
+                        print('processing '+filename)
+                        processlist.append(listdir[i])
+                        filesize=os.path.getsize(filename)
+                    
+                        if filesize > int(500):
+                            #if over 20 minute of audio collected (10.580MB), assume 2 speakers 
+
+                            shutil.copy(incoming_dir+filename,hostdir+'/pyaudioanalysis3/data/'+filename)
+                        
+                            g=aS.speakerDiarization(filename,2,mtSize=2.0,mtStep=0.2,stWin=0.05,LDAdim=35, PLOT=False)
+
+                            s0seg=list()
+                            s1seg=list()
+
+                            for i in range(len(g)-1):
+                                if i==0:
+                                    start=i/5.0
+                                else:
+                                    if g[i]==g[i+1]:
+                                        pass
+                                        #continue where left off to find start length
+                                    else:
+                                        if g[i+1]==0:
+                                            end=i/5.0
+                                            s1seg.append([start,end])
+                                            start=(i+1)/5.0
+                                            
+                                        elif g[i+1]==1:
+                                            end=i/5.0
+                                            s0seg.append([start,end])
+                                            start=(i+1)/5.0
+                                                
+                                        else:
+                                            print('error')
+
+                            #now save this data in individual segments
+                            newAudio = AudioSegment.from_wav(filename)
+                            diarizedir=os.getcwd()+'/'+filename[0:-4]+'_diarization'
+
+                            try:
+                                os.mkdir(diarizedir)
+                                os.chdir(diarizedir)
+                            except:
+                                os.chdir(diarizedir)
+
+                            #copy file to this directory and delete from other directory
+                            shutil.move(incoming_dir+filename,os.getcwd()+'/'+filename)
+
+                            #diarize speaker 1 
+                            print('diarizing speaker 1')
+                            curdir=os.getcwd()
+                            newdir1=curdir+'/1'
+
+                            try:
+                                os.mkdir(newdir1)
+                                os.chdir(newdir1)
+                            except:
+                                os.chdir(newdir1)
+                                
+                            for i in range(len(s0seg)):
+                                filename2=filename[0:-4]+'_speaker_1'+str(i)+'.wav'
+                                print(('making file @ %s to %s')%(str(s0seg[i][0]),str(s0seg[i][1])))
+                                exportfile(newAudio,s0seg[i][0]*1000,s0seg[i][1]*1000,filename,i,1)
+
+                            curdir=os.getcwd()
+                            listdir=os.listdir(curdir)
+                            removedfilelist1=list()
+                            keptfilelist1=list()
+
+                            for i in range(len(listdir)):
+                                if os.path.getsize(listdir[i]) < 300000:
+                                    removedfile=[listdir[i], os.path.getsize(listdir[i])]
+                                    removedfilelist1.append(removedfile)
+                                    os.remove(listdir[i])
+                                else:
+                                    keptfile=[listdir[i],os.path.getsize(listdir[i])]
+                                    keptfilelist1.append(keptfile)
+
+                            #speaker 1 stitched size
+                            s1stitchedsize=0
+                            for i in range(len(keptfilelist1)):
+                                s1stitchedsize=s1stitchedsize+int(keptfilelist1[i][1])
+                                
+                            #speaker 2 
+                            os.chdir(diarizedir)
+                            curdir=os.getcwd()
+                            newdir2=curdir+'/2'
+
+                            try:
+                                os.mkdir(newdir2)
+                                os.chdir(newdir2)
+                            except:
+                                os.chdir(newdir2)
+                                
+                            print('diarizing speaker 2')
+                            for i in range(len(s1seg)):
+                                filename2=filename[0:-4]+'_speaker_2'+str(i)+'.wav'
+                                print(('making file @ %s to %s')%(str(s1seg[i][0]),str(s1seg[i][1])))
+                                exportfile(newAudio,s1seg[i][0]*1000,s1seg[i][1]*1000,filename,i,2)
+
+                            curdir=os.getcwd()
+                            listdir=os.listdir(curdir)
+                            removedfilelist2=list()
+                            keptfilelist2=list()
+
+                            ##now delete files that are less than 300 KB 
+                            for i in range(len(listdir)):
+                                if os.path.getsize(listdir[i]) < 300000:
+                                    removedfile=[listdir[i], os.path.getsize(listdir[i])]
+                                    removedfilelist2.append(removedfile)
+                                    os.remove(listdir[i])
+                                else:
+                                    keptfile=[listdir[i],os.path.getsize(listdir[i])]
+                                    keptfilelist2.append(keptfile)
+
+                            #speaker 2 stitched size
+                            s2stitchedsize=0
+                            for i in range(len(keptfilelist2)):
+                                s2stitchedsize=s2stitchedsize+int(keptfilelist2[i][1])
+                                
+                            #calculate processing time
+                            end_time=time.time()
+                            processtime=end_time-start_time 
+
+                            #this is the .json serializable diarization
+                            os.chdir(diarizedir)
+                            
+                            data={
+                                'filename':filename,
+                                'file location':diarizedir,
+                                'file size':filesize,
+                                'processing time':processtime,
+                                'processcount':processcount,
+                                'errorcount':errorcount,
+                                'data':list(g),
+                                'speaker 1':s0seg,
+                                'speaker 2':s1seg,
+                                'speaker 1 kept segments':keptfilelist1,
+                                'speaker 1 stitched size':s1stitchedsize,
+                                'speaker 1 folder location':newdir1,
+                                'speaker 2 kept segments':keptfilelist2,
+                                'speaker 2 stitched size':s2stitchedsize,
+                                'speaker 2 folder location':newdir2,
+                                'speaker 1 deleted segments':removedfilelist1,
+                                'speaker 2 deleted segments':removedfilelist2,
+                                }
+
+                            #write to json 
+                            os.chdir(diarizedir)
+                            with open(filename[0:-4]+'.json', 'w') as f:
+                                json.dump(data, f)
+                            f.close()
+
+                            #read the db
+                            g=json.loads(open(filename[0:-4]+'.json').read())
+                            keptlist1=g['speaker 1 kept segments']
+                            keptloc1=g['speaker 1 folder location']
+                            filelist1=list()
+                            for i in range(len(keptlist1)):
+                                filelist1.append(str(keptlist1[i][0]))
+
+                            keptlist2=g['speaker 2 kept segments']
+                            keptloc2=g['speaker 2 folder location']
+                            filelist2=list()
+                            for i in range(len(keptlist2)):
+                                filelist2.append(str(keptlist2[i][0]))
+
+                            #save stitch to locations where segments are 
+                            os.chdir(keptloc1)
+                            try:
+                                print('stitching to location 1: ' + keptloc1)
+                                print(filelist1)
+                                stitchtogether(filelist1,keptloc1,'stitched_1.wav')
+                            except:
+                                print('error stitching 1')
+
+                            #save stitch to locations where segments are
+                            os.chdir(keptloc2)
+                            try:
+                                print('stiching to location 2: ' + keptloc2)
+                                print(filelist2)
+                                stitchtogether(filelist2,keptloc2,'stitched_2.wav')
+                            except:
+                                print('error stitching 2')
+                                
+                            #go back to the incoming dir folder for further processing 
+                            os.chdir(incoming_dir)
+
+                            #zip the entire directory into a .zip file and move to processed_dir folder
+                            shutil.make_archive(filename[0:-4]+'_diarization','zip',filename[0:-4]+'_diarization/')                            
+                            shutil.move(incoming_dir+filename[0:-4]+'_diarization.zip',processed_dir+filename[0:-4]+'_diarization.zip')
+
+                            #delete the directory using shutil
+                            shutil.rmtree(filename[0:-4]+'_diarization')
+
+                            #update processcount
+                            processcount=processcount+1
+
+                        else:
+                            errorcount=errorcount+1
+                            os.remove(filename)
+                            print('skipping file, need to resample (too small size)')
+                            
+            #sleep to avoid server overhead
+            print('sleeping...')
+            time.sleep(sleeptime)
+    except:
+        print('error')
+        print('sleeping...')
+        errorcount=errorcount+1
+        time.sleep(sleeptime)
