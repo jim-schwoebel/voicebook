@@ -1,0 +1,12 @@
+pymongo
+importlib
+scipy
+ffmpy
+getpass
+wave
+pydub
+librosa
+matplotlib
+numpy
+webrtcvad
+google.cloud.storage
