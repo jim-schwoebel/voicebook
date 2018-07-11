@@ -17,8 +17,9 @@ def speak_google(text, filename, model):
     # Note: the voice can also be specified by name.
     # Names of voices can be retrieved with client.list_voices().
     voice = texttospeech.types.VoiceSelectionParams(
-        language_code=model,
-        ssml_gender=texttospeech.enums.SsmlVoiceGender.FEMALE)
+        language_code='en-US',
+        ssml_gender=texttospeech.enums.SsmlVoiceGender.FEMALE,
+        name=model)
 
     audio_config = texttospeech.types.AudioConfig(
         audio_encoding=texttospeech.enums.AudioEncoding.MP3)
