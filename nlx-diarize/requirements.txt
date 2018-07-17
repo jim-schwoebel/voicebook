@@ -1,8 +1,0 @@
-kafka-python
-pymongo
-importlib
-scipy
-ffmpy
-getpass
-pydub
-numpy
