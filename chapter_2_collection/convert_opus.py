@@ -1,13 +1,19 @@
 '''
-convert_flac.py
+convert_opus.py
 
 Quick script to collect some audio files in .wav format, 
-then transcode these audio files into .FLAC format, and then
+then transcode these audio files into .OPUS format, and then
 compress all the files in the folder into a .zip file. 
 
-Compressing to .FLAC format is lossless and takes up about
-1/2 as much file space as do .wav files. I recommend using 
-this format if storing a large volume of data on a server. 
+Compressing to .OPUS format is lossy and takes up about
+15% of the size a .wav file would take up on the CPU.
+
+Compared to .FLAC, 50% vs. 15% storage reduction.
+
+OPUS is commonly used on cell data to take up minimal volume.
+
+I suggest recording in .FLAC if possible to reduce potential for signal loss.
+FLAC is also a bit more portable in terms of FFmpeg and file conversion software.
 '''
 import shutil, os, ffmpy 
 
