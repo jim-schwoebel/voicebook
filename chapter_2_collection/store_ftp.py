@@ -47,6 +47,7 @@ file = sync_record('test.wav',10,16000,1)
 
 # upload to server
 upload_file(file, session)
+os.remove(file)
 
 # log off server 
 session.quit() 
