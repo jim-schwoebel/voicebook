@@ -1,0 +1,162 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<title>opusenc man page</title>
+<meta name="generator" content="roffit">
+<STYLE type="text/css">
+P.level0 {
+ padding-left: 2em;
+}
+
+P.level1 {
+ padding-left: 4em;
+}
+
+P.level2 {
+ padding-left: 6em;
+}
+
+span.emphasis {
+ font-style: italic;
+}
+
+span.bold {
+ font-weight: bold;
+}
+
+span.manpage {
+ font-weight: bold;
+}
+
+h2.nroffsh {
+ background-color: #e0e0e0;
+}
+
+span.nroffip {
+ font-weight: bold;
+ font-size: 120%;
+ font-family: monospace;
+}
+
+p.roffit {
+ text-align: center;
+ font-size: 80%;
+}
+</STYLE>
+</head><body>
+
+<p class="level0">
+<p class="level0"><a name="NAME"></a><h2 class="nroffsh">NAME</h2>
+<p class="level0">opusenc - encode audio into the Opus format 
+<p class="level0"><a name="SYNOPSIS"></a><h2 class="nroffsh">SYNOPSIS</h2>
+<p class="level0"><span Class="bold">opusenc</span> [ <a class="bold" href="#-h">-h</a> ] [ <a class="bold" href="#-V">-V</a> ] [ <a class="bold" href="#--bitrate">--bitrate</a> <span Class="emphasis">kbit/sec</span> ] [ <a class="bold" href="#--vbr">--vbr</a> ] [ <a class="bold" href="#--cvbr">--cvbr</a> ] [ <a class="bold" href="#--hard-cbr">--hard-cbr</a> ] [ <a class="bold" href="#--comp">--comp</a> <span Class="emphasis">complexity</span> ] [ <a class="bold" href="#--framesize">--framesize</a> <span Class="emphasis">2.5, 5, 10, 20, 40, 60</span> ] [ <a class="bold" href="#--expect-loss">--expect-loss</a> <span Class="emphasis">pct</span> ] [ <a class="bold" href="#--downmix-mono">--downmix-mono</a> ] [ <a class="bold" href="#--downmix-stereo">--downmix-stereo</a> ] [ <a class="bold" href="#--max-delay">--max-delay</a> <span Class="emphasis">ms</span> ] [ <a class="bold" href="#--serial">--serial</a> <span Class="emphasis">serial number</span> ] [ <a class="bold" href="#--save-range">--save-range</a> <span Class="emphasis">file</span> ] [ <a class="bold" href="#--set-ctl-int">--set-ctl-int</a> <span Class="emphasis">ctl=value</span> ] [ <a class="bold" href="#--comment">--comment</a> <span Class="emphasis">tag=value</span> ] [ <a class="bold" href="#--artist">--artist</a> <span Class="emphasis">author</span> ] [ <a class="bold" href="#--title">--title</a> <span Class="emphasis">'track title'</span> ] [ <a class="bold" href="#--album">--album</a> <span Class="emphasis">'album title'</span> ] [ <a class="bold" href="#--date">--date</a> <span Class="emphasis">YYYY-MM-DD</span> ] [ <a class="bold" href="#--genre">--genre</a> <span Class="emphasis">genre</span> ] [ <a class="bold" href="#--picture">--picture</a> 
+<p class="level0">] [ <a class="bold" href="#--padding">--padding</a> <span Class="emphasis">n</span> ] [ <a class="bold" href="#--discard-comments">--discard-comments</a> ] [ <a class="bold" href="#--discard-pictures">--discard-pictures</a> ] [ <a class="bold" href="#--raw">--raw</a> ] [ <a class="bold" href="#--raw-bits">--raw-bits</a> <span Class="emphasis">bits/sample</span> ] [ <a class="bold" href="#--raw-rate">--raw-rate</a> <span Class="emphasis">Hz</span> ] [ <a class="bold" href="#--raw-chan">--raw-chan</a> <span Class="emphasis">N</span> ] [ <a class="bold" href="#--raw-endianness">--raw-endianness</a> <span Class="emphasis">flag</span> ] [ <a class="bold" href="#--ignorelength">--ignorelength</a> ] <span Class="emphasis">input.wav</span> <span Class="emphasis">output.opus</span> 
+<p class="level0"><a name="DESCRIPTION"></a><h2 class="nroffsh">DESCRIPTION</h2>
+<p class="level0"><span Class="bold">opusenc</span> reads audio data in either raw, Wave, or AIFF format and encodes it into an Opus stream. If the input file is "-" audio data is read from stdin. Likewise, if the output file is "-" opus data is written to stdout. 
+<p class="level0">Unless quieted <span Class="bold">opusenc</span> displays fancy statistics about the encoding progress. 
+<p class="level0"><a name="OPTIONS"></a><h2 class="nroffsh">OPTIONS</h2>
+<p class="level0">
+<p class="level0"><a name="-h"></a><span class="nroffip">-h, --help</span> 
+<p class="level1">Show command help 
+<p class="level0"><a name="-V"></a><span class="nroffip">-V, --version</span> 
+<p class="level1">Show the version number 
+<p class="level0"><a name="--bitrate"></a><span class="nroffip">--bitrate N.nnn</span> 
+<p class="level1">Target bitrate in kbit/sec (6-256 per channel) 
+<p class="level1">In VBR mode this specifies the average rate for a large and diverse collection of audio. In CVBR and Hard-CBR mode it specifies the specific output bitrate. 
+<p class="level1">Default for &gt;=44.1kHz input is 64kbps per mono stream, 96kbps per coupled pair. 
+<p class="level1">
+<p class="level0"><a name="--vbr"></a><span class="nroffip">--vbr</span> 
+<p class="level1">Use variable bitrate encoding (default) 
+<p class="level1">In VBR mode the bitrate may go up and down freely depending on the content to achieve more consistent quality. 
+<p class="level1">
+<p class="level0"><a name="--cvbr"></a><span class="nroffip">--cvbr</span> 
+<p class="level1">Use constrained variable bitrate encoding. 
+<p class="level1">Outputs to a specific bitrate. This mode is analogous to CBR in AAC/MP3 encoders and managed mode in vorbis coders. This delivers less consistent quality than VBR mode but consistent bitrate. 
+<p class="level0"><a name="--hard-cbr"></a><span class="nroffip">--hard-cbr</span> 
+<p class="level1">Use hard constant bitrate encoding. 
+<p class="level1">With hard-cbr every frame will be exactly the same size, similar to how speech codecs work. This delivers lower overall quality but is useful &nbsp;where bitrate changes might leak data in encrypted channels or on synchronous transports. 
+<p class="level0"><a name="--comp"></a><span class="nroffip">--comp N</span> 
+<p class="level1">Encoding computational complexity (0-10, default: 10). Zero gives the fastest encodes but lower quality, while 10 gives the highest quality but slower encoding. 
+<p class="level0"><a name="--framesize"></a><span class="nroffip">--framesize N</span> 
+<p class="level1">Maximum frame size in milliseconds (2.5, 5, 10, 20, 40, 60, default: 20) <br>Smaller framesizes achieve lower latency but less quality at a given bitrate. <br>Sizes greater than 20ms are only interesting at fairly low bitrates. 
+<p class="level0"><a name="--expect-loss"></a><span class="nroffip">--expect-loss N</span> 
+<p class="level1">Percentage packet loss to expect (default: 0) 
+<p class="level0"><a name="--downmix-mono"></a><span class="nroffip">--downmix-mono</span> 
+<p class="level1">Downmix to mono 
+<p class="level0"><a name="--downmix-stereo"></a><span class="nroffip">--downmix-stereo</span> 
+<p class="level1">Downmix to stereo (if &gt;2 channels input) 
+<p class="level0"><a name="--max-delay"></a><span class="nroffip">--max-delay N</span> 
+<p class="level1">Maximum container delay in milliseconds (0-1000, default: 1000) 
+<p class="level0"><a name="--serial"></a><span class="nroffip">--serial n</span> 
+<p class="level1">Forces the stream serial number to a specified value (instead of being random). This is used to make the encoder deterministic for testing and is not generally recommended. 
+<p class="level0"><a name="--save-range"></a><span class="nroffip">--save-range file</span> 
+<p class="level1">Saves check values for every frame to a file 
+<p class="level0"><a name="--set-ctl-int"></a><span class="nroffip">--set-ctl-int x=y</span> 
+<p class="level1">Pass the encoder control x with value y (advanced) Preface with s: to direct the ctl to multistream s <br>This may be used multiple times 
+<p class="level1">
+<p class="level0"><a name="--comment"></a><span class="nroffip">--comment tag=value</span> 
+<p class="level1">Add an extra comment.  This may be used multiple times, and all instances will be added to each of the input files specified. The argument should be in the form "tag=value". See the vorbis-comment specification for well known tag names: <a href="http://www.xiph.org/vorbis/doc/v-comment.html">http://www.xiph.org/vorbis/doc/v-comment.html</a> 
+<p class="level0"><a name="--artist"></a><span class="nroffip">--artist artist</span> 
+<p class="level1">Set the artist comment field to <span Class="emphasis">artist.</span> This may be used multiple times to list contributing artists individually. Note that some playback software does not display multiple artists gracefully. 
+<p class="level0"><a name="--title"></a><span class="nroffip">--title title</span> 
+<p class="level1">Set the track title comment field to <span Class="emphasis">title</span> 
+<p class="level0"><a name="--album"></a><span class="nroffip">--album album</span> 
+<p class="level1">Set the album or collection title field to <span Class="emphasis">album</span> 
+<p class="level0"><a name="--date"></a><span class="nroffip">--date YYYY-MM-DD</span> 
+<p class="level1">Set the date comment field to <span Class="emphasis">YYYY-MM-DD</span> 
+<p class="level0"><a name="--genre"></a><span class="nroffip">--genre genre</span> 
+<p class="level1">Set the genre comment field to <span Class="emphasis">genre.</span> This option may be specified multiple times to tag a track with multiple overlapping genres. 
+<p class="level0"><a name="--picture"></a><span class="nroffip">--picture filename|specification</span> 
+<p class="level1">Attach album art for the track. 
+<p class="level1">Either a <span Class="emphasis">filename</span> for the artwork or a more complete <span Class="emphasis">specification</span> form can be used. The picture is added to a <span Class="bold">METADATA_BLOCK_PICTURE</span> comment field similar to what is used in 
+<p class="level1">The <span Class="emphasis">specification</span> is a string whose parts are separated by | (pipe) characters. Some parts may be left empty to invoke default values. Passing a plain filename is just shorthand for the "||||filename" specification. 
+<p class="level1">The format of <span Class="emphasis">specification</span> is [<span Class="bold">type</span>]|[<span Class="bold">mime-type</span>]|[<span Class="bold">description</span>]|[<span Class="bold">width</span>x<span Class="bold">height</span>x<span Class="bold">depth</span>[/<span Class="bold">colors</span>]]|<span Class="bold">filename</span> 
+<p class="level1"><span Class="emphasis">type</span> is an optional number describing the nature of the picture. Defined values are from one of: 
+<p class="level1">&nbsp; 0: Other <br>&nbsp; 1: 32x32 pixel 'file icon' (PNG only) <br>&nbsp; 2: Other file icon <br>&nbsp; 3: Cover (front) <br>&nbsp; 4: Cover (back) <br>&nbsp; 5: Leaflet page <br>&nbsp; 6: Media (e.g., label side of a CD) <br>&nbsp; 7: Lead artist/lead performer/soloist <br>&nbsp; 8: Artist/performer <br>&nbsp; 9: Conductor <br>&nbsp;10: Band/Orchestra <br>&nbsp;11: Composer <br>&nbsp;12: Lyricist/text writer <br>&nbsp;13: Recording location <br>&nbsp;14: During recording <br>&nbsp;15: During performance <br>&nbsp;16: Movie/video screen capture <br>&nbsp;17: A bright colored fish <br>&nbsp;18: Illustration <br>&nbsp;19: Band/artist logotype <br>&nbsp;20: Publisher/studio logotype 
+<p class="level1">The default is 3 (front cover). More than one --picture option can be specified to attach multiple pictures. There may only be one picture each of type 1 and 2 in a file. 
+<p class="level1"><span Class="emphasis">mime-type</span> is optional. If left blank, it will be detected from the file. For best compatibility with players, use pictures with a <span Class="emphasis">mime-type</span> of image/jpeg or image/png. The <span Class="emphasis">mime-type</span> can also be "--&gt;" to mean that <span Class="emphasis">filename</span> is actually a URL to an image, though this use is discouraged. The file at the URL will not be fetched. The URL itself is stored in the comment field. 
+<p class="level1"><span Class="emphasis">description</span> is optional. The default is an empty string. 
+<p class="level1">The next part specifies the resolution and color information. If the <span Class="emphasis">mime-type</span> is image/jpeg, image/png, or image/gif, you can usually leave this empty and they can be detected from the file. Otherwise, you must specify the width in pixels, height in pixels, and color depth in bits-per-pixel. If the image has indexed colors you should also specify the number of colors used. If possible, these are checked against the file for accuracy. 
+<p class="level1"><span Class="emphasis">filename</span> is the path to the picture file to be imported, or the URL if the <span Class="emphasis">mime-type</span> is --&gt;. 
+<p class="level0"><a name="--padding"></a><span class="nroffip">--padding n</span> 
+<p class="level1">Reserve <span Class="emphasis">n</span> extra bytes for metadata tags. This can make later tag editing more efficient. Defaults to 512. 
+<p class="level0"><a name="--discard-comments"></a><span class="nroffip">--discard-comments</span> 
+<p class="level1">Don't propagate metadata tags from the input file. 
+<p class="level0"><a name="--discard-pictures"></a><span class="nroffip">--discard-pictures</span> 
+<p class="level1">Don't propagate pictures or art from the input file. 
+<p class="level1">
+<p class="level0"><a name="--raw"></a><span class="nroffip">--raw</span> 
+<p class="level1">Raw (headerless) PCM input 
+<p class="level0"><a name="--raw-bits"></a><span class="nroffip">--raw-bits N</span> 
+<p class="level1">Set bits/sample for raw input (default: 16) 
+<p class="level0"><a name="--raw-rate"></a><span class="nroffip">--raw-rate N</span> 
+<p class="level1">Set sampling rate for raw input (default: 48000) 
+<p class="level0"><a name="--raw-chan"></a><span class="nroffip">--raw-chan N</span> 
+<p class="level1">Set number of channels for raw input (default: 2) 
+<p class="level0"><a name="--raw-endianness"></a><span class="nroffip">--raw-endianness [0/1]</span> 
+<p class="level1">Set the endianness for raw input: 1 for bigendian, 0 for little (defaults to 0) 
+<p class="level0"><a name="--ignorelength"></a><span class="nroffip">--ignorelength</span> 
+<p class="level1">Always ignore the datalength in Wave headers. Opusenc automatically ignores the length when its implausible (very small or very large) but some STDIN usage may still need this option to avoid truncation. 
+<p class="level1"><a name="EXAMPLES"></a><h2 class="nroffsh">EXAMPLES</h2>
+<p class="level0">
+<p class="level0">Simplest usage. Take input as input.wav and produce output as output.opus: 
+<p class="level1">opusenc input.wav output.opus 
+<p class="level0">
+<p class="level0">
+<p class="level0">Produce a very high quality encode with a target rate of 160kbps: 
+<p class="level1">opusenc --bitrate 160 input.wav output.opus 
+<p class="level0">
+<p class="level0">
+<p class="level0">Record and send a live stream to an Icecast HTTP streaming server using oggfwd: 
+<p class="level1">arecord -c 2 -r 48000 -twav - | opusenc --bitrate 96 -  - | oggfwd icecast.somewhere.org 8000 password /stream.opus 
+<p class="level0">
+<p class="level0">
+<p class="level0"><a name="NOTES"></a><h2 class="nroffsh">NOTES</h2>
+<p class="level0">
+<p class="level0">While it is possible to use opusenc for low latency streaming (e.g. with --max-delay set to 0 and netcat instead of Icecast) it's not really designed for this, and the Ogg container and TCP transport aren't the best tools for that application. Shell pipelines themselves will often have high buffering. The ability to set framesizes as low as 2.5 ms in opusenc mostly exists to try out the quality of the format with low latency settings, but not really for actual low latency usage. <br>Interactive usage should use UDP/RTP directly. 
+<p class="level0"><a name="AUTHORS"></a><h2 class="nroffsh">AUTHORS</h2>
+<p class="level0"><br>Gregory Maxwell &lt;greg@xiph.org&gt; 
+<p class="level0"><a name="SEE"></a><h2 class="nroffsh">SEE ALSO</h2>
+<p class="level0"><a class="manpage" href="./opusdec.html">opusdec (1)</a> <a class="manpage" href="./opusinfo.html">opusinfo (1)</a> <span Class="manpage">oggfwd (1)</span> <p class="roffit">
+ This HTML page was made with <a href="http://daniel.haxx.se/projects/roffit/">roffit</a>.
+</body></html>

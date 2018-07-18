@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+ "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<title>opusdec man page</title>
+<meta name="generator" content="roffit">
+<STYLE type="text/css">
+P.level0 {
+ padding-left: 2em;
+}
+
+P.level1 {
+ padding-left: 4em;
+}
+
+P.level2 {
+ padding-left: 6em;
+}
+
+span.emphasis {
+ font-style: italic;
+}
+
+span.bold {
+ font-weight: bold;
+}
+
+span.manpage {
+ font-weight: bold;
+}
+
+h2.nroffsh {
+ background-color: #e0e0e0;
+}
+
+span.nroffip {
+ font-weight: bold;
+ font-size: 120%;
+ font-family: monospace;
+}
+
+p.roffit {
+ text-align: center;
+ font-size: 80%;
+}
+</STYLE>
+</head><body>
+
+<p class="level0">
+<p class="level0"><a name="NAME"></a><h2 class="nroffsh">NAME</h2>
+<p class="level0">opusdec - decode audio from Opus format to WAV (or simple audio output) 
+<p class="level0"><a name="SYNOPSIS"></a><h2 class="nroffsh">SYNOPSIS</h2>
+<p class="level0"><span Class="bold">opusdec</span> [ <span Class="bold">-hV</span> ] [ <a class="bold" href="#--rate">--rate Hz</a> ] [ <a class="bold" href="#--gain">--gain dB</a> ] [ <a class="bold" href="#--no-dither">--no-dither</a> ] [ <a class="bold" href="#--float">--float</a> ] [ <a class="bold" href="#--force-wav">--force-wav</a> ] [ <a class="bold" href="#--packet-loss">--packet-loss pct</a> ] [ <a class="bold" href="#--save-range">--save-range file</a> ] <span Class="bold">input.opus</span> [ <span Class="bold">output.wav</span> ] 
+<p class="level0"><a name="DESCRIPTION"></a><h2 class="nroffsh">DESCRIPTION</h2>
+<p class="level0">
+<p class="level0"><span Class="bold">opusdec</span> decodes Opus files into PCM Wave (uncompressed) files. 
+<p class="level0">If the input file is specified as <span Class="bold">-</span> , then <span Class="bold">opusdec</span> will read from stdin. Likewise, an output filename of <span Class="bold">-</span> will cause output to be to stdout. 
+<p class="level0">If no output is specified <span Class="bold">opusdec</span> will attempt to play the audio in realtime if it supports audio playback on your system. 
+<p class="level0"><a name="OPTIONS"></a><h2 class="nroffsh">OPTIONS</h2>
+<p class="level0">
+<p class="level0"><a name="-h"></a><span class="nroffip">-h, --help</span> 
+<p class="level1">Print help message 
+<p class="level0"><a name="-V"></a><span class="nroffip">-V, --version</span> 
+<p class="level1">Display version information 
+<p class="level0"><a name="--quiet"></a><span class="nroffip">--quiet</span> 
+<p class="level1">Suppresses program output 
+<p class="level0"><a name="--rate"></a><span class="nroffip">--rate</span> 
+<p class="level1"><br>Force decoding at sampling rate n Hz 
+<p class="level0"><a name="--gain"></a><span class="nroffip">--gain</span> 
+<p class="level1"><br>Adjust the output volume n dB, negative values make the signal quieter. 
+<p class="level0"><a name="--no-dither"></a><span class="nroffip">--no-dither</span> 
+<p class="level1">Do not dither 16-bit output 
+<p class="level0"><a name="--float"></a><span class="nroffip">--float</span> 
+<p class="level1">32-bit floating-point files instead of 16-bit files 
+<p class="level0"><a name="--force-wav"></a><span class="nroffip">--force-wav</span> 
+<p class="level1">Force including a wav header on output (e.g. for non-wav extensions and stdout) 
+<p class="level0"><a name="--packet-loss"></a><span class="nroffip">--packet-loss</span> 
+<p class="level1">Simulate n % random Opus packet loss 
+<p class="level0"><a name="--save-range"></a><span class="nroffip">--save-range</span> 
+<p class="level1">Saves check values for every frame to a file 
+<p class="level1"><a name="EXAMPLES"></a><h2 class="nroffsh">EXAMPLES</h2>
+<p class="level0">Decode a file <span Class="bold">input.opus</span> to <span Class="bold">output.wav</span> 
+<p class="level1">opusdec input.opus output.wav 
+<p class="level0">
+<p class="level0">Play a file <span Class="bold">input.opus</span> and force output at 48000 regardless of the original sampling rate <br><span Class="emphasis">(48kHz output may be faster, due to avoiding resampling and some sound hardware produces higher quality output when run at 48kHz)</span> 
+<p class="level1">opusdec --rate 48000 input.opus 
+<p class="level0">
+<p class="level0">Re-encode a high bitrate Opus file to a lower rate 
+<p class="level1">opusdec --force-wav input.opus - | opusenc --bitrate 64 - output.opus 
+<p class="level0">
+<p class="level0">Play an http stream <span Class="bold"><a href="http://icecast.somwhere.org">http://icecast.somwhere.org</a>:8000/stream.opus</span> with the help of curl on a system with pulseaudio <br><span Class="emphasis">(press ctrl-c to quit)</span> 
+<p class="level1">curl <a href="http://icecast.somwhere.org">http://icecast.somwhere.org</a>:8000/stream.opus | padsp opusdec - 
+<p class="level0">
+<p class="level0"><a name="AUTHORS"></a><h2 class="nroffsh">AUTHORS</h2>
+<p class="level0"><br>Jean-Marc Valin &lt;jmvalin@jmvalin.ca&gt; <br>Gregory Maxwell &lt;greg@xiph.org&gt; 
+<p class="level0"><a name="BUGS"></a><h2 class="nroffsh">BUGS</h2>
+<p class="level0">
+<p class="level0">Opusdec does not currently reject all invalid files which it should reject. It also doesn't provide very helpful output for the corrupted files it does reject. Use <span Class="bold">opusinfo</span>(1) for somewhat better diagnostics. 
+<p class="level0"><a name="SEE"></a><h2 class="nroffsh">SEE ALSO</h2>
+<p class="level0"><a class="manpage" href="./opusenc.html">opusenc (1)</a> <a class="manpage" href="./opusinfo.html">opusinfo (1)</a> <p class="roffit">
+ This HTML page was made with <a href="http://daniel.haxx.se/projects/roffit/">roffit</a>.
+</body></html>
