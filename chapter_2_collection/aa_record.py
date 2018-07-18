@@ -15,12 +15,15 @@ import sounddevice as sd
 import soundfile as sf 
 from bs4 import BeautifulSoup
 import speech_recognition as sr_audio
-import os, pyttsx3
+import os, pyttsx3, pdfkit, pygame
 
 def sync_record(filename, duration, fs, channels):
     print('recording')
     myrecording = sd.rec(int(duration * fs), samplerate=fs, channels=channels)
-    fetch_weather()
+    try:
+        fetch_weather()
+    except:
+        pass
     sd.wait()
     sf.write(filename, myrecording, fs)
     print('done recording')
@@ -46,13 +49,16 @@ def transcribe_audio_sphinx(filename):
     return text
     
 def fetch_weather():
-    os.system('open https://www.yahoo.com/news/weather')
+    link='https://www.yahoo.com/news/weather'
+    pdfkit.from_url(link, 'out.pdf')
 
 speak_text('would you like to get the weather?')
-sync_record('response.wav',2,16000,1)
+sync_playback('beep.mp3')
+time.sleep(1.2)
+sync_record('response.wav',5,16000,1)
 transcript=transcribe_audio_sphinx('response.wav')
-if transcript.lower().find('yes') >= 0:
-    speak_text('here is the weather')
-
+if transcript.lower().find('yes') >= 0 or transcript.lower().find('yeah')>=0:
+    speak_text('ok, great here it is.')
+    os.system('open out.pdf')
     
     

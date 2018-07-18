@@ -13,20 +13,14 @@ be an APA mode.
 '''
 import os
 
-# APA CONFIG 1 
-# active-asynchronous (AA)
+# APA CONFIG 1 (AA → PA)
 os.system('python3 aa_record.py')
-# passive-asynchronous (PA)
 os.system('python3 pa_record.py')
 
-# APA CONFIG 2 
-# active-synchronous (AS)
+# APA CONFIG 2 (AS→ PA)
 # os.system('python3 as_record.py')
-# passive-asynchronous (PA)
 # os.system('python3 pa_record.py')
 
-# APA CONFIG 3 
-# active asynchronous (AA)
+# APA CONFIG 3 (AA→ PS)
 # os.system('python3 aa_record.py')
-# passive synchronous (PS)
 # os.system('python3 ps_record.py')

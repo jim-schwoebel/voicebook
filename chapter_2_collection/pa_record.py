@@ -14,7 +14,7 @@ import sounddevice as sd
 import soundfile as sf 
 import time, os, shutil, psutil 
 
-# define syncronous recording function (did this is Chapter 1)
+# define synchronous recording function (did this is Chapter 1)
 def get_battery():
     battery = psutil.sensors_battery()
     plugged = battery.power_plugged

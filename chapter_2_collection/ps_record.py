@@ -32,7 +32,7 @@ except:
     
 i=0
 
-# loop through 10 times recoridng a 2 second sample 
+# loop through 10 times recording a 2 second sample 
 # can change to infinite loop ==> while i > -1: 
 while i<10:
     # record a mono file synchronously
