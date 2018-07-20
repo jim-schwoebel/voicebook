@@ -219,4 +219,4 @@ def nltk_featurize(file):
 
 
 # transcribe with pocketsphinx
-features, labels = nltk_featurize('test.wav')
+#features, labels = nltk_featurize('test.wav')
