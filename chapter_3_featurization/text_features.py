@@ -53,9 +53,9 @@ def text_featurize(filename,jsondump):
 
     return data 
 
-# record and get transcript 
-if 'test.wav' not in os.listdir():
-    sync_record('test.wav', 10, 44100, 2)
+# # record and get transcript 
+# if 'test.wav' not in os.listdir():
+#     sync_record('test.wav', 10, 44100, 2)
 
-# now extract all text features
-data=text_featurize('test.wav', True)
+# # now extract all text features
+# data=text_featurize('test.wav', True)
