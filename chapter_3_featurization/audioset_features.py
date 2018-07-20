@@ -118,11 +118,11 @@ if 'audioset' not in os.listdir():
         print('there was an error installing audioset')
 
 # record a 10 second, mono 16k Hz audio file in the current directory
-filename='test.wav'
-sync_record(filename,10,16000,1)
+# filename='test.wav'
+# sync_record(filename,10,16000,1)
 
 # now let's featurize an audio sample in the current directory, test.wav 
-features, new_features =audioset_featurize(filename)
+# features, new_features =audioset_featurize(filename)
 # print('new features')   
 # print(new_features)
 # print(len(new_features))
