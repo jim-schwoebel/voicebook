@@ -25,7 +25,7 @@ except:
 sphinx_transcript=ts.transcribe_sphinx('test.wav')
 
 # transcribe with deepspeech (can be CPU intensive)
-sphinx_transcript=ts.transcribe_deepspeech('test.wav')
+deepspeech_transcript=ts.transcribe_deepspeech('test.wav')
 
 # record a sample file and transcribe using all transcription methods
 # then, output all the transcripts into a jsonfile ('test.json') 
