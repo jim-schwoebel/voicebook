@@ -28,7 +28,7 @@ import transcribe as ts
 
 def nltk_featurize(file):
 	# get transcript 
-	if file[-4:]=='.wav'
+	if file[-4:]=='.wav':
 		transcript=ts.transcribe_sphinx('test.wav')
 	else:
 		transcript=file
