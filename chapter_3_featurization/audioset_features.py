@@ -123,9 +123,9 @@ sync_record(filename,10,16000,1)
 
 # now let's featurize an audio sample in the current directory, test.wav 
 features, new_features =audioset_featurize(filename)
-print('new features')   
-print(new_features)
-print(len(new_features))
+# print('new features')   
+# print(new_features)
+# print(len(new_features))
 
 
 
