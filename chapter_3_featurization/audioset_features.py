@@ -79,10 +79,10 @@ def audioset_featurize(filename):
     # initialize numpy array to add features into
     new_features_mean=np.zeros(len(features[0]))
     for i in range(len(features)):
-        new_features_mean=new_features+np.array(features[i])
+        new_features_mean=new_features_mean+np.array(features[i])
 
     # now take mean of all these features 
-    new_features_mean=(1/len(features))*new_features
+    new_features_mean=(1.0/len(features))*new_features_mean
 
     # GET STD FEATURES
     new_features_std=list()
@@ -121,8 +121,10 @@ if 'audioset' not in os.listdir():
 sync_record('test2.wav',10,16000,1)
 
 # now let's featurize an audio sample in the current directory, test.wav 
-features=audioset_featurize('test.wav')
-print(features)    
+features, new_features =audioset_featurize('test.wav')
+print('new features')   
+print(new_features)
+print(len(new_features))
 
 
 
