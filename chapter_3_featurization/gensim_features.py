@@ -54,11 +54,12 @@ def sentence_embedding(sentence,size,modelname):
 
     return out_embed
 
+# EXAMPLE:
 # load alice and wonderland corpus and build w2v model
-text=open('alice.txt').read()
-transcript='I had a great time at the bar today.'
-modelname='alice.pickle'
-w2v_train(text,100,modelname)
-features=sentence_embedding(transcript, 100,modelname)
-print(features)
-print(len(features))
+# text=open('alice.txt').read()
+# transcript='I had a great time at the bar today.'
+# modelname='alice.pickle'
+# w2v_train(text,100,modelname)
+# features=sentence_embedding(transcript, 100,modelname)
+# print(features)
+# print(len(features))
