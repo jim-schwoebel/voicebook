@@ -320,8 +320,8 @@ labels = ['addiction_controls', 'adhd_controls', 'africanamerican_controls','als
 try:
     os.chdir(model_dir)
 except:
-    unzip('meta_models.zip')
-    os.remove('meta_models.zip')
+    print('ERROR! \n\n You need to download the meta models. \n\n Please clone the repo (git@github.com:jim-schwoebel/voicebook.git)',
+      'and navigate to the chapter_3_featurization/meta_models folder, and add these models to the working directory then re-run script.')
     os.chdir(model_dir)
 
 model_list=list()
