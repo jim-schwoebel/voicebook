@@ -294,6 +294,8 @@ except:
     os.chdir(load_dir)
 
 listdir=os.listdir()
+
+print('META FEAUTRIZING...')
 for i in range(len(listdir)):
     try:
       if listdir[i][-5:] not in ['Store','.json']:
@@ -330,7 +332,6 @@ for i in range(len(listdir)):
                   loadmodel.close()
                   
                   output=str(model.predict(features)[0])
-                  print(output)
                   classname=output
                   class_list.append(classname)
 
@@ -348,7 +349,12 @@ for i in range(len(listdir)):
                 else:
                   meta_features.append(1)
 
+              # show output in terminal 
+              print('\n\n META FEATURES \n\n')
               print(meta_features)
+              print('\n\n META CLASSES: \n\n')
+              print(class_list)
+
               jsonfilename=filename[0:-4]+'.json'
               jsonfile=open(jsonfilename,'w')
 
