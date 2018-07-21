@@ -3,99 +3,133 @@ meta_features.py
 
 Load in meta features by featurizing and applying loaded ML models.
 
-69 total models are trained and provided here for you; feel free to add to this list.
+71 total models are trained and provided here for you; feel free to add to this list.
 
 Note these are models trained on the NeuroLex standard embedding - which
 is usually just a combination of mfcc coefficients and mfcc deltas spread out
-over time. A list of accuracies, standard deviations,
-and modeltypes is provided below:
+over time. 
 
-Model Name	Accuracy	Standard Deviation	Modeltype
-addiction_controls	0.616666666666667	0.233333333333333	logistic regression
-adhd_controls	0.62	0.0653197264742181	sk
-als_controls	0.833333333333333	0.210818510677892	hard voting
-alternative_alternativecontrolbalanced	0.743333333333333	0.163842743032593	random forest
-amharic_amharic_controls	0.666666666666667	0.182574185835055	knn
-angry_angry_controls	0.598824786324786	0.0216278858906185	hard voting
-anxiety_controls	0.8	0.244948974278318	knn
-autism_controls	0.583333333333333	0.105409255338946	random forest
-bipolar_controls	0.706666666666667	0.149666295470958	gaussian-nb
-caffeine_controls	0.933333333333333	0.133333333333333	hard voting
-cantonese_cantonese_controls	0.783333333333333	0.296273147243853	adaboost
-christian_christiancontrolbalanced	0.86	0.195959179422654	logistic regression
-cold_controls	0.826666666666667	0.18306040290328	logistic regression
-country_countrycontrolbalanced	0.9	0.122474487139159	svm
-depression_controls	0.833333333333333	0.139443337755679	adaboost
-disgust_disgust_controls	0.793333333333333	0.123648246606609	logistic regression
-dutch_dutch_controls	0.705714285714286	0.16747829588289	random forest
-dyslexia_controls	0.59	0.0916515138991168	knn
-edm_edmcontrolbalanced	0.71	0.190787840283389	svm
-english_english_controls	0.686274509803922	0.0733002966373284	logistic regression
-awake_fatigued	0.772527472527473	0.0845225693319974	gaussian-nb
-fear_fear_controls	0.612705882352941	0.0359251646457615	gaussian-nb
-fifties_fifties_controls	0.794545131389912	0.0151656184818545	knn
-folk_folkcontrolbalanced	0.683333333333333	0.290593262902712	logistic regression
-fourties_fourties_controls	0.774859823805254	0.0186105837039435	knn
-french_french_controls	0.819047619047619	0.118187368057056	gaussian-nb
-gender	0.886945812807882	0.0601933355302945	hard voting
-german_german_controls	0.516666666666667	0.260341655863555	random forest
-glioblastoma_controls	0.666666666666667	0.278886675511358	knn
-graves_disease_controls	0.8	0.187082869338697	logistic regression
-happy_happy_controls	0.544996147089866	0.0387385680145828	logistic regression
-holiday_holidaycontrolbalanced	0.633333333333333	0.250554939639549	svm
-indie_indiecontrolbalanced	0.743333333333333	0.163842743032593	svm
-italian_italian_controls	0.683333333333333	0.24381231397213	adaboost
-japanese_japanese_controls	0.813333333333333	0.243675558433294	hard voting
-jazz_jazzcontrolbalanced	0.793333333333333	0.111853078237084	gaussian-nb
-korean_korean_controls	0.763333333333333	0.225191276720727	gaussian-nb
-latin_latincontrolbalanced	0.87	0.166132477258361	gaussian-nb
-macedonian_macedonian_controls	0.733333333333333	0.226077666104176	random forest
-mandarin_mandarin_controls	0.633333333333333	0.250554939639549	gaussian-nb
-multiple_sclerosis_controls	0.81	0.110352969048312	gradient boosting
-neutral_neutral_controls	0.557614471387894	0.0346767702052588	gaussian-nb
-newage_newagecontrolbalanced	0.843333333333333	0.134824989441045	adaboost
-parkinsons_controls	0.65	0.3	random forest
-polish_polish_controls	0.586666666666667	0.223706156474167	knn
-pop_popcontrolbalanced	0.643333333333333	0.20127372185934	hard voting
-portuguese_portuguese_controls	0.606666666666667	0.179381653960983	decision-tree
-postpartum_depression_controls	0.893333333333333	0.137275068546493	knn
-highquality_badquality	0.756666666666667	0.0827311576399391	logistic regression
-rap_rapcontrolbalanced	0.803333333333333	0.16746475582774	hard voting
-reggae_reggaecontrolbalanced	0.703333333333333	0.0609188896083236	random forest
-rock_rockcontrolbalanced	0.693333333333333	0.105725010181025	logistic regression
-romanian_romanian_controls	0.766666666666667	0.2	logistic regression
-russian_russian_controls	0.64	0.32	decision-tree
-sad_sad_controls	0.57773240365648	0.0294270111310834	knn
-schizophrenia_controls	0.73	0.198438347548496	svm
-seventies_seventies_controls	0.795753660637382	0.0378425083662649	hard voting
-sixties_sixties_controls	0.797694462400345	0.0346864094031604	knn
-sleep_apnea_controls	0.713333333333333	0.0710242525088751	gaussian-nb
-soundtrack_soundtrackcontrolbalanced	0.9	0.122474487139159	gradient boosting
-spanish_spanish_controls	0.571111111111111	0.0896082006829153	adaboost
-stressed_calm	0.788888888888889	0.0926962382871743	logistic regression
-surprise_surprise_controls	0.59468085106383	0.0361563038199457	knn
-swedish_swedish_controls	0.666666666666667	0.182574185835055	logistic regression
-teens_teens_controls	0.762092175756338	0.0212424639835302	knn
-thirties_thirties_controls	0.765463935070702	0.00626231620665817	knn
-turkish_turkish_controls	0.733333333333333	0.152023390013218	adaboost
-twenties_twenties_controls	0.747827586437699	0.00483503800126851	knn
-vietnamese_vietnamese_controls	0.65	0.2	gaussian-nb
+====================================================================
+MODEL ACCURACIES 
 
-An example output of the array is 
+A list of accuracies, standard deviations, and modeltypes is provided below
+(also in summary.xlsx in the meta_models folder).
 
-[1, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 
-0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 
-0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1, 0, 
-0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+====================================================================
 
-Enjoy!  
+addiction_controls  0.616666666666667 0.233333333333333 logistic regression
+adhd_controls 0.62  0.0653197264742181  sk
+africanamerican_controls  0.887894736842105 0.0528836071034967  hard voting
+als_controls  0.833333333333333 0.210818510677892 hard voting
+alternative_alternativecontrolbalanced  0.743333333333333 0.163842743032593 random forest
+amharic_amharic_controls  0.666666666666667 0.182574185835055 knn
+angry_angry_controls  0.598824786324786 0.0216278858906185  hard voting
+anxiety_controls  0.8 0.244948974278318 knn
+autism_controls 0.583333333333333 0.105409255338946 random forest
+awake_fatigued  0.772527472527473 0.0845225693319974  gaussian-nb
+bipolar_controls  0.706666666666667 0.149666295470958 gaussian-nb
+caffeine_controls 0.933333333333333 0.133333333333333 hard voting
+cantonese_cantonese_controls  0.783333333333333 0.296273147243853 adaboost
+christian_christiancontrolbalanced  0.86  0.195959179422654 logistic regression
+cold_controls 0.826666666666667 0.18306040290328  logistic regression
+country_countrycontrolbalanced  0.9 0.122474487139159 svm
+depression_controls 0.833333333333333 0.139443337755679 adaboost
+disgust_disgust_controls  0.793333333333333 0.123648246606609 logistic regression
+dutch_dutch_controls  0.705714285714286 0.16747829588289  random forest
+dyslexia_controls 0.59  0.0916515138991168  knn
+edm_edmcontrolbalanced  0.71  0.190787840283389 svm
+english_english_controls  0.686274509803922 0.0733002966373284  logistic regression
+fear_fear_controls  0.612705882352941 0.0359251646457615  gaussian-nb
+fifties_fifties_controls  0.794545131389912 0.0151656184818545  knn
+folk_folkcontrolbalanced  0.683333333333333 0.290593262902712 logistic regression
+fourties_fourties_controls  0.774859823805254 0.0186105837039435  knn
+french_french_controls  0.819047619047619 0.118187368057056 gaussian-nb
+gender  0.886945812807882 0.0601933355302945  hard voting
+german_german_controls  0.516666666666667 0.260341655863555 random forest
+glioblastoma_controls 0.666666666666667 0.278886675511358 knn
+graves_disease_controls 0.8 0.187082869338697 logistic regression
+happy_happy_controls  0.544996147089866 0.0387385680145828  logistic regression
+highquality_badquality  0.756666666666667 0.0827311576399391  logistic regression
+holiday_holidaycontrolbalanced  0.633333333333333 0.250554939639549 svm
+indie_indiecontrolbalanced  0.743333333333333 0.163842743032593 svm
+italian_italian_controls  0.683333333333333 0.24381231397213  adaboost
+japanese_japanese_controls  0.813333333333333 0.243675558433294 hard voting
+jazz_jazzcontrolbalanced  0.793333333333333 0.111853078237084 gaussian-nb
+korean_korean_controls  0.763333333333333 0.225191276720727 gaussian-nb
+latin_latincontrolbalanced  0.87  0.166132477258361 gaussian-nb
+macedonian_macedonian_controls  0.733333333333333 0.226077666104176 random forest
+mandarin_mandarin_controls  0.633333333333333 0.250554939639549 gaussian-nb
+multiple_sclerosis_controls 0.81  0.110352969048312 gradient boosting
+natural_non-natural 0.796153846153846 0.0803100500685427  adaboost
+neutral_neutral_controls  0.557614471387894 0.0346767702052588  gaussian-nb
+newage_newagecontrolbalanced  0.843333333333333 0.134824989441045 adaboost
+parkinsons_controls 0.65  0.3 random forest
+polish_polish_controls  0.586666666666667 0.223706156474167 knn
+pop_popcontrolbalanced  0.643333333333333 0.20127372185934  hard voting
+portuguese_portuguese_controls  0.606666666666667 0.179381653960983 decision-tree
+postpartum_depression_controls  0.893333333333333 0.137275068546493 knn
+rap_rapcontrolbalanced  0.803333333333333 0.16746475582774  hard voting
+reggae_reggaecontrolbalanced  0.703333333333333 0.0609188896083236  random forest
+rock_rockcontrolbalanced  0.693333333333333 0.105725010181025 logistic regression
+romanian_romanian_controls  0.766666666666667 0.2 logistic regression
+russian_russian_controls  0.64  0.32  decision-tree
+sad_sad_controls  0.57773240365648  0.0294270111310834  knn
+schizophrenia_controls  0.73  0.198438347548496 svm
+seventies_seventies_controls  0.795753660637382 0.0378425083662649  hard voting
+sixties_sixties_controls  0.797694462400345 0.0346864094031604  knn
+sleep_apnea_controls  0.713333333333333 0.0710242525088751  gaussian-nb
+soundtrack_soundtrackcontrolbalanced  0.9 0.122474487139159 gradient boosting
+spanish_spanish_controls  0.571111111111111 0.0896082006829153  adaboost
+stressed_calm 0.788888888888889 0.0926962382871743  logistic regression
+surprise_surprise_controls  0.59468085106383  0.0361563038199457  knn
+swedish_swedish_controls  0.666666666666667 0.182574185835055 logistic regression
+teens_teens_controls  0.762092175756338 0.0212424639835302  knn
+thirties_thirties_controls  0.765463935070702 0.00626231620665817 knn
+turkish_turkish_controls  0.733333333333333 0.152023390013218 adaboost
+twenties_twenties_controls  0.747827586437699 0.00483503800126851 knn
+vietnamese_vietnamese_controls  0.65  0.2 gaussian-nb
+
+====================================================================
+
+An example output from the script is below
+
+====================================================================
+
+META FEATURES 
+
+
+[1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 
+0, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 
+0, 0, 0, 0, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+
+
+ META CLASSES: 
+
+
+['controls', 'adhd', 'africanamerican', 'controls', 'alternativecontrolbalanced', 
+'amharic_controls', 'angry_controls', 'anxiety', 'controls', 'controls', 'controls', 
+'cantonese', 'christian', 'controls', 'country', 'depression', 'disgust_controls', 
+'dutch_controls', 'controls', 'edmcontrolbalanced', 'english', 'awake', 'fear_controls', 
+'fifties_controls', 'folkcontrolbalanced', 'fourties_controls', 'french_controls', 
+'male', 'german', 'controls', 'controls', 'happy_controls', 'holiday', 
+'indiecontrolbalanced', 'italian', 'japanese', 'jazzcontrolbalanced', 'korean', 
+'latin', 'macedonian_controls', 'mandarin_controls', 'multiple_sclerosis', 'natural', 
+'neutral_controls', 'newagecontrolbalanced', 'controls', 'polish', 'popcontrolbalanced', 
+'portuguese_controls', 'controls', 'badquality', 'rapcontrolbalanced', 'reggae', 'rock', 
+'romanian', 'russian_controls', 'sad', 'controls', 'seventies_controls', 'sixties', 
+'controls', 'soundtrackcontrolbalanced', 'spanish_controls', 'stressed', 'surprise_controls', 
+'swedish', 'teens', 'thirties', 'turkish', 'twenties', 'vietnamese_controls']
+
+=====================================================================================
+
+Happy Meta-featurizing!  
 '''
 
 ################################################################################
 ##                      IMPORT STATEMENTS                                     ##
 ################################################################################
 
-import librosa, pickle, getpass, time 
+import librosa, pickle, getpass, time, zipfile
 from pydub import AudioSegment
 import os, nltk, random, json 
 from nltk import word_tokenize 
@@ -105,6 +139,12 @@ import numpy as np
 ################################################################################
 ##                      HELPER FUNCTIONS                                     ##
 ################################################################################
+
+def unzip(file):
+    filepath=os.getcwd()+'/'+file
+    folderpath=os.getcwd()+'/'+file[0:-4]
+    zip = zipfile.ZipFile(filepath)
+    zip.extractall(path=folderpath)
 
 def featurize2(wavfile):
     #initialize features 
@@ -254,12 +294,12 @@ def convert(file):
 
 # initialize directories and variables 
 cur_dir=os.getcwd()+'/load_dir'
-model_dir=os.getcwd()+'/meta_models'
+model_dir=os.getcwd()+'/meta_models/meta_models'
 load_dir=cur_dir 
 errorcount=0
 count=0
 
-labels = ['addiction_controls', 'adhd_controls', 'als_controls', 'alternative_alternativecontrolbalanced',
+labels = ['addiction_controls', 'adhd_controls', 'africanamerican_controls','als_controls','alternative_alternativecontrolbalanced',
            'amharic_amharic_controls','angry_angry_controls','anxiety_controls','autism_controls',
            'bipolar_controls','caffeine_controls','cantonese_cantonese_controls','christian_christiancontrolbalanced',
            'cold_controls','country_countrycontrolbalanced','depression_controls','disgust_disgust_controls',
@@ -269,15 +309,21 @@ labels = ['addiction_controls', 'adhd_controls', 'als_controls', 'alternative_al
            'glioblastoma_controls','graves_disease_controls','happy_happy_controls','holiday_holidaycontrolbalanced',
            'indie_indiecontrolbalanced','italian_italian_controls','japanese_japanese_controls','jazz_jazzcontrolbalanced',
            'korean_korean_controls','latin_latincontrolbalanced','macedonian_macedonian_controls','mandarin_mandarin_controls',
-           'multiple_sclerosis_controls','neutral_neutral_controls','newage_newagecontrolbalanced','parkinsons_controls',
-           'polish_polish_controls','pop_popcontrolbalanced','portuguese_portuguese_controls','postpartum_depression_controls',
+           'multiple_sclerosis_controls','natural_non-natural','neutral_neutral_controls','newage_newagecontrolbalanced',
+           'parkinsons_controls','polish_polish_controls','pop_popcontrolbalanced','portuguese_portuguese_controls','postpartum_depression_controls',
            'highquality_badquality','rap_rapcontrolbalanced','reggae_reggaecontrolbalanced','rock_rockcontrolbalanced',
            'romanian_romanian_controls','russian_russian_controls','sad_sad_controls','schizophrenia_controls',
            'seventies_seventies_controls','sixties_sixties_controls','sleep_apnea_controls','soundtrack_soundtrackcontrolbalanced',
            'spanish_spanish_controls','stressed_calm','surprise_surprise_controls','swedish_swedish_controls','teens_teens_controls',
            'thirties_thirties_controls','turkish_turkish_controls','twenties_twenties_controls','vietnamese_vietnamese_controls']
 
-os.chdir(model_dir)
+try:
+    os.chdir(model_dir)
+except:
+    unzip('meta_models.zip')
+    os.remove('meta_models.zip')
+    os.chdir(model_dir)
+
 model_list=list()
 
 for i in range(len(labels)):
@@ -344,7 +390,7 @@ for i in range(len(listdir)):
 
               meta_features=list()
               for i in range(len(class_list)):
-                if class_list[i].find('control') or class_list[i] in ['badquality', 'fatigued', 'male']:
+                if class_list[i].find('control') or class_list[i] in ['badquality', 'fatigued', 'male', 'natural']:
                   meta_features.append(0)
                 else:
                   meta_features.append(1)
