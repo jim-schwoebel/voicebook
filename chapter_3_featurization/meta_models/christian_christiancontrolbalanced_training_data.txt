@@ -1,8 +1,0 @@
-train labels
-
-['christiancontrolbalanced', 'christian', 'christiancontrolbalanced', 'christiancontrolbalanced', 'christian', 'christiancontrolbalanced', 'christian', 'christian', 'christian', 'christiancontrolbalanced', 'christian', 'christian', 'christian', 'christiancontrolbalanced', 'christian', 'christiancontrolbalanced', 'christiancontrolbalanced', 'christiancontrolbalanced', 'christiancontrolbalanced', 'christian', 'christiancontrolbalanced', 'christian', 'christian', 'christian', 'christiancontrolbalanced', 'christiancontrolbalanced', 'christiancontrolbalanced', 'christian', 'christiancontrolbalanced', 'christian', 'christian', 'christian', 'christiancontrolbalanced', 'christian', 'christian', 'christiancontrolbalanced', 'christian', 'christian', 'christiancontrolbalanced', 'christiancontrolbalanced']
-
-test labels
-
-['christian', 'christian', 'christiancontrolbalanced', 'christiancontrolbalanced', 'christian', 'christiancontrolbalanced', 'christiancontrolbalanced', 'christiancontrolbalanced', 'christian', 'christiancontrolbalanced', 'christiancontrolbalanced', 'christiancontrolbalanced', 'christiancontrolbalanced', 'christian', 'christiancontrolbalanced', 'christian', 'christian', 'christian', 'christiancontrolbalanced', 'christian']
-

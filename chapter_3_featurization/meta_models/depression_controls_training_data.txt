@@ -1,8 +1,0 @@
-train labels
-
-['depression', 'controls', 'depression', 'depression', 'depression', 'controls', 'controls', 'controls', 'depression', 'controls', 'controls', 'depression', 'depression', 'controls', 'depression', 'controls', 'depression', 'depression', 'controls', 'controls', 'depression', 'controls', 'depression', 'depression', 'depression', 'controls', 'depression', 'depression', 'controls', 'depression', 'controls', 'controls']
-
-test labels
-
-['controls', 'controls', 'controls', 'controls', 'controls', 'controls', 'depression', 'depression', 'depression', 'controls', 'depression', 'depression', 'depression', 'controls', 'controls', 'depression']
-

@@ -1,8 +1,0 @@
-train labels
-
-['dutch_controls', 'dutch_controls', 'dutch', 'dutch', 'dutch', 'dutch', 'dutch_controls', 'dutch_controls', 'dutch', 'dutch_controls', 'dutch', 'dutch_controls', 'dutch', 'dutch', 'dutch', 'dutch', 'dutch', 'dutch', 'dutch_controls', 'dutch', 'dutch_controls', 'dutch', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch', 'dutch_controls', 'dutch', 'dutch', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch', 'dutch', 'dutch', 'dutch_controls', 'dutch', 'dutch', 'dutch', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch', 'dutch_controls', 'dutch_controls', 'dutch', 'dutch_controls']
-
-test labels
-
-['dutch_controls', 'dutch', 'dutch', 'dutch', 'dutch', 'dutch_controls', 'dutch', 'dutch', 'dutch', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch', 'dutch_controls', 'dutch_controls', 'dutch_controls', 'dutch', 'dutch', 'dutch', 'dutch', 'dutch', 'dutch_controls', 'dutch', 'dutch', 'dutch', 'dutch']
-

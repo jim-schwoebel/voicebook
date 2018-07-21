@@ -1,8 +1,0 @@
-train labels
-
-['countrycontrolbalanced', 'countrycontrolbalanced', 'countrycontrolbalanced', 'countrycontrolbalanced', 'country', 'country', 'country', 'country', 'country', 'country', 'countrycontrolbalanced', 'countrycontrolbalanced', 'countrycontrolbalanced', 'country', 'countrycontrolbalanced', 'countrycontrolbalanced', 'countrycontrolbalanced', 'countrycontrolbalanced', 'countrycontrolbalanced', 'country', 'country', 'country', 'countrycontrolbalanced', 'countrycontrolbalanced', 'countrycontrolbalanced', 'country', 'countrycontrolbalanced', 'country', 'country', 'country', 'countrycontrolbalanced', 'country', 'country', 'countrycontrolbalanced', 'country', 'country', 'countrycontrolbalanced', 'countrycontrolbalanced']
-
-test labels
-
-['country', 'country', 'countrycontrolbalanced', 'country', 'countrycontrolbalanced', 'countrycontrolbalanced', 'countrycontrolbalanced', 'country', 'countrycontrolbalanced', 'country', 'countrycontrolbalanced', 'country', 'countrycontrolbalanced', 'countrycontrolbalanced', 'country', 'country', 'country', 'country', 'countrycontrolbalanced', 'country']
-

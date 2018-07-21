@@ -1,8 +1,0 @@
-train labels
-
-['disgust', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust', 'disgust', 'disgust', 'disgust', 'disgust_controls', 'disgust', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust', 'disgust', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust', 'disgust', 'disgust_controls', 'disgust', 'disgust', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust_controls']
-
-test labels
-
-['disgust_controls', 'disgust', 'disgust_controls', 'disgust', 'disgust', 'disgust_controls', 'disgust', 'disgust', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust', 'disgust', 'disgust', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls']
-
