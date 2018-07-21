@@ -1,8 +1,0 @@
-train labels
-
-['anxiety', 'controls', 'anxiety', 'controls', 'anxiety', 'controls', 'anxiety', 'anxiety', 'anxiety', 'controls', 'controls', 'anxiety', 'controls', 'controls', 'anxiety', 'controls', 'controls', 'controls', 'anxiety', 'controls', 'anxiety', 'controls', 'anxiety', 'anxiety', 'controls']
-
-test labels
-
-['controls', 'controls', 'anxiety', 'anxiety', 'controls', 'controls', 'anxiety', 'controls', 'controls', 'anxiety', 'anxiety', 'anxiety', 'anxiety']
-
