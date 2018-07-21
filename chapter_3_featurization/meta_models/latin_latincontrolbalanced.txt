@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+gaussian-nb: 0.8699999999999999 (+/- 0.1661324772583615) 
+
+MODEL FILE NAME: 
+
+ latin_latincontrolbalanced_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:28:20.863278
+
+EXECUTION TIME: 
+
+ 4.200779914855957
+
+GROUPS: 
+
+['latin', 'latincontrolbalanced']
+(29 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latin', 'latin', 'latin', 'latin', 'latin', 'latin', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latin', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latin', 'latin', 'latin', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latin', 'latincontrolbalanced', 'latin', 'latin', 'latin', 'latincontrolbalanced', 'latin', 'latin', 'latincontrolbalanced', 'latin', 'latin', 'latincontrolbalanced', 'latincontrolbalanced']
+
+test labels
+
+['latin', 'latin', 'latincontrolbalanced', 'latin', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latin', 'latincontrolbalanced', 'latin', 'latincontrolbalanced', 'latin', 'latincontrolbalanced', 'latincontrolbalanced', 'latin', 'latin', 'latin', 'latin', 'latincontrolbalanced', 'latin']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+random forest: 0.5133333333333333 (+/- 0.17993826101687704)
+logistic regression: 0.5233333333333333 (+/- 0.18844392033470092)
+sk: 0.5533333333333333 (+/- 0.06863753427324665)
+decision-tree: 0.5633333333333332 (+/- 0.12666666666666665)
+gradient boosting: 0.6133333333333333 (+/- 0.1403962645910179)
+svm: 0.6233333333333333 (+/- 0.26616619703569505)
+adaboost: 0.63 (+/- 0.2181742422927143)
+knn: 0.6533333333333333 (+/- 0.09510228411791403)
+hard voting: 0.7033333333333334 (+/- 0.16944353369518447)
+gaussian-nb: 0.8699999999999999 (+/- 0.1661324772583615)
+
+
+(C) 2018, NeuroLex Laboratories

@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+logistic regression: 0.6933333333333332 (+/- 0.10572501018102472) 
+
+MODEL FILE NAME: 
+
+ rock_rockcontrolbalanced_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:28:59.239312
+
+EXECUTION TIME: 
+
+ 1.7897942066192627
+
+GROUPS: 
+
+['rock', 'rockcontrolbalanced']
+(29 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rock', 'rock', 'rock', 'rock', 'rock', 'rock', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rock', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rock', 'rock', 'rock', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rock', 'rockcontrolbalanced', 'rock', 'rock', 'rock', 'rockcontrolbalanced', 'rock', 'rock', 'rockcontrolbalanced', 'rock', 'rock', 'rockcontrolbalanced', 'rockcontrolbalanced']
+
+test labels
+
+['rock', 'rock', 'rockcontrolbalanced', 'rock', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rock', 'rockcontrolbalanced', 'rock', 'rockcontrolbalanced', 'rock', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rock', 'rock', 'rock', 'rock', 'rockcontrolbalanced', 'rock']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+adaboost: 0.5133333333333333 (+/- 0.08589399151150082)
+knn: 0.5166666666666667 (+/- 0.2603416558635551)
+sk: 0.5533333333333333 (+/- 0.06863753427324665)
+decision-tree: 0.5633333333333332 (+/- 0.12666666666666665)
+gradient boosting: 0.5633333333333332 (+/- 0.12666666666666665)
+hard voting: 0.5633333333333332 (+/- 0.12666666666666665)
+gaussian-nb: 0.6433333333333333 (+/- 0.12454361128179603)
+svm: 0.6666666666666667 (+/- 0.22973414586817037)
+random forest: 0.6766666666666666 (+/- 0.2341889076033373)
+logistic regression: 0.6933333333333332 (+/- 0.10572501018102472)
+
+
+(C) 2018, NeuroLex Laboratories

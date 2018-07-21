@@ -1,0 +1,8 @@
+train labels
+
+['controls', 'controls', 'autism', 'autism', 'autism', 'autism', 'controls', 'controls', 'autism', 'controls', 'controls', 'controls', 'autism', 'controls', 'autism', 'controls', 'autism', 'autism', 'autism', 'controls', 'controls', 'autism', 'controls', 'autism', 'autism', 'autism', 'controls', 'autism', 'autism', 'controls', 'autism', 'controls', 'controls']
+
+test labels
+
+['autism', 'controls', 'controls', 'controls', 'autism', 'controls', 'controls', 'controls', 'controls', 'autism', 'autism', 'autism', 'controls', 'autism', 'autism', 'autism', 'controls']
+

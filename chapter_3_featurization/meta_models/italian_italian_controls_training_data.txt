@@ -1,0 +1,8 @@
+train labels
+
+['italian_controls', 'italian_controls', 'italian_controls', 'italian', 'italian', 'italian', 'italian_controls', 'italian_controls', 'italian', 'italian', 'italian', 'italian_controls', 'italian_controls', 'italian_controls', 'italian_controls', 'italian_controls', 'italian_controls', 'italian', 'italian', 'italian', 'italian_controls', 'italian_controls', 'italian', 'italian_controls', 'italian', 'italian', 'italian', 'italian_controls', 'italian', 'italian', 'italian_controls', 'italian', 'italian_controls', 'italian_controls']
+
+test labels
+
+['italian', 'italian_controls', 'italian_controls', 'italian', 'italian_controls', 'italian', 'italian', 'italian_controls', 'italian', 'italian_controls', 'italian', 'italian', 'italian_controls', 'italian', 'italian_controls', 'italian', 'italian_controls', 'italian']
+

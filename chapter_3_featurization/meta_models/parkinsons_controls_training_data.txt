@@ -1,0 +1,8 @@
+train labels
+
+['controls', 'controls', 'controls', 'parkinsons', 'parkinsons', 'parkinsons', 'controls', 'controls', 'parkinsons', 'parkinsons', 'parkinsons', 'controls', 'controls', 'controls', 'controls', 'controls', 'controls', 'parkinsons', 'parkinsons', 'parkinsons', 'controls', 'controls', 'parkinsons', 'controls', 'parkinsons', 'parkinsons', 'parkinsons', 'controls', 'parkinsons', 'parkinsons', 'controls', 'parkinsons', 'controls', 'controls']
+
+test labels
+
+['parkinsons', 'controls', 'controls', 'parkinsons', 'controls', 'parkinsons', 'parkinsons', 'controls', 'parkinsons', 'controls', 'parkinsons', 'parkinsons', 'controls', 'parkinsons', 'controls', 'parkinsons', 'controls', 'parkinsons']
+

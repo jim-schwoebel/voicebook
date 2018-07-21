@@ -1,0 +1,8 @@
+train labels
+
+['korean_controls', 'korean_controls', 'korean_controls', 'korean', 'korean', 'korean', 'korean_controls', 'korean_controls', 'korean', 'korean', 'korean', 'korean_controls', 'korean_controls', 'korean_controls', 'korean_controls', 'korean_controls', 'korean_controls', 'korean', 'korean', 'korean', 'korean_controls', 'korean_controls', 'korean_controls', 'korean', 'korean_controls', 'korean', 'korean', 'korean', 'korean_controls', 'korean', 'korean', 'korean_controls', 'korean', 'korean_controls', 'korean_controls', 'korean_controls']
+
+test labels
+
+['korean', 'korean_controls', 'korean_controls', 'korean', 'korean_controls', 'korean', 'korean', 'korean_controls', 'korean', 'korean_controls', 'korean', 'korean', 'korean', 'korean', 'korean_controls', 'korean', 'korean_controls', 'korean']
+

@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+logistic regression: 0.7933333333333333 (+/- 0.1236482466066094) 
+
+MODEL FILE NAME: 
+
+ disgust_disgust_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 23:52:53.285702
+
+EXECUTION TIME: 
+
+ 4.893160820007324
+
+GROUPS: 
+
+['disgust', 'disgust_controls']
+(42 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['disgust', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust', 'disgust', 'disgust', 'disgust', 'disgust_controls', 'disgust', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust', 'disgust', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust', 'disgust', 'disgust_controls', 'disgust', 'disgust', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust_controls']
+
+test labels
+
+['disgust_controls', 'disgust', 'disgust_controls', 'disgust', 'disgust', 'disgust_controls', 'disgust', 'disgust', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust_controls', 'disgust_controls', 'disgust_controls', 'disgust', 'disgust', 'disgust', 'disgust', 'disgust', 'disgust_controls', 'disgust', 'disgust_controls']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+adaboost: 0.5333333333333333 (+/- 0.09189365834726812)
+sk: 0.54 (+/- 0.04898979485566354)
+decision-tree: 0.5666666666666667 (+/- 0.2065591117977289)
+gradient boosting: 0.5733333333333334 (+/- 0.12364824660660936)
+random forest: 0.68 (+/- 0.12400716825158851)
+gaussian-nb: 0.72 (+/- 0.06531972647421812)
+hard voting: 0.72 (+/- 0.12400716825158853)
+knn: 0.72 (+/- 0.1771377367411523)
+svm: 0.7266666666666666 (+/- 0.16653327995729061)
+logistic regression: 0.7933333333333333 (+/- 0.1236482466066094)
+
+
+(C) 2018, NeuroLex Laboratories

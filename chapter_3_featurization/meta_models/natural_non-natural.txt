@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+adaboost: 0.7961538461538462 (+/- 0.08031005006854272) 
+
+MODEL FILE NAME: 
+
+ natural_non-natural_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-21 09:40:29.057542
+
+EXECUTION TIME: 
+
+ 4.502547025680542
+
+GROUPS: 
+
+['natural', 'non-natural']
+(96 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['natural', 'non-natural', 'natural', 'natural', 'natural', 'natural', 'non-natural', 'natural', 'non-natural', 'natural', 'non-natural', 'natural', 'non-natural', 'non-natural', 'non-natural', 'natural', 'non-natural', 'non-natural', 'natural', 'natural', 'non-natural', 'natural', 'natural', 'non-natural', 'non-natural', 'non-natural', 'non-natural', 'natural', 'natural', 'non-natural', 'non-natural', 'natural', 'non-natural', 'non-natural', 'natural', 'non-natural', 'natural', 'natural', 'non-natural', 'natural', 'natural', 'non-natural', 'non-natural', 'natural', 'natural', 'non-natural', 'non-natural', 'natural', 'non-natural', 'natural', 'natural', 'natural', 'non-natural', 'natural', 'natural', 'non-natural', 'non-natural', 'natural', 'natural', 'non-natural', 'non-natural', 'natural', 'natural', 'natural', 'natural', 'non-natural', 'natural', 'non-natural', 'natural', 'non-natural', 'non-natural', 'non-natural', 'natural', 'natural', 'natural', 'natural', 'non-natural', 'natural', 'natural', 'non-natural', 'non-natural', 'natural', 'natural', 'natural', 'natural', 'non-natural', 'non-natural', 'natural', 'natural', 'non-natural', 'non-natural', 'non-natural', 'non-natural', 'natural', 'natural', 'non-natural', 'natural', 'non-natural', 'natural', 'natural', 'natural', 'natural', 'natural', 'non-natural', 'non-natural', 'non-natural', 'natural', 'non-natural', 'non-natural', 'natural', 'natural', 'non-natural', 'non-natural', 'non-natural', 'non-natural', 'non-natural', 'non-natural', 'natural', 'natural', 'non-natural', 'non-natural', 'natural', 'natural', 'non-natural', 'natural', 'natural', 'non-natural', 'non-natural']
+
+test labels
+
+['natural', 'non-natural', 'natural', 'non-natural', 'non-natural', 'non-natural', 'natural', 'natural', 'natural', 'natural', 'natural', 'non-natural', 'natural', 'natural', 'non-natural', 'natural', 'non-natural', 'natural', 'non-natural', 'natural', 'non-natural', 'non-natural', 'non-natural', 'non-natural', 'natural', 'non-natural', 'natural', 'non-natural', 'natural', 'non-natural', 'non-natural', 'non-natural', 'natural', 'natural', 'non-natural', 'natural', 'non-natural', 'non-natural', 'non-natural', 'natural', 'non-natural', 'non-natural', 'natural', 'non-natural', 'natural', 'non-natural', 'non-natural', 'natural', 'natural', 'non-natural', 'natural', 'non-natural', 'natural', 'natural', 'non-natural', 'natural', 'natural', 'non-natural', 'natural', 'natural', 'non-natural', 'non-natural', 'non-natural', 'non-natural']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+sk: 0.5307692307692308 (+/- 0.015384615384615375)
+logistic regression: 0.5307692307692308 (+/- 0.05102499677469847)
+knn: 0.6115384615384615 (+/- 0.10348941574672084)
+svm: 0.6256410256410256 (+/- 0.05279810328711282)
+gradient boosting: 0.641025641025641 (+/- 0.0760635742266222)
+gaussian-nb: 0.6423076923076924 (+/- 0.07256908563120465)
+random forest: 0.6705128205128206 (+/- 0.13589743589743591)
+decision-tree: 0.7025641025641026 (+/- 0.05980463481892618)
+hard voting: 0.75 (+/- 0.029792179586210922)
+adaboost: 0.7961538461538462 (+/- 0.08031005006854272)
+
+
+(C) 2018, NeuroLex Laboratories

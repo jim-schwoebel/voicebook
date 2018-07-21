@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+knn: 0.6666666666666666 (+/- 0.27888667551135854) 
+
+MODEL FILE NAME: 
+
+ glioblastoma_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:22:03.751975
+
+EXECUTION TIME: 
+
+ 3.2447800636291504
+
+GROUPS: 
+
+['glioblastoma', 'controls']
+(20 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['controls', 'glioblastoma', 'glioblastoma', 'controls', 'glioblastoma', 'controls', 'glioblastoma', 'glioblastoma', 'glioblastoma', 'controls', 'controls', 'glioblastoma', 'controls', 'controls', 'glioblastoma', 'controls', 'controls', 'controls', 'glioblastoma', 'controls', 'glioblastoma', 'controls', 'glioblastoma', 'glioblastoma', 'controls', 'controls']
+
+test labels
+
+['glioblastoma', 'glioblastoma', 'glioblastoma', 'controls', 'glioblastoma', 'glioblastoma', 'controls', 'controls', 'controls', 'glioblastoma', 'controls', 'glioblastoma', 'glioblastoma', 'controls']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+decision-tree: 0.45 (+/- 0.1452966314513558)
+random forest: 0.45 (+/- 0.1452966314513558)
+logistic regression: 0.4833333333333333 (+/- 0.2603416558635551)
+svm: 0.4833333333333333 (+/- 0.2603416558635551)
+adaboost: 0.5 (+/- 0.10540925533894598)
+gradient boosting: 0.5 (+/- 0.10540925533894598)
+hard voting: 0.5 (+/- 0.10540925533894598)
+sk: 0.5666666666666667 (+/- 0.08164965809277258)
+gaussian-nb: 0.6166666666666666 (+/- 0.33166247903553997)
+knn: 0.6666666666666666 (+/- 0.27888667551135854)
+
+
+(C) 2018, NeuroLex Laboratories

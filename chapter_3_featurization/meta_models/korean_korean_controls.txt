@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+gaussian-nb: 0.7633333333333333 (+/- 0.22519127672072714) 
+
+MODEL FILE NAME: 
+
+ korean_korean_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-06-06 18:30:03.271382
+
+EXECUTION TIME: 
+
+ 1.8052442073822021
+
+GROUPS: 
+
+['korean', 'korean_controls']
+(27 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['korean_controls', 'korean_controls', 'korean_controls', 'korean', 'korean', 'korean', 'korean_controls', 'korean_controls', 'korean', 'korean', 'korean', 'korean_controls', 'korean_controls', 'korean_controls', 'korean_controls', 'korean_controls', 'korean_controls', 'korean', 'korean', 'korean', 'korean_controls', 'korean_controls', 'korean_controls', 'korean', 'korean_controls', 'korean', 'korean', 'korean', 'korean_controls', 'korean', 'korean', 'korean_controls', 'korean', 'korean_controls', 'korean_controls', 'korean_controls']
+
+test labels
+
+['korean', 'korean_controls', 'korean_controls', 'korean', 'korean_controls', 'korean', 'korean', 'korean_controls', 'korean', 'korean_controls', 'korean', 'korean', 'korean', 'korean', 'korean_controls', 'korean', 'korean_controls', 'korean']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+svm: 0 (+/- 0)
+gradient boosting: 0.35333333333333333 (+/- 0.29333333333333333)
+logistic regression: 0.36666666666666664 (+/- 0.22110831935702666)
+decision-tree: 0.42000000000000004 (+/- 0.23814094799322336)
+random forest: 0.43666666666666665 (+/- 0.16478942792411033)
+adaboost: 0.47000000000000003 (+/- 0.2733333333333333)
+hard voting: 0.47000000000000003 (+/- 0.2733333333333333)
+knn: 0.4733333333333333 (+/- 0.18427033281447003)
+sk: 0.6199999999999999 (+/- 0.06531972647421806)
+gaussian-nb: 0.7633333333333333 (+/- 0.22519127672072714)
+
+
+(C) 2018, NeuroLex Laboratories

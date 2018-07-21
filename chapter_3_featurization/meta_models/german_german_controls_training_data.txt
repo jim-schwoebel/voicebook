@@ -1,0 +1,8 @@
+train labels
+
+['german_controls', 'german_controls', 'german', 'german', 'german', 'german', 'german_controls', 'german_controls', 'german', 'german_controls', 'german_controls', 'german_controls', 'german', 'german_controls', 'german', 'german_controls', 'german', 'german', 'german', 'german_controls', 'german_controls', 'german', 'german_controls', 'german', 'german', 'german', 'german_controls', 'german', 'german', 'german_controls', 'german', 'german_controls', 'german_controls']
+
+test labels
+
+['german', 'german_controls', 'german_controls', 'german_controls', 'german', 'german_controls', 'german_controls', 'german_controls', 'german_controls', 'german', 'german', 'german', 'german_controls', 'german', 'german', 'german', 'german_controls']
+

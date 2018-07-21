@@ -1,0 +1,8 @@
+train labels
+
+['russian', 'russian_controls', 'russian_controls', 'russian_controls', 'russian_controls', 'russian', 'russian_controls', 'russian_controls', 'russian', 'russian_controls', 'russian', 'russian_controls', 'russian', 'russian', 'russian', 'russian_controls', 'russian', 'russian_controls', 'russian_controls', 'russian_controls', 'russian_controls', 'russian', 'russian', 'russian_controls', 'russian', 'russian_controls', 'russian', 'russian_controls', 'russian_controls', 'russian', 'russian', 'russian_controls', 'russian_controls', 'russian_controls', 'russian', 'russian_controls', 'russian_controls', 'russian', 'russian_controls', 'russian', 'russian', 'russian', 'russian', 'russian_controls', 'russian', 'russian_controls']
+
+test labels
+
+['russian', 'russian', 'russian_controls', 'russian', 'russian_controls', 'russian', 'russian', 'russian', 'russian_controls', 'russian', 'russian', 'russian', 'russian_controls', 'russian', 'russian_controls', 'russian', 'russian_controls', 'russian_controls', 'russian_controls', 'russian_controls', 'russian', 'russian', 'russian_controls', 'russian']
+

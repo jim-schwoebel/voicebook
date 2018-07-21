@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+knn: 0.5866666666666667 (+/- 0.22370615647416692) 
+
+MODEL FILE NAME: 
+
+ polish_polish_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-06-06 18:30:38.861570
+
+EXECUTION TIME: 
+
+ 2.0493030548095703
+
+GROUPS: 
+
+['polish', 'polish_controls']
+(28 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['polish', 'polish_controls', 'polish_controls', 'polish_controls', 'polish', 'polish', 'polish', 'polish', 'polish_controls', 'polish_controls', 'polish_controls', 'polish', 'polish', 'polish_controls', 'polish_controls', 'polish_controls', 'polish_controls', 'polish_controls', 'polish', 'polish', 'polish', 'polish_controls', 'polish_controls', 'polish_controls', 'polish', 'polish_controls', 'polish', 'polish', 'polish', 'polish_controls', 'polish', 'polish', 'polish_controls', 'polish', 'polish_controls', 'polish_controls', 'polish_controls']
+
+test labels
+
+['polish', 'polish', 'polish_controls', 'polish', 'polish', 'polish_controls', 'polish_controls', 'polish', 'polish_controls', 'polish', 'polish_controls', 'polish', 'polish_controls', 'polish_controls', 'polish', 'polish', 'polish', 'polish', 'polish_controls']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+svm: 0 (+/- 0)
+decision-tree: 0.3333333333333333 (+/- 0.27888667551135854)
+logistic regression: 0.3833333333333333 (+/- 0.24494897427831783)
+gaussian-nb: 0.45666666666666667 (+/- 0.29013406862651925)
+gradient boosting: 0.4666666666666666 (+/- 0.24494897427831783)
+hard voting: 0.4833333333333333 (+/- 0.3431876713662333)
+random forest: 0.53 (+/- 0.15719768163402129)
+adaboost: 0.5733333333333334 (+/- 0.30525035262514894)
+sk: 0.5866666666666667 (+/- 0.0748331477354788)
+knn: 0.5866666666666667 (+/- 0.22370615647416692)
+
+
+(C) 2018, NeuroLex Laboratories

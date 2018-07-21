@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+logistic regression: 0.8 (+/- 0.18708286933869706) 
+
+MODEL FILE NAME: 
+
+ graves_disease_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:22:23.327690
+
+EXECUTION TIME: 
+
+ 3.045316696166992
+
+GROUPS: 
+
+['graves_disease', 'controls']
+(25 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['controls', 'controls', 'graves_disease', 'graves_disease', 'graves_disease', 'graves_disease', 'controls', 'controls', 'graves_disease', 'controls', 'controls', 'controls', 'graves_disease', 'controls', 'graves_disease', 'controls', 'graves_disease', 'graves_disease', 'graves_disease', 'controls', 'controls', 'graves_disease', 'controls', 'graves_disease', 'graves_disease', 'graves_disease', 'controls', 'graves_disease', 'graves_disease', 'controls', 'graves_disease', 'controls', 'controls']
+
+test labels
+
+['graves_disease', 'controls', 'controls', 'controls', 'graves_disease', 'controls', 'controls', 'controls', 'controls', 'graves_disease', 'graves_disease', 'graves_disease', 'controls', 'graves_disease', 'graves_disease', 'graves_disease', 'controls']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+decision-tree: 0.3833333333333333 (+/- 0.23333333333333334)
+gradient boosting: 0.4333333333333333 (+/- 0.2758824226207808)
+gaussian-nb: 0.4833333333333333 (+/- 0.2603416558635551)
+sk: 0.5333333333333333 (+/- 0.06666666666666665)
+knn: 0.5333333333333333 (+/- 0.17159383568311667)
+hard voting: 0.6333333333333333 (+/- 0.19436506316151003)
+adaboost: 0.6833333333333333 (+/- 0.1855921454276674)
+random forest: 0.6833333333333333 (+/- 0.1855921454276674)
+svm: 0.75 (+/- 0.22360679774997896)
+logistic regression: 0.8 (+/- 0.18708286933869706)
+
+
+(C) 2018, NeuroLex Laboratories

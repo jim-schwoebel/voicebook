@@ -1,0 +1,8 @@
+train labels
+
+['controls', 'controls', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'controls', 'controls', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'controls', 'controls', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'controls', 'controls', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'controls', 'controls', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'controls', 'multiple_sclerosis', 'controls']
+
+test labels
+
+['multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'controls', 'controls', 'multiple_sclerosis', 'controls', 'controls', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'controls', 'controls', 'controls', 'multiple_sclerosis']
+

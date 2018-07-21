@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+knn: 0.8933333333333333 (+/- 0.13727506854649335) 
+
+MODEL FILE NAME: 
+
+ postpartum_depression_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:28:27.281742
+
+EXECUTION TIME: 
+
+ 3.6871001720428467
+
+GROUPS: 
+
+['postpartum_depression', 'controls']
+(39 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['controls', 'controls', 'controls', 'postpartum_depression', 'postpartum_depression', 'controls', 'controls', 'controls', 'postpartum_depression', 'controls', 'postpartum_depression', 'controls', 'postpartum_depression', 'controls', 'postpartum_depression', 'postpartum_depression', 'postpartum_depression', 'postpartum_depression', 'controls', 'postpartum_depression', 'postpartum_depression', 'controls', 'controls', 'controls', 'controls', 'postpartum_depression', 'postpartum_depression', 'controls', 'postpartum_depression', 'controls', 'postpartum_depression', 'controls', 'controls', 'controls', 'postpartum_depression', 'postpartum_depression', 'controls', 'controls', 'controls', 'controls', 'postpartum_depression', 'postpartum_depression', 'postpartum_depression', 'controls', 'postpartum_depression', 'postpartum_depression', 'postpartum_depression', 'postpartum_depression', 'controls', 'controls', 'postpartum_depression', 'controls']
+
+test labels
+
+['postpartum_depression', 'postpartum_depression', 'postpartum_depression', 'postpartum_depression', 'postpartum_depression', 'controls', 'postpartum_depression', 'postpartum_depression', 'controls', 'controls', 'controls', 'postpartum_depression', 'controls', 'controls', 'postpartum_depression', 'controls', 'postpartum_depression', 'controls', 'postpartum_depression', 'postpartum_depression', 'postpartum_depression', 'controls', 'controls', 'controls', 'controls', 'postpartum_depression']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+sk: 0.54 (+/- 0.04898979485566355)
+random forest: 0.78 (+/- 0.20396078054371142)
+logistic regression: 0.7966666666666667 (+/- 0.12927146286443544)
+svm: 0.7966666666666667 (+/- 0.12927146286443544)
+gaussian-nb: 0.8133333333333332 (+/- 0.16546231527987812)
+gradient boosting: 0.8466666666666669 (+/- 0.1484737163421339)
+hard voting: 0.8466666666666669 (+/- 0.1484737163421339)
+adaboost: 0.8533333333333333 (+/- 0.0748331477354788)
+decision-tree: 0.8933333333333333 (+/- 0.08793937305515277)
+knn: 0.8933333333333333 (+/- 0.13727506854649335)
+
+
+(C) 2018, NeuroLex Laboratories

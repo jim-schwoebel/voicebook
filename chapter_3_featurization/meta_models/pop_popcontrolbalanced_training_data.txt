@@ -1,0 +1,8 @@
+train labels
+
+['popcontrolbalanced', 'pop', 'popcontrolbalanced', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'pop', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'popcontrolbalanced', 'popcontrolbalanced', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'pop', 'popcontrolbalanced', 'popcontrolbalanced', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'popcontrolbalanced', 'popcontrolbalanced']
+
+test labels
+
+['pop', 'pop', 'popcontrolbalanced', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'popcontrolbalanced', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'popcontrolbalanced', 'popcontrolbalanced', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'pop', 'popcontrolbalanced', 'pop']
+

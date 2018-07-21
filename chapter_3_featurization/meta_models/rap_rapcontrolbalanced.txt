@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+hard voting: 0.8033333333333333 (+/- 0.16746475582773962) 
+
+MODEL FILE NAME: 
+
+ rap_rapcontrolbalanced_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:28:56.592949
+
+EXECUTION TIME: 
+
+ 2.0801198482513428
+
+GROUPS: 
+
+['rap', 'rapcontrolbalanced']
+(30 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['rapcontrolbalanced', 'rap', 'rapcontrolbalanced', 'rapcontrolbalanced', 'rap', 'rapcontrolbalanced', 'rap', 'rap', 'rap', 'rapcontrolbalanced', 'rap', 'rap', 'rap', 'rapcontrolbalanced', 'rap', 'rapcontrolbalanced', 'rapcontrolbalanced', 'rapcontrolbalanced', 'rapcontrolbalanced', 'rap', 'rapcontrolbalanced', 'rap', 'rap', 'rap', 'rapcontrolbalanced', 'rapcontrolbalanced', 'rapcontrolbalanced', 'rap', 'rapcontrolbalanced', 'rap', 'rap', 'rap', 'rapcontrolbalanced', 'rap', 'rap', 'rapcontrolbalanced', 'rap', 'rap', 'rapcontrolbalanced', 'rapcontrolbalanced']
+
+test labels
+
+['rap', 'rap', 'rapcontrolbalanced', 'rapcontrolbalanced', 'rap', 'rapcontrolbalanced', 'rapcontrolbalanced', 'rapcontrolbalanced', 'rap', 'rapcontrolbalanced', 'rapcontrolbalanced', 'rapcontrolbalanced', 'rapcontrolbalanced', 'rap', 'rapcontrolbalanced', 'rap', 'rap', 'rap', 'rapcontrolbalanced', 'rap']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+knn: 0.35666666666666663 (+/- 0.12454361128179603)
+logistic regression: 0.48 (+/- 0.31874754901018454)
+sk: 0.5533333333333333 (+/- 0.06863753427324665)
+svm: 0.6233333333333333 (+/- 0.21411315803668965)
+random forest: 0.6466666666666667 (+/- 0.24707173946941896)
+gaussian-nb: 0.6866666666666668 (+/- 0.21842873233874502)
+decision-tree: 0.7133333333333333 (+/- 0.192469333776694)
+gradient boosting: 0.7533333333333333 (+/- 0.13556466271775172)
+adaboost: 0.7633333333333333 (+/- 0.22519127672072714)
+hard voting: 0.8033333333333333 (+/- 0.16746475582773962)
+
+
+(C) 2018, NeuroLex Laboratories

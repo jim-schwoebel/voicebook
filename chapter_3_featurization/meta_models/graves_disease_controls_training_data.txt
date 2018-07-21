@@ -1,0 +1,8 @@
+train labels
+
+['controls', 'controls', 'graves_disease', 'graves_disease', 'graves_disease', 'graves_disease', 'controls', 'controls', 'graves_disease', 'controls', 'controls', 'controls', 'graves_disease', 'controls', 'graves_disease', 'controls', 'graves_disease', 'graves_disease', 'graves_disease', 'controls', 'controls', 'graves_disease', 'controls', 'graves_disease', 'graves_disease', 'graves_disease', 'controls', 'graves_disease', 'graves_disease', 'controls', 'graves_disease', 'controls', 'controls']
+
+test labels
+
+['graves_disease', 'controls', 'controls', 'controls', 'graves_disease', 'controls', 'controls', 'controls', 'controls', 'graves_disease', 'graves_disease', 'graves_disease', 'controls', 'graves_disease', 'graves_disease', 'graves_disease', 'controls']
+

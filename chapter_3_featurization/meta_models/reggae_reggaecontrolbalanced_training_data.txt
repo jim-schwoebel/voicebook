@@ -1,0 +1,8 @@
+train labels
+
+['reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggae', 'reggae', 'reggae', 'reggae', 'reggae', 'reggae', 'reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggae', 'reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggae', 'reggae', 'reggae', 'reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggae', 'reggaecontrolbalanced', 'reggae', 'reggae', 'reggae', 'reggaecontrolbalanced', 'reggae', 'reggae', 'reggaecontrolbalanced', 'reggae', 'reggae', 'reggaecontrolbalanced', 'reggaecontrolbalanced']
+
+test labels
+
+['reggae', 'reggae', 'reggaecontrolbalanced', 'reggae', 'reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggae', 'reggaecontrolbalanced', 'reggae', 'reggaecontrolbalanced', 'reggae', 'reggaecontrolbalanced', 'reggaecontrolbalanced', 'reggae', 'reggae', 'reggae', 'reggae', 'reggaecontrolbalanced', 'reggae']
+

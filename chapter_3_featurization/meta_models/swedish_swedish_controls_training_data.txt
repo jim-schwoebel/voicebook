@@ -1,0 +1,8 @@
+train labels
+
+['swedish_controls', 'swedish', 'swedish', 'swedish_controls', 'swedish', 'swedish_controls', 'swedish', 'swedish', 'swedish', 'swedish_controls', 'swedish_controls', 'swedish', 'swedish_controls', 'swedish_controls', 'swedish', 'swedish_controls', 'swedish_controls', 'swedish_controls', 'swedish', 'swedish_controls', 'swedish', 'swedish_controls', 'swedish', 'swedish', 'swedish_controls', 'swedish_controls']
+
+test labels
+
+['swedish', 'swedish', 'swedish', 'swedish_controls', 'swedish', 'swedish', 'swedish_controls', 'swedish_controls', 'swedish_controls', 'swedish', 'swedish_controls', 'swedish', 'swedish', 'swedish_controls']
+

@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+decision-tree: 0.6066666666666667 (+/- 0.17938165396098282) 
+
+MODEL FILE NAME: 
+
+ portuguese_portuguese_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-06-06 18:30:36.803228
+
+EXECUTION TIME: 
+
+ 2.1290948390960693
+
+GROUPS: 
+
+['portuguese', 'portuguese_controls']
+(33 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese_controls']
+
+test labels
+
+['portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+svm: 0 (+/- 0)
+adaboost: 0.32666666666666666 (+/- 0.11623730516108462)
+random forest: 0.46333333333333326 (+/- 0.15070206073943085)
+gaussian-nb: 0.49000000000000005 (+/- 0.34117444218463966)
+gradient boosting: 0.5366666666666667 (+/- 0.15070206073943088)
+hard voting: 0.5533333333333333 (+/- 0.09333333333333331)
+sk: 0.5933333333333333 (+/- 0.053333333333333316)
+logistic regression: 0.5933333333333333 (+/- 0.13727506854649335)
+knn: 0.5933333333333333 (+/- 0.053333333333333316)
+decision-tree: 0.6066666666666667 (+/- 0.17938165396098282)
+
+
+(C) 2018, NeuroLex Laboratories

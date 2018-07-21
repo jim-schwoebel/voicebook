@@ -1,0 +1,8 @@
+train labels
+
+['polish', 'polish_controls', 'polish_controls', 'polish_controls', 'polish', 'polish', 'polish', 'polish', 'polish_controls', 'polish_controls', 'polish_controls', 'polish', 'polish', 'polish_controls', 'polish_controls', 'polish_controls', 'polish_controls', 'polish_controls', 'polish', 'polish', 'polish', 'polish_controls', 'polish_controls', 'polish_controls', 'polish', 'polish_controls', 'polish', 'polish', 'polish', 'polish_controls', 'polish', 'polish', 'polish_controls', 'polish', 'polish_controls', 'polish_controls', 'polish_controls']
+
+test labels
+
+['polish', 'polish', 'polish_controls', 'polish', 'polish', 'polish_controls', 'polish_controls', 'polish', 'polish_controls', 'polish', 'polish_controls', 'polish', 'polish_controls', 'polish_controls', 'polish', 'polish', 'polish', 'polish', 'polish_controls']
+

@@ -1,0 +1,8 @@
+train labels
+
+['indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indie', 'indie', 'indie', 'indie', 'indie', 'indie', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indie', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indie', 'indie', 'indie', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indie', 'indiecontrolbalanced', 'indie', 'indie', 'indie', 'indiecontrolbalanced', 'indie', 'indie', 'indiecontrolbalanced', 'indie', 'indie', 'indiecontrolbalanced', 'indiecontrolbalanced']
+
+test labels
+
+['indie', 'indie', 'indiecontrolbalanced', 'indie', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indie', 'indiecontrolbalanced', 'indie', 'indiecontrolbalanced', 'indie', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indie', 'indie', 'indie', 'indie', 'indiecontrolbalanced', 'indie']
+

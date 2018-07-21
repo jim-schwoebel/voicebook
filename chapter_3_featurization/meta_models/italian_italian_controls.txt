@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+adaboost: 0.6833333333333333 (+/- 0.2438123139721299) 
+
+MODEL FILE NAME: 
+
+ italian_italian_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-06-06 18:30:20.895501
+
+EXECUTION TIME: 
+
+ 1.9396860599517822
+
+GROUPS: 
+
+['italian', 'italian_controls']
+(26 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['italian_controls', 'italian_controls', 'italian_controls', 'italian', 'italian', 'italian', 'italian_controls', 'italian_controls', 'italian', 'italian', 'italian', 'italian_controls', 'italian_controls', 'italian_controls', 'italian_controls', 'italian_controls', 'italian_controls', 'italian', 'italian', 'italian', 'italian_controls', 'italian_controls', 'italian', 'italian_controls', 'italian', 'italian', 'italian', 'italian_controls', 'italian', 'italian', 'italian_controls', 'italian', 'italian_controls', 'italian_controls']
+
+test labels
+
+['italian', 'italian_controls', 'italian_controls', 'italian', 'italian_controls', 'italian', 'italian', 'italian_controls', 'italian', 'italian_controls', 'italian', 'italian', 'italian_controls', 'italian', 'italian_controls', 'italian', 'italian_controls', 'italian']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+svm: 0 (+/- 0)
+gaussian-nb: 0.5666666666666667 (+/- 0.08164965809277258)
+sk: 0.5666666666666667 (+/- 0.08164965809277258)
+logistic regression: 0.5666666666666667 (+/- 0.17795130420052185)
+decision-tree: 0.6166666666666666 (+/- 0.24494897427831783)
+random forest: 0.6166666666666666 (+/- 0.09999999999999999)
+knn: 0.6333333333333333 (+/- 0.19436506316151003)
+gradient boosting: 0.6666666666666666 (+/- 0.24152294576982397)
+hard voting: 0.6666666666666666 (+/- 0.24152294576982397)
+adaboost: 0.6833333333333333 (+/- 0.2438123139721299)
+
+
+(C) 2018, NeuroLex Laboratories

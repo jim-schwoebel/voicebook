@@ -1,0 +1,8 @@
+train labels
+
+['cantonese_controls', 'cantonese', 'cantonese', 'cantonese_controls', 'cantonese', 'cantonese_controls', 'cantonese', 'cantonese', 'cantonese', 'cantonese_controls', 'cantonese_controls', 'cantonese', 'cantonese_controls', 'cantonese_controls', 'cantonese', 'cantonese_controls', 'cantonese_controls', 'cantonese_controls', 'cantonese', 'cantonese_controls', 'cantonese', 'cantonese_controls', 'cantonese', 'cantonese', 'cantonese_controls', 'cantonese_controls']
+
+test labels
+
+['cantonese', 'cantonese', 'cantonese', 'cantonese_controls', 'cantonese', 'cantonese', 'cantonese_controls', 'cantonese_controls', 'cantonese_controls', 'cantonese', 'cantonese_controls', 'cantonese', 'cantonese', 'cantonese_controls']
+

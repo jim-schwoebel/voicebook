@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+gaussian-nb: 0.65 (+/- 0.2) 
+
+MODEL FILE NAME: 
+
+ vietnamese_vietnamese_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-06-06 18:30:06.771160
+
+EXECUTION TIME: 
+
+ 1.755972146987915
+
+GROUPS: 
+
+['vietnamese', 'vietnamese_controls']
+(22 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['vietnamese', 'vietnamese_controls', 'vietnamese', 'vietnamese', 'vietnamese', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese', 'vietnamese', 'vietnamese_controls', 'vietnamese', 'vietnamese_controls', 'vietnamese', 'vietnamese', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese', 'vietnamese_controls', 'vietnamese', 'vietnamese_controls', 'vietnamese', 'vietnamese', 'vietnamese', 'vietnamese_controls', 'vietnamese_controls']
+
+test labels
+
+['vietnamese_controls', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese', 'vietnamese', 'vietnamese', 'vietnamese', 'vietnamese', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese', 'vietnamese']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+svm: 0 (+/- 0)
+adaboost: 0.18333333333333332 (+/- 0.2603416558635551)
+hard voting: 0.3333333333333333 (+/- 0.22973414586817037)
+decision-tree: 0.4333333333333333 (+/- 0.2758824226207808)
+logistic regression: 0.45 (+/- 0.33166247903553997)
+sk: 0.5333333333333333 (+/- 0.06666666666666667)
+gradient boosting: 0.5333333333333333 (+/- 0.281858908754796)
+knn: 0.5333333333333333 (+/- 0.3231786571610886)
+random forest: 0.6333333333333333 (+/- 0.1130388330520878)
+gaussian-nb: 0.65 (+/- 0.2)
+
+
+(C) 2018, NeuroLex Laboratories

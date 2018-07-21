@@ -1,0 +1,8 @@
+train labels
+
+['macedonian_controls', 'macedonian_controls', 'macedonian_controls', 'macedonian', 'macedonian', 'macedonian', 'macedonian_controls', 'macedonian_controls', 'macedonian', 'macedonian', 'macedonian', 'macedonian_controls', 'macedonian_controls', 'macedonian_controls', 'macedonian_controls', 'macedonian_controls', 'macedonian_controls', 'macedonian', 'macedonian', 'macedonian', 'macedonian_controls', 'macedonian_controls', 'macedonian', 'macedonian_controls', 'macedonian', 'macedonian', 'macedonian', 'macedonian_controls', 'macedonian', 'macedonian', 'macedonian_controls', 'macedonian', 'macedonian_controls', 'macedonian_controls']
+
+test labels
+
+['macedonian', 'macedonian_controls', 'macedonian_controls', 'macedonian', 'macedonian_controls', 'macedonian', 'macedonian', 'macedonian_controls', 'macedonian', 'macedonian_controls', 'macedonian', 'macedonian', 'macedonian_controls', 'macedonian', 'macedonian_controls', 'macedonian', 'macedonian_controls', 'macedonian']
+

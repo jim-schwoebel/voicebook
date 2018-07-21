@@ -1,0 +1,8 @@
+train labels
+
+['rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rock', 'rock', 'rock', 'rock', 'rock', 'rock', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rock', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rock', 'rock', 'rock', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rock', 'rockcontrolbalanced', 'rock', 'rock', 'rock', 'rockcontrolbalanced', 'rock', 'rock', 'rockcontrolbalanced', 'rock', 'rock', 'rockcontrolbalanced', 'rockcontrolbalanced']
+
+test labels
+
+['rock', 'rock', 'rockcontrolbalanced', 'rock', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rock', 'rockcontrolbalanced', 'rock', 'rockcontrolbalanced', 'rock', 'rockcontrolbalanced', 'rockcontrolbalanced', 'rock', 'rock', 'rock', 'rock', 'rockcontrolbalanced', 'rock']
+

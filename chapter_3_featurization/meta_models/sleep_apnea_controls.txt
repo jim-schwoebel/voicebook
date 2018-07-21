@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+gaussian-nb: 0.7133333333333333 (+/- 0.07102425250887508) 
+
+MODEL FILE NAME: 
+
+ sleep_apnea_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:28:42.844408
+
+EXECUTION TIME: 
+
+ 3.027384042739868
+
+GROUPS: 
+
+['sleep_apnea', 'controls']
+(31 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['controls', 'sleep_apnea', 'controls', 'sleep_apnea', 'controls', 'controls', 'controls', 'controls', 'controls', 'sleep_apnea', 'controls', 'sleep_apnea', 'sleep_apnea', 'sleep_apnea', 'controls', 'sleep_apnea', 'controls', 'controls', 'controls', 'controls', 'sleep_apnea', 'controls', 'sleep_apnea', 'sleep_apnea', 'sleep_apnea', 'controls', 'controls', 'controls', 'sleep_apnea', 'controls', 'sleep_apnea', 'sleep_apnea', 'sleep_apnea', 'controls', 'sleep_apnea', 'sleep_apnea', 'controls', 'sleep_apnea', 'sleep_apnea', 'controls', 'controls']
+
+test labels
+
+['controls', 'controls', 'sleep_apnea', 'controls', 'sleep_apnea', 'controls', 'sleep_apnea', 'sleep_apnea', 'sleep_apnea', 'controls', 'sleep_apnea', 'sleep_apnea', 'controls', 'sleep_apnea', 'controls', 'controls', 'sleep_apnea', 'sleep_apnea', 'controls', 'sleep_apnea', 'sleep_apnea']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+decision-tree: 0.37666666666666665 (+/- 0.08273115763993905)
+gradient boosting: 0.42666666666666664 (+/- 0.06463573143221772)
+adaboost: 0.4666666666666667 (+/- 0.09189365834726813)
+random forest: 0.4666666666666667 (+/- 0.09189365834726813)
+hard voting: 0.5066666666666667 (+/- 0.09752492558885195)
+knn: 0.5166666666666667 (+/- 0.14757295747452437)
+svm: 0.5633333333333332 (+/- 0.18451136670797397)
+sk: 0.5733333333333334 (+/- 0.06463573143221771)
+logistic regression: 0.6133333333333333 (+/- 0.11274356350191843)
+gaussian-nb: 0.7133333333333333 (+/- 0.07102425250887508)
+
+
+(C) 2018, NeuroLex Laboratories

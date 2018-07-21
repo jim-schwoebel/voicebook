@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+random forest: 0.5166666666666666 (+/- 0.2603416558635552) 
+
+MODEL FILE NAME: 
+
+ german_german_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-06-06 18:30:11.419079
+
+EXECUTION TIME: 
+
+ 2.069667100906372
+
+GROUPS: 
+
+['german', 'german_controls']
+(25 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['german_controls', 'german_controls', 'german', 'german', 'german', 'german', 'german_controls', 'german_controls', 'german', 'german_controls', 'german_controls', 'german_controls', 'german', 'german_controls', 'german', 'german_controls', 'german', 'german', 'german', 'german_controls', 'german_controls', 'german', 'german_controls', 'german', 'german', 'german', 'german_controls', 'german', 'german', 'german_controls', 'german', 'german_controls', 'german_controls']
+
+test labels
+
+['german', 'german_controls', 'german_controls', 'german_controls', 'german', 'german_controls', 'german_controls', 'german_controls', 'german_controls', 'german', 'german', 'german', 'german_controls', 'german', 'german', 'german', 'german_controls']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+svm: 0 (+/- 0)
+knn: 0.31666666666666665 (+/- 0.1855921454276674)
+adaboost: 0.36666666666666664 (+/- 0.2505549396395485)
+decision-tree: 0.4333333333333333 (+/- 0.2260776661041756)
+logistic regression: 0.4333333333333333 (+/- 0.2260776661041756)
+gaussian-nb: 0.45 (+/- 0.4)
+sk: 0.4666666666666666 (+/- 0.06666666666666668)
+gradient boosting: 0.4833333333333333 (+/- 0.13333333333333333)
+hard voting: 0.4833333333333333 (+/- 0.2603416558635551)
+random forest: 0.5166666666666666 (+/- 0.2603416558635552)
+
+
+(C) 2018, NeuroLex Laboratories

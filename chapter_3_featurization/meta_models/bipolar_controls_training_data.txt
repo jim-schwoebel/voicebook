@@ -1,0 +1,8 @@
+train labels
+
+['bipolar', 'bipolar', 'controls', 'controls', 'controls', 'controls', 'controls', 'bipolar', 'controls', 'bipolar', 'controls', 'bipolar', 'controls', 'bipolar', 'bipolar', 'controls', 'bipolar', 'controls', 'bipolar', 'bipolar', 'controls', 'controls', 'controls', 'controls', 'bipolar', 'bipolar', 'controls', 'bipolar', 'controls', 'bipolar', 'controls', 'controls', 'controls', 'bipolar', 'bipolar', 'controls', 'controls', 'controls', 'bipolar', 'bipolar', 'bipolar', 'controls', 'bipolar', 'bipolar', 'bipolar', 'bipolar', 'controls', 'controls', 'bipolar', 'controls']
+
+test labels
+
+['bipolar', 'bipolar', 'bipolar', 'bipolar', 'controls', 'controls', 'controls', 'controls', 'controls', 'bipolar', 'controls', 'controls', 'bipolar', 'bipolar', 'controls', 'bipolar', 'bipolar', 'bipolar', 'bipolar', 'bipolar', 'bipolar', 'controls', 'controls', 'bipolar', 'controls', 'controls']
+

@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+adaboost: 0.7333333333333334 (+/- 0.1520233900132184) 
+
+MODEL FILE NAME: 
+
+ turkish_turkish_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-06-06 18:30:16.706219
+
+EXECUTION TIME: 
+
+ 2.397825002670288
+
+GROUPS: 
+
+['turkish', 'turkish_controls']
+(37 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish', 'turkish', 'turkish', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish_controls']
+
+test labels
+
+['turkish', 'turkish_controls', 'turkish', 'turkish', 'turkish', 'turkish_controls', 'turkish', 'turkish', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish_controls']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+svm: 0 (+/- 0)
+decision-tree: 0.4066666666666666 (+/- 0.13727506854649332)
+gaussian-nb: 0.44666666666666666 (+/- 0.20176994600562076)
+logistic regression: 0.4633333333333334 (+/- 0.23390406390465113)
+random forest: 0.47000000000000003 (+/- 0.22271057451320087)
+sk: 0.56 (+/- 0.04898979485566355)
+gradient boosting: 0.5700000000000001 (+/- 0.21354156504062624)
+knn: 0.64 (+/- 0.1356465996625054)
+hard voting: 0.6533333333333333 (+/- 0.23247461032216923)
+adaboost: 0.7333333333333334 (+/- 0.1520233900132184)
+
+
+(C) 2018, NeuroLex Laboratories

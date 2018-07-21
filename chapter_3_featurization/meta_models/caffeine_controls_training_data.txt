@@ -1,0 +1,8 @@
+train labels
+
+['controls', 'controls', 'controls', 'caffeine', 'caffeine', 'controls', 'controls', 'controls', 'caffeine', 'controls', 'caffeine', 'controls', 'caffeine', 'controls', 'caffeine', 'caffeine', 'caffeine', 'caffeine', 'controls', 'caffeine', 'caffeine', 'controls', 'controls', 'controls', 'controls', 'caffeine', 'caffeine', 'controls', 'caffeine', 'controls', 'caffeine', 'controls', 'controls', 'controls', 'caffeine', 'caffeine', 'controls', 'controls', 'controls', 'controls', 'caffeine', 'caffeine', 'caffeine', 'controls', 'caffeine', 'caffeine', 'caffeine', 'caffeine', 'controls', 'controls', 'caffeine', 'controls']
+
+test labels
+
+['caffeine', 'caffeine', 'caffeine', 'caffeine', 'caffeine', 'controls', 'caffeine', 'caffeine', 'controls', 'controls', 'controls', 'caffeine', 'controls', 'controls', 'caffeine', 'controls', 'caffeine', 'controls', 'caffeine', 'caffeine', 'caffeine', 'controls', 'controls', 'controls', 'controls', 'caffeine']
+

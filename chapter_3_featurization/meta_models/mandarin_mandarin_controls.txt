@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+gaussian-nb: 0.6333333333333333 (+/- 0.2505549396395485) 
+
+MODEL FILE NAME: 
+
+ mandarin_mandarin_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-06-06 18:30:14.296811
+
+EXECUTION TIME: 
+
+ 1.9233150482177734
+
+GROUPS: 
+
+['mandarin', 'mandarin_controls']
+(32 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['mandarin', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin_controls']
+
+test labels
+
+['mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin_controls']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+svm: 0 (+/- 0)
+sk: 0.45 (+/- 0.10000000000000002)
+gradient boosting: 0.4666666666666666 (+/- 0.17159383568311667)
+random forest: 0.4666666666666666 (+/- 0.17159383568311667)
+decision-tree: 0.5166666666666666 (+/- 0.20682789409984761)
+hard voting: 0.5166666666666666 (+/- 0.20682789409984761)
+adaboost: 0.55 (+/- 0.18708286933869706)
+knn: 0.5833333333333333 (+/- 0.10540925533894598)
+logistic regression: 0.6 (+/- 0.2)
+gaussian-nb: 0.6333333333333333 (+/- 0.2505549396395485)
+
+
+(C) 2018, NeuroLex Laboratories

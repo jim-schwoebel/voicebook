@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+hard voting: 0.8133333333333332 (+/- 0.2436755584332942) 
+
+MODEL FILE NAME: 
+
+ japanese_japanese_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-06-06 18:30:09.340980
+
+EXECUTION TIME: 
+
+ 2.5605101585388184
+
+GROUPS: 
+
+['japanese', 'japanese_controls']
+(27 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['japanese_controls', 'japanese_controls', 'japanese_controls', 'japanese', 'japanese', 'japanese', 'japanese_controls', 'japanese_controls', 'japanese', 'japanese', 'japanese', 'japanese_controls', 'japanese_controls', 'japanese_controls', 'japanese_controls', 'japanese_controls', 'japanese_controls', 'japanese', 'japanese', 'japanese', 'japanese_controls', 'japanese_controls', 'japanese_controls', 'japanese', 'japanese_controls', 'japanese', 'japanese', 'japanese', 'japanese_controls', 'japanese', 'japanese', 'japanese_controls', 'japanese', 'japanese_controls', 'japanese_controls', 'japanese_controls']
+
+test labels
+
+['japanese', 'japanese_controls', 'japanese_controls', 'japanese', 'japanese_controls', 'japanese', 'japanese', 'japanese_controls', 'japanese', 'japanese_controls', 'japanese', 'japanese', 'japanese', 'japanese', 'japanese_controls', 'japanese', 'japanese_controls', 'japanese']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+svm: 0 (+/- 0)
+logistic regression: 0.58 (+/- 0.23814094799322336)
+decision-tree: 0.6033333333333333 (+/- 0.14313940369055925)
+random forest: 0.6033333333333333 (+/- 0.14313940369055925)
+sk: 0.6199999999999999 (+/- 0.06531972647421806)
+knn: 0.6466666666666666 (+/- 0.20396078054371142)
+gaussian-nb: 0.6866666666666666 (+/- 0.16812693617224658)
+gradient boosting: 0.7366666666666666 (+/- 0.13999999999999999)
+adaboost: 0.7466666666666666 (+/- 0.2286190426597633)
+hard voting: 0.8133333333333332 (+/- 0.2436755584332942)
+
+
+(C) 2018, NeuroLex Laboratories

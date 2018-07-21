@@ -1,0 +1,8 @@
+train labels
+
+['vietnamese', 'vietnamese_controls', 'vietnamese', 'vietnamese', 'vietnamese', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese', 'vietnamese', 'vietnamese_controls', 'vietnamese', 'vietnamese_controls', 'vietnamese', 'vietnamese', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese', 'vietnamese_controls', 'vietnamese', 'vietnamese_controls', 'vietnamese', 'vietnamese', 'vietnamese', 'vietnamese_controls', 'vietnamese_controls']
+
+test labels
+
+['vietnamese_controls', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese', 'vietnamese', 'vietnamese', 'vietnamese', 'vietnamese', 'vietnamese_controls', 'vietnamese_controls', 'vietnamese', 'vietnamese']
+

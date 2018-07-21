@@ -1,0 +1,8 @@
+train labels
+
+['portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese', 'portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese_controls']
+
+test labels
+
+['portuguese_controls', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese', 'portuguese_controls', 'portuguese', 'portuguese', 'portuguese']
+

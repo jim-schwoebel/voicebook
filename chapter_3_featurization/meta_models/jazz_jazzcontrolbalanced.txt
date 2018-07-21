@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+gaussian-nb: 0.7933333333333332 (+/- 0.11185307823708347) 
+
+MODEL FILE NAME: 
+
+ jazz_jazzcontrolbalanced_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:28:06.240682
+
+EXECUTION TIME: 
+
+ 5.113563060760498
+
+GROUPS: 
+
+['jazz', 'jazzcontrolbalanced']
+(30 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced']
+
+test labels
+
+['jazz', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazz']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+sk: 0.5533333333333333 (+/- 0.06863753427324665)
+random forest: 0.5533333333333333 (+/- 0.1723691129846386)
+knn: 0.5633333333333332 (+/- 0.12666666666666665)
+logistic regression: 0.6366666666666667 (+/- 0.1624123695343978)
+gradient boosting: 0.6633333333333333 (+/- 0.1355646627177517)
+hard voting: 0.7033333333333334 (+/- 0.06091888960832357)
+adaboost: 0.7266666666666667 (+/- 0.2172044607685988)
+svm: 0.7433333333333333 (+/- 0.04294699575575044)
+decision-tree: 0.79 (+/- 0.31048349392520047)
+gaussian-nb: 0.7933333333333332 (+/- 0.11185307823708347)
+
+
+(C) 2018, NeuroLex Laboratories

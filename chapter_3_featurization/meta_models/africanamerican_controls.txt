@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+hard voting: 0.8878947368421052 (+/- 0.0528836071034967) 
+
+MODEL FILE NAME: 
+
+ africanamerican_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-21 09:21:00.191650
+
+EXECUTION TIME: 
+
+ 7.800607204437256
+
+GROUPS: 
+
+['africanamerican', 'controls']
+(149 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['africanamerican', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'controls', 'controls', 'africanamerican', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'controls', 'controls', 'africanamerican', 'controls', 'controls', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'controls', 'controls', 'controls', 'africanamerican', 'controls', 'africanamerican', 'controls', 'controls', 'controls', 'controls', 'africanamerican', 'africanamerican', 'controls', 'controls', 'africanamerican', 'controls', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'controls', 'controls', 'controls', 'controls', 'controls', 'africanamerican', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'controls', 'controls', 'africanamerican', 'africanamerican', 'controls', 'controls', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'controls', 'africanamerican', 'controls', 'controls', 'africanamerican', 'controls', 'controls', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'controls', 'controls', 'controls', 'africanamerican', 'controls', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'controls', 'controls', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'controls', 'controls', 'africanamerican', 'africanamerican', 'controls', 'controls', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'controls', 'controls', 'africanamerican', 'controls', 'controls', 'controls', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'controls', 'controls', 'controls', 'controls', 'africanamerican', 'controls', 'africanamerican', 'controls', 'controls', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'controls', 'controls', 'africanamerican', 'controls', 'controls', 'africanamerican', 'africanamerican', 'controls', 'controls', 'controls', 'controls', 'controls', 'africanamerican', 'africanamerican', 'controls', 'controls', 'africanamerican', 'controls', 'controls', 'controls', 'controls', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'controls', 'africanamerican']
+
+test labels
+
+['controls', 'controls', 'controls', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'controls', 'controls', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'controls', 'controls', 'africanamerican', 'controls', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'controls', 'controls', 'controls', 'controls', 'africanamerican', 'controls', 'africanamerican', 'controls', 'controls', 'africanamerican', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'controls', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'africanamerican', 'controls', 'controls', 'africanamerican', 'controls', 'controls', 'controls', 'controls', 'controls', 'africanamerican', 'africanamerican', 'controls', 'controls', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'controls', 'africanamerican', 'controls', 'africanamerican', 'africanamerican', 'africanamerican', 'controls', 'controls', 'africanamerican']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+sk: 0.5452631578947369 (+/- 0.009473684210526346)
+decision-tree: 0.7284210526315789 (+/- 0.10114852905874568)
+svm: 0.7768421052631579 (+/- 0.0783910221554142)
+logistic regression: 0.8073684210526316 (+/- 0.061184069043413114)
+knn: 0.8278947368421052 (+/- 0.04176175668395235)
+random forest: 0.8278947368421052 (+/- 0.052383626462184155)
+gradient boosting: 0.8573684210526314 (+/- 0.06329809001420174)
+gaussian-nb: 0.8689473684210526 (+/- 0.023265301163474063)
+adaboost: 0.8784210526315789 (+/- 0.026546358342986326)
+hard voting: 0.8878947368421052 (+/- 0.0528836071034967)
+
+
+(C) 2018, NeuroLex Laboratories

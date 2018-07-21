@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+gaussian-nb: 0.7066666666666667 (+/- 0.14966629547095767) 
+
+MODEL FILE NAME: 
+
+ bipolar_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:20:50.125678
+
+EXECUTION TIME: 
+
+ 10.272962093353271
+
+GROUPS: 
+
+['bipolar', 'controls']
+(38 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['bipolar', 'bipolar', 'controls', 'controls', 'controls', 'controls', 'controls', 'bipolar', 'controls', 'bipolar', 'controls', 'bipolar', 'controls', 'bipolar', 'bipolar', 'controls', 'bipolar', 'controls', 'bipolar', 'bipolar', 'controls', 'controls', 'controls', 'controls', 'bipolar', 'bipolar', 'controls', 'bipolar', 'controls', 'bipolar', 'controls', 'controls', 'controls', 'bipolar', 'bipolar', 'controls', 'controls', 'controls', 'bipolar', 'bipolar', 'bipolar', 'controls', 'bipolar', 'bipolar', 'bipolar', 'bipolar', 'controls', 'controls', 'bipolar', 'controls']
+
+test labels
+
+['bipolar', 'bipolar', 'bipolar', 'bipolar', 'controls', 'controls', 'controls', 'controls', 'controls', 'bipolar', 'controls', 'controls', 'bipolar', 'bipolar', 'controls', 'bipolar', 'bipolar', 'bipolar', 'bipolar', 'bipolar', 'bipolar', 'controls', 'controls', 'bipolar', 'controls', 'controls']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+sk: 0.54 (+/- 0.04898979485566355)
+logistic regression: 0.54 (+/- 0.11623730516108462)
+gradient boosting: 0.5466666666666666 (+/- 0.21354156504062627)
+knn: 0.5633333333333332 (+/- 0.18451136670797397)
+random forest: 0.5733333333333333 (+/- 0.1420485050177501)
+decision-tree: 0.6466666666666667 (+/- 0.14391355429948602)
+adaboost: 0.6466666666666667 (+/- 0.2295890047696342)
+hard voting: 0.6533333333333333 (+/- 0.20066555924389884)
+svm: 0.6866666666666668 (+/- 0.1528979325490629)
+gaussian-nb: 0.7066666666666667 (+/- 0.14966629547095767)
+
+
+(C) 2018, NeuroLex Laboratories

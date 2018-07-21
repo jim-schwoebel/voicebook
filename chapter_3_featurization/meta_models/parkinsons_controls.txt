@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+random forest: 0.65 (+/- 0.3) 
+
+MODEL FILE NAME: 
+
+ parkinsons_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:26:00.126500
+
+EXECUTION TIME: 
+
+ 3.6245570182800293
+
+GROUPS: 
+
+['parkinsons', 'controls']
+(26 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['controls', 'controls', 'controls', 'parkinsons', 'parkinsons', 'parkinsons', 'controls', 'controls', 'parkinsons', 'parkinsons', 'parkinsons', 'controls', 'controls', 'controls', 'controls', 'controls', 'controls', 'parkinsons', 'parkinsons', 'parkinsons', 'controls', 'controls', 'parkinsons', 'controls', 'parkinsons', 'parkinsons', 'parkinsons', 'controls', 'parkinsons', 'parkinsons', 'controls', 'parkinsons', 'controls', 'controls']
+
+test labels
+
+['parkinsons', 'controls', 'controls', 'parkinsons', 'controls', 'parkinsons', 'parkinsons', 'controls', 'parkinsons', 'controls', 'parkinsons', 'parkinsons', 'controls', 'parkinsons', 'controls', 'parkinsons', 'controls', 'parkinsons']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+adaboost: 0.41666666666666663 (+/- 0.2041241452319315)
+hard voting: 0.41666666666666663 (+/- 0.2041241452319315)
+decision-tree: 0.4666666666666666 (+/- 0.18708286933869703)
+gradient boosting: 0.4666666666666666 (+/- 0.18708286933869703)
+gaussian-nb: 0.5 (+/- 0.19002923751652298)
+sk: 0.5666666666666667 (+/- 0.08164965809277258)
+knn: 0.6166666666666666 (+/- 0.09999999999999999)
+logistic regression: 0.6333333333333333 (+/- 0.2505549396395485)
+svm: 0.6333333333333333 (+/- 0.2505549396395485)
+random forest: 0.65 (+/- 0.3)
+
+
+(C) 2018, NeuroLex Laboratories

@@ -1,0 +1,8 @@
+train labels
+
+['folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folk', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced']
+
+test labels
+
+['folk', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folk', 'folkcontrolbalanced', 'folk']
+

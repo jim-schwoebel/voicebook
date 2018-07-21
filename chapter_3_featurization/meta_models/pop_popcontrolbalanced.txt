@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+hard voting: 0.6433333333333333 (+/- 0.2012737218593404) 
+
+MODEL FILE NAME: 
+
+ pop_popcontrolbalanced_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:28:49.611803
+
+EXECUTION TIME: 
+
+ 2.98016095161438
+
+GROUPS: 
+
+['pop', 'popcontrolbalanced']
+(30 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['popcontrolbalanced', 'pop', 'popcontrolbalanced', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'pop', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'popcontrolbalanced', 'popcontrolbalanced', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'pop', 'popcontrolbalanced', 'popcontrolbalanced', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'popcontrolbalanced', 'popcontrolbalanced']
+
+test labels
+
+['pop', 'pop', 'popcontrolbalanced', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'popcontrolbalanced', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'popcontrolbalanced', 'popcontrolbalanced', 'popcontrolbalanced', 'pop', 'popcontrolbalanced', 'pop', 'pop', 'pop', 'popcontrolbalanced', 'pop']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+knn: 0.3966666666666666 (+/- 0.18541245313564506)
+svm: 0.3966666666666666 (+/- 0.09683892697555967)
+logistic regression: 0.4366666666666667 (+/- 0.12666666666666665)
+adaboost: 0.5033333333333333 (+/- 0.21223676506308808)
+random forest: 0.5033333333333333 (+/- 0.21223676506308808)
+decision-tree: 0.5066666666666667 (+/- 0.22025238048909054)
+sk: 0.5533333333333333 (+/- 0.06863753427324665)
+gradient boosting: 0.5533333333333333 (+/- 0.1723691129846386)
+gaussian-nb: 0.62 (+/- 0.2501999200639361)
+hard voting: 0.6433333333333333 (+/- 0.2012737218593404)
+
+
+(C) 2018, NeuroLex Laboratories

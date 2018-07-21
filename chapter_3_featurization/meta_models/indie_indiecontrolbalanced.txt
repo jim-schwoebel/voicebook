@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+svm: 0.7433333333333333 (+/- 0.16384274303259344) 
+
+MODEL FILE NAME: 
+
+ indie_indiecontrolbalanced_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:25:39.059502
+
+EXECUTION TIME: 
+
+ 6.809515714645386
+
+GROUPS: 
+
+['indie', 'indiecontrolbalanced']
+(29 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indie', 'indie', 'indie', 'indie', 'indie', 'indie', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indie', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indie', 'indie', 'indie', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indie', 'indiecontrolbalanced', 'indie', 'indie', 'indie', 'indiecontrolbalanced', 'indie', 'indie', 'indiecontrolbalanced', 'indie', 'indie', 'indiecontrolbalanced', 'indiecontrolbalanced']
+
+test labels
+
+['indie', 'indie', 'indiecontrolbalanced', 'indie', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indie', 'indiecontrolbalanced', 'indie', 'indiecontrolbalanced', 'indie', 'indiecontrolbalanced', 'indiecontrolbalanced', 'indie', 'indie', 'indie', 'indie', 'indiecontrolbalanced', 'indie']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+knn: 0.5133333333333333 (+/- 0.08589399151150082)
+sk: 0.5533333333333333 (+/- 0.06863753427324665)
+decision-tree: 0.5733333333333334 (+/- 0.20779263167344933)
+gaussian-nb: 0.5966666666666667 (+/- 0.2463962481676844)
+gradient boosting: 0.6033333333333333 (+/- 0.18541245313564506)
+random forest: 0.6033333333333333 (+/- 0.09683892697555967)
+logistic regression: 0.6433333333333333 (+/- 0.2559513842726996)
+hard voting: 0.6533333333333333 (+/- 0.24299062624810128)
+adaboost: 0.6933333333333332 (+/- 0.24734141945452195)
+svm: 0.7433333333333333 (+/- 0.16384274303259344)
+
+
+(C) 2018, NeuroLex Laboratories

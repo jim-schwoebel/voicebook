@@ -1,0 +1,8 @@
+train labels
+
+['mandarin', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin_controls']
+
+test labels
+
+['mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin_controls', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin_controls', 'mandarin', 'mandarin', 'mandarin_controls']
+

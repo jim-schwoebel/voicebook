@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+gradient boosting: 0.9 (+/- 0.1224744871391589) 
+
+MODEL FILE NAME: 
+
+ soundtrack_soundtrackcontrolbalanced_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:29:40.801154
+
+EXECUTION TIME: 
+
+ 0.6712698936462402
+
+GROUPS: 
+
+['soundtrack', 'soundtrackcontrolbalanced']
+(25 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrack', 'soundtrack', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrack', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrack', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced']
+
+test labels
+
+['soundtrack', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrack', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrack', 'soundtrack', 'soundtrackcontrolbalanced']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+sk: 0.6 (+/- 0.2)
+logistic regression: 0.7833333333333333 (+/- 0.11303883305208781)
+svm: 0.7833333333333333 (+/- 0.11303883305208781)
+gaussian-nb: 0.8 (+/- 0.18708286933869706)
+random forest: 0.8333333333333333 (+/- 0.13944333775567927)
+hard voting: 0.85 (+/- 0.2)
+knn: 0.8833333333333332 (+/- 0.1452966314513558)
+decision-tree: 0.9 (+/- 0.1224744871391589)
+adaboost: 0.9 (+/- 0.1224744871391589)
+gradient boosting: 0.9 (+/- 0.1224744871391589)
+
+
+(C) 2018, NeuroLex Laboratories

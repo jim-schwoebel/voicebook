@@ -1,0 +1,8 @@
+train labels
+
+['jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced']
+
+test labels
+
+['jazz', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazzcontrolbalanced', 'jazz', 'jazzcontrolbalanced', 'jazz', 'jazz', 'jazz', 'jazzcontrolbalanced', 'jazz']
+

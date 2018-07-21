@@ -1,0 +1,8 @@
+train labels
+
+['turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish', 'turkish', 'turkish', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish_controls']
+
+test labels
+
+['turkish', 'turkish_controls', 'turkish', 'turkish', 'turkish', 'turkish_controls', 'turkish', 'turkish', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish_controls', 'turkish_controls', 'turkish', 'turkish', 'turkish_controls', 'turkish_controls']
+

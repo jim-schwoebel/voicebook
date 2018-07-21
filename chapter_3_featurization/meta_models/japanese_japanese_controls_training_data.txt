@@ -1,0 +1,8 @@
+train labels
+
+['japanese_controls', 'japanese_controls', 'japanese_controls', 'japanese', 'japanese', 'japanese', 'japanese_controls', 'japanese_controls', 'japanese', 'japanese', 'japanese', 'japanese_controls', 'japanese_controls', 'japanese_controls', 'japanese_controls', 'japanese_controls', 'japanese_controls', 'japanese', 'japanese', 'japanese', 'japanese_controls', 'japanese_controls', 'japanese_controls', 'japanese', 'japanese_controls', 'japanese', 'japanese', 'japanese', 'japanese_controls', 'japanese', 'japanese', 'japanese_controls', 'japanese', 'japanese_controls', 'japanese_controls', 'japanese_controls']
+
+test labels
+
+['japanese', 'japanese_controls', 'japanese_controls', 'japanese', 'japanese_controls', 'japanese', 'japanese', 'japanese_controls', 'japanese', 'japanese_controls', 'japanese', 'japanese', 'japanese', 'japanese', 'japanese_controls', 'japanese', 'japanese_controls', 'japanese']
+

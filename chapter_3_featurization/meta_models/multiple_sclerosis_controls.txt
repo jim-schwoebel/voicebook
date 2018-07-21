@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+gradient boosting: 0.8099999999999999 (+/- 0.11035296904831232) 
+
+MODEL FILE NAME: 
+
+ multiple_sclerosis_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:27:23.760908
+
+EXECUTION TIME: 
+
+ 6.288074016571045
+
+GROUPS: 
+
+['multiple_sclerosis', 'controls']
+(39 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['controls', 'controls', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'controls', 'controls', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'controls', 'controls', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'controls', 'controls', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'controls', 'controls', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'controls', 'multiple_sclerosis', 'controls']
+
+test labels
+
+['multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'controls', 'controls', 'multiple_sclerosis', 'controls', 'controls', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'controls', 'multiple_sclerosis', 'multiple_sclerosis', 'multiple_sclerosis', 'controls', 'controls', 'controls', 'controls', 'multiple_sclerosis']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+logistic regression: 0.39333333333333337 (+/- 0.14047538337136983)
+svm: 0.4666666666666666 (+/- 0.2011080417199781)
+knn: 0.5333333333333334 (+/- 0.17511900715418263)
+gaussian-nb: 0.54 (+/- 0.278408173570948)
+sk: 0.54 (+/- 0.04898979485566355)
+adaboost: 0.6533333333333333 (+/- 0.18451136670797397)
+random forest: 0.6733333333333332 (+/- 0.21333333333333335)
+hard voting: 0.7366666666666666 (+/- 0.13999999999999999)
+decision-tree: 0.77 (+/- 0.139204086785474)
+gradient boosting: 0.8099999999999999 (+/- 0.11035296904831232)
+
+
+(C) 2018, NeuroLex Laboratories

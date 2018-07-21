@@ -1,0 +1,8 @@
+train labels
+
+['soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrack', 'soundtrack', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrack', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrack', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced']
+
+test labels
+
+['soundtrack', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrack', 'soundtrack', 'soundtrackcontrolbalanced', 'soundtrack', 'soundtrack', 'soundtrack', 'soundtrackcontrolbalanced']
+

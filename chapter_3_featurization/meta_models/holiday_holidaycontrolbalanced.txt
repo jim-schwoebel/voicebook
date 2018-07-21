@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+svm: 0.6333333333333333 (+/- 0.2505549396395485) 
+
+MODEL FILE NAME: 
+
+ holiday_holidaycontrolbalanced_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:25:10.605943
+
+EXECUTION TIME: 
+
+ 6.2046637535095215
+
+GROUPS: 
+
+['holiday', 'holidaycontrolbalanced']
+(26 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['holidaycontrolbalanced', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holidaycontrolbalanced', 'holidaycontrolbalanced']
+
+test labels
+
+['holiday', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holidaycontrolbalanced', 'holiday']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+gradient boosting: 0.4333333333333333 (+/- 0.17795130420052185)
+hard voting: 0.4333333333333333 (+/- 0.17795130420052185)
+adaboost: 0.5 (+/- 0.19002923751652298)
+knn: 0.5166666666666666 (+/- 0.15275252316519466)
+gaussian-nb: 0.5666666666666667 (+/- 0.08164965809277258)
+sk: 0.5666666666666667 (+/- 0.08164965809277258)
+logistic regression: 0.5833333333333333 (+/- 0.2472066162365221)
+decision-tree: 0.6166666666666667 (+/- 0.23333333333333334)
+random forest: 0.6333333333333333 (+/- 0.2505549396395485)
+svm: 0.6333333333333333 (+/- 0.2505549396395485)
+
+
+(C) 2018, NeuroLex Laboratories

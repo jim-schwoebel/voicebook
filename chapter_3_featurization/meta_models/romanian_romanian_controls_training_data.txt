@@ -1,0 +1,8 @@
+train labels
+
+['romanian_controls', 'romanian', 'romanian', 'romanian_controls', 'romanian', 'romanian_controls', 'romanian', 'romanian', 'romanian', 'romanian_controls', 'romanian_controls', 'romanian', 'romanian_controls', 'romanian_controls', 'romanian', 'romanian_controls', 'romanian_controls', 'romanian_controls', 'romanian', 'romanian_controls', 'romanian', 'romanian_controls', 'romanian', 'romanian', 'romanian_controls', 'romanian_controls']
+
+test labels
+
+['romanian', 'romanian', 'romanian', 'romanian_controls', 'romanian', 'romanian', 'romanian_controls', 'romanian_controls', 'romanian_controls', 'romanian', 'romanian_controls', 'romanian', 'romanian', 'romanian_controls']
+

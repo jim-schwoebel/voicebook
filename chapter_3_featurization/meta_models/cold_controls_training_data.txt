@@ -1,0 +1,8 @@
+train labels
+
+['controls', 'controls', 'controls', 'cold', 'cold', 'controls', 'controls', 'controls', 'cold', 'controls', 'cold', 'controls', 'cold', 'controls', 'cold', 'cold', 'cold', 'cold', 'controls', 'cold', 'cold', 'controls', 'controls', 'controls', 'controls', 'cold', 'cold', 'controls', 'cold', 'controls', 'cold', 'controls', 'controls', 'controls', 'cold', 'cold', 'controls', 'controls', 'controls', 'controls', 'cold', 'cold', 'cold', 'controls', 'cold', 'cold', 'cold', 'cold', 'controls', 'controls', 'cold', 'controls']
+
+test labels
+
+['cold', 'cold', 'cold', 'cold', 'cold', 'controls', 'cold', 'cold', 'controls', 'controls', 'controls', 'cold', 'controls', 'controls', 'cold', 'controls', 'cold', 'controls', 'cold', 'cold', 'cold', 'controls', 'controls', 'controls', 'controls', 'cold']
+

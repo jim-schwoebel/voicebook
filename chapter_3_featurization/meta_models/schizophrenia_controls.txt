@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+svm: 0.73 (+/- 0.1984383475484962) 
+
+MODEL FILE NAME: 
+
+ schizophrenia_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:28:02.990826
+
+EXECUTION TIME: 
+
+ 5.692798376083374
+
+GROUPS: 
+
+['schizophrenia', 'controls']
+(39 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['controls', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls']
+
+test labels
+
+['schizophrenia', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'controls', 'controls', 'schizophrenia']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+random forest: 0.47000000000000003 (+/- 0.20666666666666664)
+sk: 0.54 (+/- 0.04898979485566355)
+decision-tree: 0.5733333333333333 (+/- 0.1420485050177501)
+gaussian-nb: 0.5833333333333333 (+/- 0.21705094128132943)
+gradient boosting: 0.6066666666666667 (+/- 0.28079252918203584)
+hard voting: 0.6066666666666667 (+/- 0.28079252918203584)
+knn: 0.6333333333333333 (+/- 0.20439612955674524)
+adaboost: 0.6966666666666667 (+/- 0.21919042963698127)
+logistic regression: 0.73 (+/- 0.1984383475484962)
+svm: 0.73 (+/- 0.1984383475484962)
+
+
+(C) 2018, NeuroLex Laboratories

@@ -1,0 +1,8 @@
+train labels
+
+['latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latin', 'latin', 'latin', 'latin', 'latin', 'latin', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latin', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latin', 'latin', 'latin', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latin', 'latincontrolbalanced', 'latin', 'latin', 'latin', 'latincontrolbalanced', 'latin', 'latin', 'latincontrolbalanced', 'latin', 'latin', 'latincontrolbalanced', 'latincontrolbalanced']
+
+test labels
+
+['latin', 'latin', 'latincontrolbalanced', 'latin', 'latincontrolbalanced', 'latincontrolbalanced', 'latincontrolbalanced', 'latin', 'latincontrolbalanced', 'latin', 'latincontrolbalanced', 'latin', 'latincontrolbalanced', 'latincontrolbalanced', 'latin', 'latin', 'latin', 'latin', 'latincontrolbalanced', 'latin']
+

@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+logistic regression: 0.7666666666666666 (+/- 0.2) 
+
+MODEL FILE NAME: 
+
+ romanian_romanian_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-06-06 18:30:12.363810
+
+EXECUTION TIME: 
+
+ 0.937324047088623
+
+GROUPS: 
+
+['romanian', 'romanian_controls']
+(20 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['romanian_controls', 'romanian', 'romanian', 'romanian_controls', 'romanian', 'romanian_controls', 'romanian', 'romanian', 'romanian', 'romanian_controls', 'romanian_controls', 'romanian', 'romanian_controls', 'romanian_controls', 'romanian', 'romanian_controls', 'romanian_controls', 'romanian_controls', 'romanian', 'romanian_controls', 'romanian', 'romanian_controls', 'romanian', 'romanian', 'romanian_controls', 'romanian_controls']
+
+test labels
+
+['romanian', 'romanian', 'romanian', 'romanian_controls', 'romanian', 'romanian', 'romanian_controls', 'romanian_controls', 'romanian_controls', 'romanian', 'romanian_controls', 'romanian', 'romanian', 'romanian_controls']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+svm: 0 (+/- 0)
+random forest: 0.41666666666666663 (+/- 0.2472066162365221)
+sk: 0.5666666666666667 (+/- 0.08164965809277258)
+knn: 0.5666666666666667 (+/- 0.2260776661041756)
+gaussian-nb: 0.6 (+/- 0.22607766610417562)
+adaboost: 0.65 (+/- 0.22607766610417562)
+decision-tree: 0.7166666666666666 (+/- 0.16329931618554522)
+gradient boosting: 0.7166666666666666 (+/- 0.16329931618554522)
+hard voting: 0.7166666666666666 (+/- 0.16329931618554522)
+logistic regression: 0.7666666666666666 (+/- 0.2)
+
+
+(C) 2018, NeuroLex Laboratories

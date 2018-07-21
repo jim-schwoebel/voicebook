@@ -1,0 +1,8 @@
+train labels
+
+['controls', 'glioblastoma', 'glioblastoma', 'controls', 'glioblastoma', 'controls', 'glioblastoma', 'glioblastoma', 'glioblastoma', 'controls', 'controls', 'glioblastoma', 'controls', 'controls', 'glioblastoma', 'controls', 'controls', 'controls', 'glioblastoma', 'controls', 'glioblastoma', 'controls', 'glioblastoma', 'glioblastoma', 'controls', 'controls']
+
+test labels
+
+['glioblastoma', 'glioblastoma', 'glioblastoma', 'controls', 'glioblastoma', 'glioblastoma', 'controls', 'controls', 'controls', 'glioblastoma', 'controls', 'glioblastoma', 'glioblastoma', 'controls']
+

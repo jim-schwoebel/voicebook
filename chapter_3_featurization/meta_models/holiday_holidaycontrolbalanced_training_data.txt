@@ -1,0 +1,8 @@
+train labels
+
+['holidaycontrolbalanced', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holidaycontrolbalanced', 'holidaycontrolbalanced']
+
+test labels
+
+['holiday', 'holidaycontrolbalanced', 'holidaycontrolbalanced', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holidaycontrolbalanced', 'holiday', 'holidaycontrolbalanced', 'holiday']
+
