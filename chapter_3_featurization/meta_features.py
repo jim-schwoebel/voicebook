@@ -294,7 +294,7 @@ def convert(file):
 
 # initialize directories and variables 
 cur_dir=os.getcwd()+'/load_dir'
-model_dir=os.getcwd()+'/meta_models/meta_models'
+model_dir=os.getcwd()+'/meta_models/'
 load_dir=cur_dir 
 errorcount=0
 count=0
