@@ -1,8 +1,0 @@
-train labels
-
-['amharic_controls', 'amharic', 'amharic', 'amharic_controls', 'amharic', 'amharic_controls', 'amharic', 'amharic', 'amharic', 'amharic_controls', 'amharic_controls', 'amharic', 'amharic_controls', 'amharic_controls', 'amharic', 'amharic_controls', 'amharic_controls', 'amharic_controls', 'amharic', 'amharic_controls', 'amharic', 'amharic_controls', 'amharic', 'amharic', 'amharic_controls', 'amharic_controls']
-
-test labels
-
-['amharic', 'amharic', 'amharic', 'amharic_controls', 'amharic', 'amharic', 'amharic_controls', 'amharic_controls', 'amharic_controls', 'amharic', 'amharic_controls', 'amharic', 'amharic', 'amharic_controls']
-
