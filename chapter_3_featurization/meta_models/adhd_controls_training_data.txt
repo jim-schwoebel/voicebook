@@ -1,8 +1,0 @@
-train labels
-
-['controls', 'controls', 'controls', 'adhd', 'adhd', 'adhd', 'controls', 'controls', 'adhd', 'adhd', 'adhd', 'controls', 'controls', 'controls', 'controls', 'controls', 'controls', 'adhd', 'adhd', 'adhd', 'controls', 'controls', 'controls', 'adhd', 'controls', 'adhd', 'adhd', 'adhd', 'controls', 'adhd', 'adhd', 'controls', 'adhd', 'controls', 'controls', 'controls']
-
-test labels
-
-['adhd', 'controls', 'controls', 'adhd', 'controls', 'adhd', 'adhd', 'controls', 'adhd', 'controls', 'adhd', 'adhd', 'adhd', 'adhd', 'controls', 'adhd', 'controls', 'adhd']
-
