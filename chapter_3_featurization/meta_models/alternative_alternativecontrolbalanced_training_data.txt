@@ -1,8 +1,0 @@
-train labels
-
-['alternativecontrolbalanced', 'alternative', 'alternativecontrolbalanced', 'alternativecontrolbalanced', 'alternative', 'alternativecontrolbalanced', 'alternative', 'alternative', 'alternative', 'alternativecontrolbalanced', 'alternative', 'alternative', 'alternative', 'alternativecontrolbalanced', 'alternative', 'alternativecontrolbalanced', 'alternativecontrolbalanced', 'alternativecontrolbalanced', 'alternativecontrolbalanced', 'alternative', 'alternativecontrolbalanced', 'alternative', 'alternative', 'alternative', 'alternativecontrolbalanced', 'alternativecontrolbalanced', 'alternativecontrolbalanced', 'alternative', 'alternativecontrolbalanced', 'alternative', 'alternative', 'alternative', 'alternativecontrolbalanced', 'alternative', 'alternative', 'alternativecontrolbalanced', 'alternative', 'alternative', 'alternativecontrolbalanced', 'alternativecontrolbalanced']
-
-test labels
-
-['alternative', 'alternative', 'alternativecontrolbalanced', 'alternativecontrolbalanced', 'alternative', 'alternativecontrolbalanced', 'alternativecontrolbalanced', 'alternativecontrolbalanced', 'alternative', 'alternativecontrolbalanced', 'alternativecontrolbalanced', 'alternativecontrolbalanced', 'alternativecontrolbalanced', 'alternative', 'alternativecontrolbalanced', 'alternative', 'alternative', 'alternative', 'alternativecontrolbalanced', 'alternative']
-
