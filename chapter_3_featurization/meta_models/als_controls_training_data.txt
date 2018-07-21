@@ -1,8 +1,0 @@
-train labels
-
-['als', 'controls', 'als', 'als', 'als', 'controls', 'controls', 'als', 'controls', 'controls', 'als', 'als', 'controls', 'als', 'controls', 'als', 'als', 'controls', 'controls', 'controls', 'als', 'controls', 'als', 'controls', 'als', 'als', 'als', 'controls', 'controls']
-
-test labels
-
-['controls', 'controls', 'controls', 'controls', 'controls', 'controls', 'als', 'als', 'als', 'als', 'als', 'controls', 'controls', 'als', 'als']
-
