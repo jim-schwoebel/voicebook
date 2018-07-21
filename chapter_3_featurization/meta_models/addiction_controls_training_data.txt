@@ -1,0 +1,8 @@
+train labels
+
+['addiction', 'controls', 'addiction', 'addiction', 'addiction', 'controls', 'controls', 'addiction', 'controls', 'controls', 'addiction', 'addiction', 'controls', 'addiction', 'controls', 'addiction', 'addiction', 'controls', 'controls', 'controls', 'addiction', 'controls', 'addiction', 'controls', 'addiction', 'addiction', 'addiction', 'controls', 'controls']
+
+test labels
+
+['controls', 'controls', 'controls', 'controls', 'controls', 'controls', 'addiction', 'addiction', 'addiction', 'addiction', 'addiction', 'controls', 'controls', 'addiction', 'addiction']
+

@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+gaussian-nb: 0.819047619047619 (+/- 0.11818736805705578) 
+
+MODEL FILE NAME: 
+
+ french_french_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-06-06 18:30:41.232540
+
+EXECUTION TIME: 
+
+ 2.3587849140167236
+
+GROUPS: 
+
+['french', 'french_controls']
+(48 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['french_controls', 'french', 'french', 'french_controls', 'french', 'french', 'french', 'french', 'french', 'french_controls', 'french', 'french', 'french_controls', 'french', 'french_controls', 'french', 'french', 'french', 'french', 'french', 'french', 'french_controls', 'french', 'french_controls', 'french', 'french_controls', 'french_controls', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls', 'french_controls', 'french_controls', 'french', 'french', 'french', 'french_controls', 'french', 'french', 'french', 'french_controls', 'french_controls', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls']
+
+test labels
+
+['french_controls', 'french_controls', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls', 'french', 'french', 'french', 'french_controls', 'french', 'french', 'french', 'french', 'french', 'french', 'french', 'french_controls', 'french_controls', 'french', 'french_controls', 'french', 'french_controls', 'french_controls', 'french', 'french', 'french', 'french', 'french_controls', 'french', 'french_controls']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+svm: 0 (+/- 0)
+logistic regression: 0.4114285714285715 (+/- 0.29615219473942717)
+knn: 0.4542857142857143 (+/- 0.13773680906507368)
+sk: 0.562857142857143 (+/- 0.033319725113401706)
+random forest: 0.6599999999999999 (+/- 0.1085714285714286)
+decision-tree: 0.6647619047619047 (+/- 0.08737024717089309)
+gradient boosting: 0.7619047619047619 (+/- 0.15058465048420855)
+adaboost: 0.7952380952380953 (+/- 0.14412139000401483)
+hard voting: 0.8 (+/- 0.17142857142857143)
+gaussian-nb: 0.819047619047619 (+/- 0.11818736805705578)
+
+
+(C) 2018, NeuroLex Laboratories

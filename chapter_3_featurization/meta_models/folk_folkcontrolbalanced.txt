@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+logistic regression: 0.6833333333333333 (+/- 0.2905932629027116) 
+
+MODEL FILE NAME: 
+
+ folk_folkcontrolbalanced_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:25:10.172757
+
+EXECUTION TIME: 
+
+ 6.612688779830933
+
+GROUPS: 
+
+['folk', 'folkcontrolbalanced']
+(30 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folk', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced']
+
+test labels
+
+['folk', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folkcontrolbalanced', 'folk', 'folkcontrolbalanced', 'folk', 'folk', 'folk', 'folkcontrolbalanced', 'folk']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+random forest: 0.38 (+/- 0.19390719429665315)
+gradient boosting: 0.42000000000000004 (+/- 0.26570660511172844)
+decision-tree: 0.5266666666666666 (+/- 0.21873372955363893)
+adaboost: 0.5266666666666666 (+/- 0.15114378731672848)
+hard voting: 0.5266666666666666 (+/- 0.21873372955363893)
+sk: 0.5533333333333333 (+/- 0.06863753427324665)
+svm: 0.6033333333333333 (+/- 0.2436755584332942)
+knn: 0.6266666666666667 (+/- 0.23981474331473265)
+gaussian-nb: 0.6666666666666667 (+/- 0.22973414586817037)
+logistic regression: 0.6833333333333333 (+/- 0.2905932629027116)
+
+
+(C) 2018, NeuroLex Laboratories

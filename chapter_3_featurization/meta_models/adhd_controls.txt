@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+sk: 0.6199999999999999 (+/- 0.06531972647421806) 
+
+MODEL FILE NAME: 
+
+ adhd_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:20:49.693283
+
+EXECUTION TIME: 
+
+ 9.876383066177368
+
+GROUPS: 
+
+['adhd', 'controls']
+(27 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['controls', 'controls', 'controls', 'adhd', 'adhd', 'adhd', 'controls', 'controls', 'adhd', 'adhd', 'adhd', 'controls', 'controls', 'controls', 'controls', 'controls', 'controls', 'adhd', 'adhd', 'adhd', 'controls', 'controls', 'controls', 'adhd', 'controls', 'adhd', 'adhd', 'adhd', 'controls', 'adhd', 'adhd', 'controls', 'adhd', 'controls', 'controls', 'controls']
+
+test labels
+
+['adhd', 'controls', 'controls', 'adhd', 'controls', 'adhd', 'adhd', 'controls', 'adhd', 'controls', 'adhd', 'adhd', 'adhd', 'adhd', 'controls', 'adhd', 'controls', 'adhd']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+svm: 0.19666666666666668 (+/- 0.1674647558277396)
+logistic regression: 0.20666666666666664 (+/- 0.19367785395111933)
+decision-tree: 0.35666666666666663 (+/- 0.16316317667360555)
+hard voting: 0.35666666666666663 (+/- 0.2665833203084294)
+gradient boosting: 0.4066666666666666 (+/- 0.16110727964792762)
+adaboost: 0.5233333333333332 (+/- 0.21592179654268862)
+knn: 0.5533333333333333 (+/- 0.12578641509408806)
+random forest: 0.58 (+/- 0.11075498483890765)
+gaussian-nb: 0.6199999999999999 (+/- 0.06531972647421806)
+sk: 0.6199999999999999 (+/- 0.06531972647421806)
+
+
+(C) 2018, NeuroLex Laboratories

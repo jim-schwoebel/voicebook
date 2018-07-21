@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+hard voting: 0.8333333333333333 (+/- 0.21081851067789195) 
+
+MODEL FILE NAME: 
+
+ als_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:20:45.313470
+
+EXECUTION TIME: 
+
+ 5.712890863418579
+
+GROUPS: 
+
+['als', 'controls']
+(22 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['als', 'controls', 'als', 'als', 'als', 'controls', 'controls', 'als', 'controls', 'controls', 'als', 'als', 'controls', 'als', 'controls', 'als', 'als', 'controls', 'controls', 'controls', 'als', 'controls', 'als', 'controls', 'als', 'als', 'als', 'controls', 'controls']
+
+test labels
+
+['controls', 'controls', 'controls', 'controls', 'controls', 'controls', 'als', 'als', 'als', 'als', 'als', 'controls', 'controls', 'als', 'als']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+sk: 0.5333333333333333 (+/- 0.06666666666666667)
+knn: 0.5666666666666667 (+/- 0.2260776661041756)
+gaussian-nb: 0.6833333333333333 (+/- 0.1855921454276674)
+random forest: 0.75 (+/- 0.22360679774997896)
+svm: 0.75 (+/- 0.3872983346207417)
+adaboost: 0.7833333333333333 (+/- 0.29627314724385295)
+gradient boosting: 0.7833333333333333 (+/- 0.19436506316151)
+decision-tree: 0.8 (+/- 0.2449489742783178)
+logistic regression: 0.8 (+/- 0.291547594742265)
+hard voting: 0.8333333333333333 (+/- 0.21081851067789195)
+
+
+(C) 2018, NeuroLex Laboratories

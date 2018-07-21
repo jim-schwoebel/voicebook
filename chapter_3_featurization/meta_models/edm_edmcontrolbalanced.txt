@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+svm: 0.71 (+/- 0.19078784028338913) 
+
+MODEL FILE NAME: 
+
+ edm_edmcontrolbalanced_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:24:56.964462
+
+EXECUTION TIME: 
+
+ 7.507243871688843
+
+GROUPS: 
+
+['edm', 'edmcontrolbalanced']
+(30 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edm', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced']
+
+test labels
+
+['edm', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edm', 'edmcontrolbalanced', 'edm']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+hard voting: 0.4366666666666667 (+/- 0.12666666666666668)
+gradient boosting: 0.44666666666666666 (+/- 0.1723691129846386)
+decision-tree: 0.4866666666666667 (+/- 0.17993826101687704)
+random forest: 0.4866666666666667 (+/- 0.28701529188839014)
+adaboost: 0.5366666666666667 (+/- 0.13678856352455462)
+sk: 0.5533333333333333 (+/- 0.06863753427324665)
+knn: 0.58 (+/- 0.26570660511172844)
+logistic regression: 0.62 (+/- 0.2501999200639361)
+gaussian-nb: 0.67 (+/- 0.18867962264113208)
+svm: 0.71 (+/- 0.19078784028338913)
+
+
+(C) 2018, NeuroLex Laboratories

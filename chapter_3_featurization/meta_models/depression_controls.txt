@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+adaboost: 0.8333333333333333 (+/- 0.13944333775567927) 
+
+MODEL FILE NAME: 
+
+ depression_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-20 20:21:44.960795
+
+EXECUTION TIME: 
+
+ 4.267826080322266
+
+GROUPS: 
+
+['depression', 'controls']
+(24 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['depression', 'controls', 'depression', 'depression', 'depression', 'controls', 'controls', 'controls', 'depression', 'controls', 'controls', 'depression', 'depression', 'controls', 'depression', 'controls', 'depression', 'depression', 'controls', 'controls', 'depression', 'controls', 'depression', 'depression', 'depression', 'controls', 'depression', 'depression', 'controls', 'depression', 'controls', 'controls']
+
+test labels
+
+['controls', 'controls', 'controls', 'controls', 'controls', 'controls', 'depression', 'depression', 'depression', 'controls', 'depression', 'depression', 'depression', 'controls', 'controls', 'depression']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+sk: 0.5666666666666667 (+/- 0.08164965809277258)
+decision-tree: 0.6166666666666666 (+/- 0.09999999999999999)
+svm: 0.6833333333333333 (+/- 0.1855921454276674)
+gaussian-nb: 0.7166666666666666 (+/- 0.1632993161855452)
+logistic regression: 0.7333333333333333 (+/- 0.1615893285805443)
+gradient boosting: 0.7666666666666666 (+/- 0.12247448713915891)
+hard voting: 0.7666666666666666 (+/- 0.12247448713915891)
+knn: 0.7833333333333333 (+/- 0.19436506316151)
+random forest: 0.7833333333333333 (+/- 0.19436506316151003)
+adaboost: 0.8333333333333333 (+/- 0.13944333775567927)
+
+
+(C) 2018, NeuroLex Laboratories

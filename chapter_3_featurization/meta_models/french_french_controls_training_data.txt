@@ -1,0 +1,8 @@
+train labels
+
+['french_controls', 'french', 'french', 'french_controls', 'french', 'french', 'french', 'french', 'french', 'french_controls', 'french', 'french', 'french_controls', 'french', 'french_controls', 'french', 'french', 'french', 'french', 'french', 'french', 'french_controls', 'french', 'french_controls', 'french', 'french_controls', 'french_controls', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls', 'french_controls', 'french_controls', 'french', 'french', 'french', 'french_controls', 'french', 'french', 'french', 'french_controls', 'french_controls', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls']
+
+test labels
+
+['french_controls', 'french_controls', 'french_controls', 'french_controls', 'french', 'french_controls', 'french_controls', 'french', 'french', 'french', 'french_controls', 'french', 'french', 'french', 'french', 'french', 'french', 'french', 'french_controls', 'french_controls', 'french', 'french_controls', 'french', 'french_controls', 'french_controls', 'french', 'french', 'french', 'french', 'french_controls', 'french', 'french_controls']
+

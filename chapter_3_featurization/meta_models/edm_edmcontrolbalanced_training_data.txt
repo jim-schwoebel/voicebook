@@ -1,0 +1,8 @@
+train labels
+
+['edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edm', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced']
+
+test labels
+
+['edm', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edmcontrolbalanced', 'edm', 'edmcontrolbalanced', 'edm', 'edm', 'edm', 'edmcontrolbalanced', 'edm']
+
