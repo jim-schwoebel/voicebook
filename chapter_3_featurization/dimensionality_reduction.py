@@ -106,10 +106,13 @@ They calculate things like variance and/or mean values of data and manipulate
 the matrices to a smaller space.
 
 Here are some common techniques:
+
 (1) Principal component analysis (PCA)
 (2) Independent component analysis (ICA)
 (3) K-means clustering (vector quantization)
-(3) Manifold learning 
+(4) Canonical correlation analysis 
+(5) Partial least squares regression
+(6) Manifold learning 
 
 '''
 
@@ -174,7 +177,7 @@ Useful for non-Gaussian processes / cocktail party
 
 ICA assumes 
 (1) independence of source signals; 
-(2) sum of two signals tends toward a gaussian distribution more than each signal alon3
+(2) sum of two signals tends toward a gaussian distribution more than each signal alone
 (3) there is more complexity in the signal mixture than in the simplest source signal 
 
 Useful to separate out signals in a complex mixture - for example, 
