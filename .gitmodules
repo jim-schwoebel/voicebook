@@ -4,3 +4,6 @@
 [submodule "chapter_4_modeling/pyAudioAnalysis"]
 	path = chapter_4_modeling/pyAudioAnalysis
 	url = https://github.com/tyiannak/pyAudioAnalysis
+[submodule "chapter_4_modeling/train-diseases"]
+	path = chapter_4_modeling/train-diseases
+	url = https://github.com/NeuroLexDiagnostics/train-diseases
