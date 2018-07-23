@@ -1,0 +1,3 @@
+[submodule "chapter_4_modeling/youtube_scrape"]
+	path = chapter_4_modeling/youtube_scrape
+	url = https://github.com/jim-schwoebel/youtube_scrape
