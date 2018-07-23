@@ -1,3 +1,6 @@
 [submodule "chapter_4_modeling/youtube_scrape"]
 	path = chapter_4_modeling/youtube_scrape
 	url = https://github.com/jim-schwoebel/youtube_scrape
+[submodule "chapter_4_modeling/pyAudioAnalysis"]
+	path = chapter_4_modeling/pyAudioAnalysis
+	url = https://github.com/tyiannak/pyAudioAnalysis
