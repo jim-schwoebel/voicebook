@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+gaussian-nb: 0.8666666666666668 (+/- 0.19436506316151) 
+
+MODEL FILE NAME: 
+
+ schizophrenia_controls_sc_w2v.pickle
+
+DATE CREATED: 
+
+ 2018-07-23 21:39:57.831655
+
+EXECUTION TIME: 
+
+ 1.6634578704833984
+
+GROUPS: 
+
+['schizophrenia', 'controls']
+(34 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls']
+
+test labels
+
+['controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls']
+
+FEATURES: 
+
+ w2v features from all vocabulary of each class.
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+sk: 0.6 (+/- 0.20000000000000004)
+logistic regression: 0.6 (+/- 0.20000000000000004)
+svm: 0.6 (+/- 0.20000000000000004)
+decision-tree: 0.75 (+/- 0.22360679774997896)
+knn: 0.7833333333333333 (+/- 0.19436506316151003)
+gradient boosting: 0.8 (+/- 0.18708286933869706)
+adaboost: 0.85 (+/- 0.2)
+hard voting: 0.85 (+/- 0.2)
+random forest: 0.86 (+/- 0.19595917942265426)
+gaussian-nb: 0.8666666666666668 (+/- 0.19436506316151)
+
+
+(C) 2018, NeuroLex Laboratories
