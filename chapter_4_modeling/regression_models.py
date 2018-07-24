@@ -643,7 +643,8 @@ jsonfile=open(jsonfilename,'w')
 json.dump(data,jsonfile)
 jsonfile.close()
 
-print('RESULTS: \n\n')
+print('\n\n')
+print('RESULTS: \n')
 for i in range(len(modeltypes)):
 	print(modeltypes[i] + ': ' + str(r2_scores[i]))
 
