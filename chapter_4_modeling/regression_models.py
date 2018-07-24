@@ -508,7 +508,7 @@ try:
 	pa_regr.fit(X_train, y_train)
 	predictions = cross_val_predict(pa_regr, X_test, y_test, cv=6)
 except:
-	print('error - PASSIVE-AGRESSIVE')
+	print('error - PASSIVE-AGGRESSIVE')
 
 # get stats 
 modeltypes.append('passive-agressive algorithm')
