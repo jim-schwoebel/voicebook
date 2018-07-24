@@ -556,7 +556,7 @@ start=time.time()
 modelname=name+'_sc_text'
 jsonfilename=name+'_text.json'
 size=100
-dir3=os.getcwd()+'/train_diseases/spreadsheets/'
+dir3=os.getcwd()+'/train-diseases/spreadsheets/'
 model_dir=os.getcwd()+'/models'
 cur_dir=dir3
 testing_set=0.33
@@ -595,6 +595,11 @@ if jsonfilename not in os.listdir():
             os.mkdir(dir_)
             os.chdir(dir_)
         
+        # remove any prior feauturization
+        dirlist=os.listdir()
+        for j in range(len(dirlist)):
+            if dirlist[j][-5:]=='.json':
+                os.remove(dirlist[j])
         dirlist=os.listdir()
         one=list()
 

@@ -429,7 +429,7 @@ start=time.time()
 #modelname=input('what is the name of your classifier?')
 modelname=name+'_sc_w2v'
 jsonfilename=name+'_w2v.json'
-dir3=os.getcwd()+'/train_diseases/'
+dir3=os.getcwd()+'/train-diseases/spreadsheets/'
 model_dir=dir3+'models/'
 
 try:
@@ -476,6 +476,11 @@ if jsonfilename not in os.listdir():
             os.mkdir(dir_)
             os.chdir(dir_)
 
+        # remove any prior featurization
+        dirlist=os.listdir()
+        for j in range(len(dirlist)):
+            if dirlist[j][-5:]=='.json':
+                os.remove(dirlist[j])
         dirlist=os.listdir()
         transcripts=list()
         filenames=list()

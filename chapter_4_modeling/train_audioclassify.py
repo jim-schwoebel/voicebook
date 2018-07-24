@@ -538,7 +538,7 @@ start=time.time()
 #modelname=input('what is the name of your classifier?')
 modelname=name+'_sc_audio'
 jsonfilename=name+'_audio.json'
-dir3=os.getcwd()+'/train_diseases/spreadsheets/'
+dir3=os.getcwd()+'/train-diseases/spreadsheets/'
 model_dir=os.getcwd()+'/models'
 cur_dir=dir3
 testing_set=0.33
@@ -578,7 +578,12 @@ if jsonfilename not in os.listdir():
             os.chdir(dir_)
             
         dirlist=os.listdir()
+        # remove any prior features
+        for j in range(len(dirlist)):
+            if dirlist[j][-5:]=='.json':
+                os.remove(dirlist[j])
 
+        dirlist=os.listdir()
         #if broken session, load all previous transcripts
         #this reduces costs if tied to GCP
         one=list()
@@ -594,7 +599,7 @@ if jsonfilename not in os.listdir():
             
         for j in range(len(dirlist)):
             try:
-                if dirlist[j][-4:]=='.wav' and dirlist[j][0:-4]+'.json' not in dirlist and os.path.getsize(dirlist[j])>500:
+                if dirlist[j][-4:]=='.wav' not in dirlist and os.path.getsize(dirlist[j])>500:
                     try:
                         #get wavefile
                         wavfile=dirlist[j]
