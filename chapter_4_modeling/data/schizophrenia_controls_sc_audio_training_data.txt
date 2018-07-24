@@ -1,0 +1,8 @@
+train labels
+
+['schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls']
+
+test labels
+
+['controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls']
+

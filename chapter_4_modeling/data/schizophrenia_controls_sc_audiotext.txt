@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+decision-tree: 0.62 (+/- 0.11224972160321824) 
+
+MODEL FILE NAME: 
+
+ schizophrenia_controls_sc_audiotext.pickle
+
+DATE CREATED: 
+
+ 2018-07-23 21:25:53.082073
+
+EXECUTION TIME: 
+
+ 2.0050270557403564
+
+GROUPS: 
+
+['schizophrenia', 'controls']
+(34 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls']
+
+test labels
+
+['controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls']
+
+FEATURES: 
+
+ mixed features (mfcc coefficients and text features).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+gaussian-nb: 0.4033333333333333 (+/- 0.18897383710744486)
+sk: 0.44000000000000006 (+/- 0.12)
+logistic regression: 0.5066666666666666 (+/- 0.20044395171163876)
+svm: 0.5066666666666666 (+/- 0.20044395171163876)
+adaboost: 0.52 (+/- 0.039999999999999994)
+gradient boosting: 0.52 (+/- 0.039999999999999994)
+hard voting: 0.52 (+/- 0.039999999999999994)
+random forest: 0.52 (+/- 0.039999999999999994)
+knn: 0.5900000000000001 (+/- 0.2690724809414742)
+decision-tree: 0.62 (+/- 0.11224972160321824)
+
+
+(C) 2018, NeuroLex Laboratories

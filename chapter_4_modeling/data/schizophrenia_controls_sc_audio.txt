@@ -1,0 +1,52 @@
+SUMMARY OF MODEL SELECTION 
+
+WINNING MODEL: 
+
+gaussian-nb: 0.7866666666666667 (+/- 0.1305543735171076) 
+
+MODEL FILE NAME: 
+
+ schizophrenia_controls_sc_audio.pickle
+
+DATE CREATED: 
+
+ 2018-07-23 19:59:09.854434
+
+EXECUTION TIME: 
+
+ 2.0662899017333984
+
+GROUPS: 
+
+['schizophrenia', 'controls']
+(34 in each class, 33% used for testing)
+
+TRAINING SUMMARY:
+
+train labels
+
+['schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls']
+
+test labels
+
+['controls', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'schizophrenia', 'controls', 'controls', 'schizophrenia', 'controls', 'controls', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls', 'schizophrenia', 'controls']
+
+FEATURES: 
+
+ audio features (mfcc coefficients).
+
+MODELS, ACCURACIES, AND STANDARD DEVIATIONS: 
+
+sk: 0.48 (+/- 0.039999999999999994)
+knn: 0.5633333333333332 (+/- 0.12666666666666668)
+decision-tree: 0.5733333333333334 (+/- 0.20779263167344933)
+adaboost: 0.6366666666666667 (+/- 0.22666666666666668)
+gradient boosting: 0.6599999999999999 (+/- 0.1319090595827292)
+hard voting: 0.6766666666666666 (+/- 0.2341889076033373)
+random forest: 0.7333333333333333 (+/- 0.2758824226207808)
+logistic regression: 0.7366666666666667 (+/- 0.07557189365836424)
+svm: 0.7533333333333333 (+/- 0.13556466271775172)
+gaussian-nb: 0.7866666666666667 (+/- 0.1305543735171076)
+
+
+(C) 2018, NeuroLex Laboratories
