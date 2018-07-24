@@ -25,6 +25,14 @@ Goes through examples of:
 18) Huber Regression
 19) Polynomial regression
 
+These are the metrics for linear regression
+# metrics.explained_variance_score(y_true, y_pred)	Explained variance regression score function
+# metrics.mean_absolute_error(y_true, y_pred)	Mean absolute error regression loss
+# metrics.mean_squared_error(y_true, y_pred[, …])	Mean squared error regression loss
+# metrics.mean_squared_log_error(y_true, y_pred)	Mean squared logarithmic error regression loss
+# metrics.median_absolute_error(y_true, y_pred)	Median absolute error regression loss
+# metrics.r2_score(y_true, y_pred[, …])	R^2 (coefficient of determination) regression score function.
+
 For more information about regression, feel free to read the
 Scikit-learn linear model documentation here:
 
@@ -35,19 +43,104 @@ http://scikit-learn.org/stable/modules/linear_model.html
 ##               IMPORT STATMENTS               ##
 ##################################################
 
+import os, json, xlsxwriter
 from sklearn import linear_model
+from sklearn.neural_network import MLPRegressor
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.linear_model import Perceptron
 from sklearn.neural_network import MLPClassifier
+from sklearn.model_selection import train_test_split
+from sklearn.cross_validation import cross_val_predict
+from sklearn.preprocessing import StandardScaler
+from sklearn import metrics
+import numpy as np
+
+# helper function 
+# eliminates redundant code 
+
+def update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores):
+
+	try:
+		explained_variances.append(metrics.explained_variance_score(y_test,predictions))
+	except:
+		explained_variances.append('n/a')
+	try:
+		mean_absolute_errors.append(metrics.mean_absolute_error(y_test,predictions))
+	except:
+		mean_squared_errors.append('n/a')
+	try:
+		mean_squared_log_errors.append(metrics.mean_squared_log_error(y_test,predictions))
+	except:
+		mean_squared_log_errors.append('n/a')
+	try:
+		median_absolute_errors.append(metrics.median_absolute_error(y_test,predictions))
+	except:
+		median_absolute_errors.append('n/a')
+	try:
+		r2_scores.append(metrics.r2_score(y_test,predictions))
+	except:
+		r2_scores.append('n/a')
+
+	return explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores
 
 ##################################################
 ##################################################
 ##              MAIN CODE BASE                  ##
 ##################################################
 ##################################################
-# generate some data
-X = [[0., 0.], [1., 1.], [2., 2.], [3., 3.]]
-Y = [0., 1., 2., 3.]
+
+# model dir 
+modeldir=os.getcwd()+'/models'
+
+# load data 
+os.chdir(os.getcwd()+'/data')
+
+name=input('what is the name of the file in /data directory you would like to analyze? \n')
+i1=name.find('.json')
+first=name[0:i1]
+# assume binary classification
+i2=first.find('_')
+one=first[0:i2]
+two=first[i2+1:]
+g=json.load(open(name))
+
+# get data 
+aa=g[one]
+co=g[two]
+
+# prepare data into train and test tests 
+# take first 104 features 
+labels=list()
+data=list()
+for i in range(len(aa)):
+	data.append(np.array(aa[i][0:104]))
+	labels.append(float(0))
+	
+for i in range(len(co)):
+	data.append(np.array(co[i][0:104]))
+	labels.append(float(1))
+	
+
+X_train, X_test, y_train, y_test = train_test_split(data, labels, test_size=0.33, random_state=42)
+# 199 = len(X_train)
+# 99 = len(X_test)
+
+# metrics 
+modeltypes=list()
+explained_variances=list()
+mean_absolute_errors=list()
+mean_squared_errors=list()
+mean_squared_log_errors=list()
+median_absolute_errors=list()
+r2_scores=list()
+os.chdir(modeldir)
+
+# metrics.explained_variance_score(y_true, y_pred)	Explained variance regression score function
+# metrics.mean_absolute_error(y_true, y_pred)	Mean absolute error regression loss
+# metrics.mean_squared_error(y_true, y_pred[, …])	Mean squared error regression loss
+# metrics.mean_squared_log_error(y_true, y_pred)	Mean squared logarithmic error regression loss
+# metrics.median_absolute_error(y_true, y_pred)	Median absolute error regression loss
+# metrics.r2_score(y_true, y_pred[, …])	R^2 (coefficient of determination) regression score function.
 
 ##################################################
 ##               linear regression              ##
@@ -60,9 +153,17 @@ in the dataset, and the responses predicted by the linear approximation.
 Example:
 http://scikit-learn.org/stable/modules/linear_model.html
 '''
-ols = linear_model.LinearRegression()
-ols.fit(X, y)
-print(reg.coef_)
+try:
+	ols = linear_model.LinearRegression()
+	ols.fit(X_train, y_train)
+	#ols.predict(X_test, y_test)
+	predictions = cross_val_predict(ols, X_test, y_test, cv=6)
+except:
+	print('error - ORDINARY LEAST SQUARES')
+
+# get stats 
+modeltypes.append('linear regression')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##              Ridge regression                ##
@@ -78,8 +179,16 @@ Example:
 http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Ridge.html#sklearn.linear_model.Ridge
 
 '''
-ridge = Ridge(fit_intercept=True, alpha=0.0, random_state=0, normalize=True)
-reg.fit(X, Y)
+try:
+	ridge = linear_model.Ridge(fit_intercept=True, alpha=0.0, random_state=0, normalize=True)
+	ridge.fit(X_train, y_train)
+	predictions = cross_val_predict(ridge, X_test, y_test, cv=6)
+except:
+	print('error - RIDGE REGRESSION')
+
+# get stats 
+modeltypes.append('ridge regression')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##                    LASSO                     ##
@@ -99,9 +208,16 @@ Example:
 http://scikit-learn.org/stable/auto_examples/linear_model/plot_lasso_model_selection.html#sphx-glr-auto-examples-linear-model-plot-lasso-model-selection-py
 
 '''
-reg = linear_model.Lasso(alpha = 0.1)
-reg.fit([[0, 0], [1, 1]], [0, 1])
-reg.predict([[1, 1]])
+try:
+	lasso = linear_model.Lasso(alpha = 0.1)
+	lasso.fit(X_train, y_train)
+	predictions = cross_val_predict(lasso, X_test, y_test, cv=6)
+except:
+	print('error - LASSO')
+
+# get stats 
+modeltypes.append('LASSO')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##              Multi-task LASSO                ##
@@ -117,19 +233,12 @@ Example:
 http://scikit-learn.org/stable/auto_examples/linear_model/plot_multi_task_lasso_support.html#sphx-glr-auto-examples-linear-model-plot-multi-task-lasso-support-py
 
 '''
-# Generate some 2D coefficients with sine waves with random frequency and phase
-n_samples, n_features, n_tasks = 100, 30, 40
-n_relevant_features = 5
-coef = np.zeros((n_tasks, n_features))
-times = np.linspace(0, 2 * np.pi, n_tasks)
-for k in range(n_relevant_features):
-    coef[:, k] = np.sin((1. + rng.randn(1)) * times + 3 * rng.randn(1))
-
-X = rng.randn(n_samples, n_features)
-Y = np.dot(X, coef.T) + rng.randn(n_samples, n_tasks)
-
-coef_lasso_ = np.array([Lasso(alpha=0.5).fit(X, y).coef_ for y in Y.T])
-coef_multi_task_lasso_ = MultiTaskLasso(alpha=1.).fit(X, Y).coef_
+# # ONLY WORKS ON y_train that is multidimensional (one hot encoded)
+# # Generate some 2D coefficients with sine waves with random frequency and phase
+# mlasso = linear_model.MultiTaskLasso(alpha=0.1)
+# mlasso.fit(X_train, y_train)
+# predictions = cross_val_predict(mlasso, X_test, y_test, cv=6)
+# accuracy = metrics.r2_score(y_test, predictions)
 
 ##################################################
 ##                  Elastic net                 ##
@@ -145,12 +254,17 @@ Example:
 http://scikit-learn.org/stable/auto_examples/linear_model/plot_lasso_and_elasticnet.html#sphx-glr-auto-examples-linear-model-plot-lasso-and-elasticnet-py
 
 '''
-from sklearn.metrics import r2_score
-
 # need training data 
-enet = ElasticNet(alpha=alpha, l1_ratio=0.7)
-y_pred_enet = enet.fit(X_train, y_train).predict(X_test)
-r2_score_enet = r2_score(y_test, y_pred_enet)
+try:
+	enet = linear_model.ElasticNet()
+	enet.fit(X_train, y_train)
+	predictions = cross_val_predict(enet, X_test, y_test, cv=6)
+except:
+	print('error - ELASTIC NET')
+
+# get stats 
+modeltypes.append('elastic net')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##            Multi-task elastic net            ##
@@ -165,10 +279,11 @@ also called tasks.
 Example:
 http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.MultiTaskElasticNet.html
 '''
-clf = linear_model.MultiTaskElasticNet(alpha=0.1)
-clf.fit([[0,0], [1, 1], [2, 2]], [[0, 0], [1, 1], [2, 2]])
-print(clf.coef_)
-print(clf.intercept_)
+# # # ONLY WORKS ON y_train that is multidimensional (one hot encoded)
+# clf = linear_model.MultiTaskElasticNet()
+# clf.fit(X_train, y_train)
+# #print(clf.coef_)
+# #print(clf.intercept_)
 
 ##################################################
 ##          Least angle regression (LARS)       ##
@@ -190,9 +305,16 @@ The disadvantages of the LARS method include:
 Example:
 http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.Lars.html
 '''
-reg = linear_model.Lars(n_nonzero_coefs=1)
-reg.fit([[-1, 1], [0, 0], [1, 1]], [-1.1111, 0, -1.1111])
-print(reg.coef_)
+try:
+	reg = linear_model.Lars(n_nonzero_coefs=1)
+	reg.fit(X_train, y_train)
+	predictions = cross_val_predict(reg, X_test, y_test, cv=6)
+except:
+	print('error - LARS')
+
+# get stats 
+modeltypes.append('Least angle regression (LARS)')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##                 LARS LASSO                   ##
@@ -207,9 +329,16 @@ Example:
 http://scikit-learn.org/stable/modules/linear_model.html#passive-aggressive-algorithms
 
 '''
-reg = linear_model.LassoLars(alpha=.1)
-reg.fit([[0, 0], [1, 1]], [0, 1])
-print(reg.coef_) 
+try:
+	reg = linear_model.LassoLars()
+	reg.fit(X_train, y_train)
+	predictions = cross_val_predict(reg, X_test, y_test, cv=6)
+except:
+	print('error - LARS LASSO')
+
+# get stats 
+modeltypes.append('LARS lasso')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##      Orthogonal Matching Pursuit (OMP)       ##
@@ -222,17 +351,15 @@ constraints imposed on the number of non-zero coefficients (ie. the L 0 pseudo-n
 Example:
 http://scikit-learn.org/stable/auto_examples/linear_model/plot_omp.html#sphx-glr-auto-examples-linear-model-plot-omp-py
 '''
-n_components, n_features = 512, 100
-n_nonzero_coefs=17
-y, X, w = make_sparse_coded_signal(n_samples=1,
-                                   n_components=n_components,
-                                   n_features=n_features,
-                                   n_nonzero_coefs=n_nonzero_coefs,
-                                   random_state=0)
-
-omp = OrthogonalMatchingPursuit(n_nonzero_coefs=n_nonzero_coefs)
-omp.fit(X, y)
-coef = omp.coef_
+try:
+	omp = linear_model.OrthogonalMatchingPursuit()
+	omp.fit(X_train, y_train)
+	predictions = cross_val_predict(omp, X_test, y_test, cv=6)
+except:
+	print('error - ORTHOGONAL MATCHING PURSUIT (OMP)')
+# get stats 
+modeltypes.append('orthogonal matching pursuit (OMP)')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##          Bayesian ridge regression           ##
@@ -250,9 +377,11 @@ The disadvantages of Bayesian regression include:
 Example:
 http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.BayesianRidge.html
 '''
-clf = BayesianRidge()
-clf.fit([[0,0], [1, 1], [2, 2]], [0, 1, 2])
-clf.predict([[1, 1]])
+# MULTI-DIMENSIONAL 
+# clf = BayesianRidge()
+# clf.fit(X_train, y_train)
+# predictions = cross_val_predict(clf, X_test, y_test, cv=6)
+# accuracy = metrics.r2_score(y_test, predictions)
 
 ##################################################
 ##      Automatic relevance determination       ## 
@@ -266,12 +395,11 @@ the Gaussian being spherical.
 Example:
 http://scikit-learn.org/stable/auto_examples/linear_model/plot_ard.html#sphx-glr-auto-examples-linear-model-plot-ard-py
 '''
-n_samples, n_features = 100, 100
-X = np.random.randn(n_samples, n_features)
-relevant_features = np.random.randint(0, n_features, 10)
-
-clf = ARDRegression(compute_score=True)
-clf.fit(X, y)
+# MULTI-DIMENSIONAL
+# clf = ARDRegression(compute_score=True)
+# clf.fit(X_train, y_train)
+# predictions = cross_val_predict(clf, X_test, y_test, cv=6)
+# accuracy = metrics.r2_score(y_test, predictions)
 
 ##################################################
 ##              Logistic regression             ##
@@ -288,8 +416,16 @@ of a single trial are modeled using a logistic function.
 Example:
 http://scikit-learn.org/stable/auto_examples/linear_model/plot_logistic_l1_l2_sparsity.html#sphx-glr-auto-examples-linear-model-plot-logistic-l1-l2-sparsity-py
 '''
-clf = linear_model.LogisticRegression(C=1.0, penalty='l1', tol=1e-6)
-clf.fit(X, y)
+try:
+	clf = linear_model.LogisticRegression(C=1.0, penalty='l1', tol=1e-6)
+	clf.fit(X_train, y_train)
+	predictions = cross_val_predict(clf, X_test, y_test, cv=6)
+except:
+	print('error - LOGISTIC REGRESSION')
+
+# get stats 
+modeltypes.append('logistic regression')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##      Stochastic gradient descent (SGD)       ##
@@ -309,12 +445,22 @@ while with loss="hinge" it fits a linear support vector machine (SVM).
 Example:
 http://scikit-learn.org/stable/modules/sgd.html#sgd
 '''
-n_samples, n_features = 10, 5
-np.random.seed(0)
-y = np.random.randn(n_samples)
-X = np.random.randn(n_samples, n_features)
-clf = linear_model.SGDRegressor()
-clf.fit(X, y)
+try:
+	# note you have to scale the data, as SGD algorithms are sensitive to 
+	# feature scaling 
+	scaler = StandardScaler()
+	scaler.fit(X_train)
+	X_train_2 = scaler.transform(X_train)
+	X_test_2 = scaler.transform(X_test) 
+	clf = linear_model.SGDRegressor()
+	clf.fit(X_train_2, y_train)
+	predictions = cross_val_predict(clf, X_test_2, y_test, cv=6)
+except:
+ 	print('error - STOCHASTIC GRADIENT DESCENT')
+
+# get stats 
+modeltypes.append('stochastic gradient descent (SGD)')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##          Perceptron algorithms               ## 
@@ -334,18 +480,16 @@ hich is effective for large & messy data but pretty useless for this kind of smo
 Example:
 http://scikit-learn.org/stable/modules/generated/sklearn.linear_model.PassiveAggressiveRegressor.html#sklearn.linear_model.PassiveAggressiveRegressor
 '''
+try:
+	nn = MLPRegressor(solver='lbfgs')
+	n = nn.fit(X_train, y_train)
+	predictions = cross_val_predict(nn, X_test, y_test, cv=6)
+except:
+	print('error - MLP REGRESSOR')
 
-x = np.arange(0.0, 1, 0.01).reshape(-1, 1)
-y = np.sin(2 * np.pi * x).ravel()
-nn = MLPRegressor(
-    hidden_layer_sizes=(10,),  activation='relu', solver='lbfgs', alpha=0.001, batch_size='auto',
-    learning_rate='constant', learning_rate_init=0.01, power_t=0.5, max_iter=1000, shuffle=True,
-    random_state=9, tol=0.0001, verbose=False, warm_start=False, momentum=0.9, nesterovs_momentum=True,
-    early_stopping=False, validation_fraction=0.1, beta_1=0.9, beta_2=0.999, epsilon=1e-08)
-n = nn.fit(x, y)
-
-test_x = np.arange(0.0, 1, 0.05).reshape(-1, 1)
-test_y = nn.predict(test_x)
+# get stats 
+modeltypes.append('perceptron')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##          Passive-agressive algorithms        ##
@@ -359,12 +503,16 @@ contrary to the Perceptron, they include a regularization parameter C.
 Example:
 http://jmlr.csail.mit.edu/papers/volume7/crammer06a/crammer06a.pdf
 '''
-X, y = make_regression(n_features=4, random_state=0)
-pa_regr = PassiveAggressiveRegressor(random_state=0)
-pa_reg.fit(X,y)
-pa_reg.coef_
-pa.reg.intercept_
-pa.reg.predict([0,0,0,0])
+try:
+	pa_regr = linear_model.PassiveAggressiveRegressor(random_state=0)
+	pa_regr.fit(X_train, y_train)
+	predictions = cross_val_predict(pa_regr, X_test, y_test, cv=6)
+except:
+	print('error - PASSIVE-AGRESSIVE')
+
+# get stats 
+modeltypes.append('passive-agressive algorithm')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##                   RANSAC                     ## 
@@ -384,10 +532,15 @@ in the fields of photogrammetric computer vision.
 Example:
 http://scikit-learn.org/stable/auto_examples/linear_model/plot_ransac.html#sphx-glr-auto-examples-linear-model-plot-ransac-py
 '''
-ransac = linear_model.RANSACRegressor()
-ransac.fit(X, Y)
-inlier_mask = ransac.inlier_mask_
-outlier_mask = np.logical_not(inlier_mask)
+try:
+	ransac = linear_model.RANSACRegressor()
+	ransac.fit(X_train, y_train)
+	predictions = cross_val_predict(ransac, X_test, y_test, cv=6)
+except:
+	print('error - RANSAC')
+# get stats 
+modeltypes.append('RANSAC')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##              Theil-SEN                       ##
@@ -401,12 +554,22 @@ with the dimensionality of the problem. It looses its robustness
 properties and becomes no better than an ordinary least squares
 in high dimension.
 
+Note takes a bit longer to train.
+
 Example:
 http://scikit-learn.org/stable/auto_examples/linear_model/plot_theilsen.html#sphx-glr-auto-examples-linear-model-plot-theilsen-py
 
 '''
-theilsen=TheilSenRegressor(random_state=42)
-theilsen.fit(X,y)
+try:
+	theilsen=linear_model.TheilSenRegressor(random_state=42)
+	theilsen.fit(X_train, y_train)
+	predictions = cross_val_predict(theilsen, X_test, y_test, cv=6)
+except:
+	print('error - THEILSEN')
+
+# get stats 
+modeltypes.append('Theil-Sen')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##              Huber Regression                ##
@@ -422,11 +585,16 @@ ignore the effect of the outliers but gives a lesser weight to them.
 Example:
 http://scikit-learn.org/stable/auto_examples/linear_model/plot_huber_vs_ridge.html#sphx-glr-auto-examples-linear-model-plot-huber-vs-ridge-py
 '''
+try:
+	huber = linear_model.HuberRegressor(fit_intercept=True, alpha=0.0, max_iter=100)
+	huber.fit(X_train, y_train)
+	predictions = cross_val_predict(huber, X_test, y_test, cv=6)
+except:
+	print('error - HUBER')
 
-huber = HuberRegressor(fit_intercept=True, alpha=0.0,
-                       max_iter=100, epsilon=epsilon)
-huber.fit(X, y)
-coef_ = huber.coef_ * x + huber.intercept_
+# get stats 
+modeltypes.append('huber regression')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
 
 ##################################################
 ##              Polynomial Regression           ##
@@ -440,11 +608,73 @@ Example:
 http://scikit-learn.org/stable/modules/linear_model.html#passive-aggressive-algorithms
 
 '''
+try:
+	X_train2 = PolynomialFeatures(interaction_only=True).fit_transform(X_train).astype(int)
+	X_test2 =PolynomialFeatures(interaction_only=True).fit_transform(X_test).astype(int)
+	clf = Perceptron(fit_intercept=False, max_iter=10, tol=None,
+	                 shuffle=False).fit(X_train2, y_train)
+	predictions = cross_val_predict(clf, X_test2, y_test, cv=6)
+	accuracy = metrics.r2_score(y_test, predictions)
+except:
+	print('error - POLYNOMIAL')
 
-X = np.array([[0, 0], [0, 1], [1, 0], [1, 1]])
-y = X[:, 0] ^ X[:, 1]
-X = PolynomialFeatures(interaction_only=True).fit_transform(X).astype(int)
-clf = Perceptron(fit_intercept=False, max_iter=10, tol=None,
-                 shuffle=False).fit(X, y)
-clf.predict(X)
-clf.score(X, y)
+# get stats 
+modeltypes.append('polynomial (perceptron)')
+explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores = update_list(explained_variances, mean_absolute_errors, mean_squared_errors, mean_squared_log_errors, median_absolute_errors, r2_scores)
+
+##################################################
+##              Write session to .JSON          ##
+##################################################
+
+os.chdir(modeldir)
+
+data={
+	'modeltypes':modeltypes,
+	'explained_variances':explained_variances,
+	'mean_absolute_errors':mean_absolute_errors,
+	'mean_squared_errors': mean_squared_errors,
+	'mean_squared_log_errors':mean_squared_log_errors,
+	'median_absolute_errors':median_absolute_errors,
+	'r2_scores':r2_scores,
+}
+
+jsonfilename=name[0:-5]+'_regression.json'
+jsonfile=open(jsonfilename,'w')
+json.dump(data,jsonfile)
+jsonfile.close()
+
+print('RESULTS: \n\n')
+for i in range(len(modeltypes)):
+	print(modeltypes[i] + ': ' + str(r2_scores[i]))
+	print('\n')
+
+filename=name[0:-5]+'.xlsx'
+workbook  = xlsxwriter.Workbook(filename)
+worksheet = workbook.add_worksheet()
+
+worksheet.write('A1', 'Model type')
+worksheet.write('B1', 'R^2 score')
+worksheet.write('C1', 'Explained Variances')
+worksheet.write('D1', 'Mean Absolute Errors')
+worksheet.write('E1', 'Mean Squared Log Errors')
+worksheet.write('F1', 'Median Absolute Errors')
+#worksheet.write('G1', 'Mean Squared Errors')
+
+
+for i in range(len(modeltypes)):
+	try:
+		worksheet.write('A'+str(i+2), str(modeltypes[i]))
+		worksheet.write('B'+str(i+2), str(r2_scores[i]))
+		worksheet.write('C'+str(i+2), str(explained_variances[i]))
+		worksheet.write('D'+str(i+2), str(mean_absolute_errors[i]))
+		worksheet.write('E'+str(i+2), str(mean_squared_log_errors[i]))
+		worksheet.write('F'+str(i+2), str(median_absolute_errors[i]))
+		#worksheet.write('G'+str(i+2), str(mean_squared_errors[i]))
+		
+	except:
+		pass
+
+workbook.close()
+
+os.system('open %s'%(filename))
+
