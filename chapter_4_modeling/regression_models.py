@@ -113,11 +113,11 @@ co=g[two]
 labels=list()
 data=list()
 for i in range(len(aa)):
-	data.append(np.array(aa[i][0:104]))
+	data.append(np.array(aa[i]))
 	labels.append(float(0))
 	
 for i in range(len(co)):
-	data.append(np.array(co[i][0:104]))
+	data.append(np.array(co[i]))
 	labels.append(float(1))
 	
 
@@ -646,7 +646,6 @@ jsonfile.close()
 print('RESULTS: \n\n')
 for i in range(len(modeltypes)):
 	print(modeltypes[i] + ': ' + str(r2_scores[i]))
-	print('\n')
 
 filename=name[0:-5]+'.xlsx'
 workbook  = xlsxwriter.Workbook(filename)
