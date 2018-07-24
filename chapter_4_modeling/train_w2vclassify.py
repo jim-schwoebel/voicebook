@@ -430,7 +430,7 @@ start=time.time()
 modelname=name+'_sc_w2v'
 jsonfilename=name+'_w2v.json'
 dir3=os.getcwd()+'/train-diseases/spreadsheets/'
-model_dir=dir3+'models/'
+model_dir=os.getcwd()+'/models/'
 
 try:
     os.chdir(model_dir)
