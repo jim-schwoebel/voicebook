@@ -2,7 +2,16 @@
 Load all model accuracies, names, and standard deviations
 and output them in a spreadsheet.
 
-This is intended for any model file directory using the nlx-model repository.'''
+This is intended for any model file directory using the following scripts:
+
+train_audioclassify.py
+train_textclassify.py
+train_audiotextclassify.py
+train_w2vclassify.py
+
+In this way, if you train a lot of models you can quickly get a summary of 
+all of them. 
+'''
 
 import json, os, xlsxwriter
 
