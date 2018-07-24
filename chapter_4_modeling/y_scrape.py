@@ -1,5 +1,5 @@
 '''
-Script: yscrape.py
+Script: y_scrape.py
 Author: Jim Schwoebel
 
 This script takes in a template excel sheet and downloads videos from youtube.
