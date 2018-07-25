@@ -475,7 +475,7 @@ g.write('Group 1: %s (%s training, %s testing)'%(name1,str(int(len(train_set2)/2
 g.write('\n')
 g.write('Group 2: %s (%s training, %s testing)'%(name2,str(int(len(labels_train_set2)/2)),str(int(len(labels_test_set2)/2))))
 g.write('\n\n')
-g.write('FEATURES: \n\n Word2Vec representation of %s and %s (200 features)'%(name1,name2))
+g.write('FEATURES: \n\n Audio features - mfcc coefficients and deltas (208 features)')
 g.write('\n\n')
 g.write('MODEL ACCURACY: \n\n')
 g.write('%s: %s \n\n'%(str('accuracy'),str(score[1]*100)))
