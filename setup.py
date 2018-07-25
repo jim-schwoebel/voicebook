@@ -6,7 +6,7 @@ def install(modules):
       os.system('pip3 install %s'%(modules[i]))
 
 modules=['scikit-learn','tpot','numpy','nltk', 'SpeechRecognition',
-        'spacy', 'librosa', 'TextBlob']
+        'spacy', 'librosa', 'TextBlob', 'matplotlib','bokeh']
 install(modules)
 
 # things that need some custom setup 
