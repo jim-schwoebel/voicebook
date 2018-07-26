@@ -16,4 +16,6 @@ os.system('brew install portaudio')
 os.system('brew install sox')
 os.system('python3 -m spacy.en.download all')
 os.system("python3 -m spacy download 'en_core_web_sm'")
-# nltk add-ons 
+# download all nltk packages 
+import nltk
+nltk.download()
