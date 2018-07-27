@@ -2,35 +2,20 @@
 
 This is an assortment of all the scripts associated with [Intro to Voice Computing Book](). These scripts should give you a jumpstart in learning how to write python code for voice-related applications. 
 
-## Getting started: setting up environment
+## Getting started: setting up environment (mac)
 
-### mac computers
-
-To set up your environment, all you need to do is run:
+First, clone the repository in the terminal application and 
 
     cd ~
-    git clone 
-    python3 setup.py 
-    
-Then, all the dependencies will be installed for the book. You won't need to install anything else. 
+    git clone git@github.com:jim-schwoebel/voicebook.git
 
-### windows operating system
-
-First, install python 3 from:
-
-Next, you need to install speech recognition and SWIG here.
-
-Then you're ready to go to install.
-
-### linux computers 
-
-To set up your environment, all you need to do is run:
+Now you need to run the setup.py script to make sure you have all the required dependencies for all the chapters of the book. To do this, run:
 
     cd ~
-    git clone 
-    python3 setup.py 
-    
-Then, all the dependencies will be installed for the book. You won't need to install anything else. 
+    cd voicebook
+    python3 setup.py
+
+Now you have all the dependencies necessary to follow along with the chapters in the book. You don’t need to worry about any other installations. Also, the entire book is available in the voicebook folder for you to read :-) 
 
 ## Frequently asked questions (FAQs)
 
