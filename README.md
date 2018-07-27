@@ -43,12 +43,13 @@ If you’re looking for another book to start learning python before you read th
 
 ### How do I provide feedback?
 
-I welcome any feedback on this book. The best way to give feedback is through adding an issue on the github repository. If you could follow these best practices for providing feedback, it would greatly help with resolving any issues:
+I welcome any feedback on this book. The best way to give feedback is through [adding an issue](https://github.com/jim-schwoebel/voicebook/issues) on this github repository. If you could follow these best practices for providing feedback, it would greatly help with resolving any issues:
 
 Go to ‘issues tab’ of the repository at this link.
 Select ‘new issue’ to provide feedback, assign this to ‘jim-schwoebel’ (my github username), label the issue as an enhancement, and assign it to the project ‘Book feedback.’ 
 
-Add in the page number that you’re commenting about in the title and the issue (e.g. Page 35 - Table 1.1.1 mis-labeled). 
+Add in the page number that you’re commenting about in the title and the issue (e.g. Chapter 1 - Page 35 - Table 1.1.1 mis-labeled). 
+
 In the description, add in what you think should be fixed (e.g. The table is not labeled properly. The proper label should be Table 1.3.4. Also, the description is a bit unclear. You may want to eliminate the last sentence). 
 
 ## References 
