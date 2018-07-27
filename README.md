@@ -21,10 +21,6 @@ Now you need to run the setup.py script to make sure you have all the required d
 
 Now you have all the dependencies necessary to follow along with the chapters in the book. You don’t need to worry about any other installations. Also, the entire book is available in the voicebook folder for you to read :-) 
 
-## Book outline
-
-outline book here.
-
 ## Frequently asked questions (FAQs)
 
 ### Why are you writing this book?
