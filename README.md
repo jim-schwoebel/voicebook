@@ -2,6 +2,10 @@
 
 This is an assortment of all the scripts associated with [Intro to Voice Computing Book](). These scripts should give you a jumpstart in learning how to write python code for voice-related applications. 
 
+* outline here
+
+Check out the [wiki](https://github.com/jim-schwoebel/voicebook/wiki) for additional documentation around each chapter - including an overview of what the scripts do. The wiki can help guide where to look if you're just using this repo to get some starter scripts. 
+
 ## Getting started: setting up environment (mac)
 
 First, clone the repository in the terminal application and 
