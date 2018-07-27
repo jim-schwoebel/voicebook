@@ -52,6 +52,8 @@ Add in the page number that you’re commenting about in the title and the issue
 
 In the description, add in what you think should be fixed (e.g. The table is not labeled properly. The proper label should be Table 1.3.4. Also, the description is a bit unclear. You may want to eliminate the last sentence). 
 
+Thanks beforehand for any feedback you may have! I'll try my best to respond to all feedback within a week of you submitting. 
+
 ## References 
 * [pyAudioAnalysis](https://github.com/tyiannak/pyAudioAnalysis)
 * [librosa](https://github.com/librosa/librosa)
