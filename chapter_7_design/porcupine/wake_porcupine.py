@@ -1,15 +1,17 @@
-import argparse
-import os
-import platform
-import struct
-import sys
+'''
+wake_porcupine.py
+
+Use the Porcupine wakeword detector to detect Nala wakeword. 
+
+Note that you must run from LI:
+python3 porcupine_demo.py --keyword_file_paths hey_nala_mac.ppn 
+
+'''
+
+import argparse, os, platform, struct, sys, pyaudio, soundfile 
 from datetime import datetime
 from threading import Thread
-
 import numpy as np
-import pyaudio
-import soundfile
-
 from porcupine import Porcupine
 
 
