@@ -17,7 +17,7 @@ def install(modules):
 modules=['scikit-learn','tpot','numpy','nltk', 'SpeechRecognition',
         'spacy', 'librosa', 'TextBlob', 'matplotlib','bokeh',
         'tensorflow','keras','textgenrnn', 'sumy', 'drawnow',
-        'matplotlib','seaborn', 'scipy', 'wordcloud']
+        'matplotlib','seaborn', 'scipy', 'wordcloud', 'pybluez']
 install(modules)
 
 # things that need some custom setup 
