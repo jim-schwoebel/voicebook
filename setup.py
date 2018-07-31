@@ -19,7 +19,7 @@ os.system('brew install opus')
 os.system('brew install portaudio')
 os.system('brew install sox')
 os.system('pip3 install --upgrade setuptools')
-os.system('brew install clang')
+os.system('pip3 install -U pyobjc')
 
 modules=['scikit-learn','tpot','numpy','nltk', 'SpeechRecognition',
         'spacy', 'librosa', 'TextBlob', 'matplotlib','bokeh',
