@@ -14,6 +14,8 @@ def install(modules):
   for i in range(len(modules)):
       os.system('pip3 install %s'%(modules[i]))
 
+os.system('pip3 install --upgrade setuptools')
+
 modules=['scikit-learn','tpot','numpy','nltk', 'SpeechRecognition',
         'spacy', 'librosa', 'TextBlob', 'matplotlib','bokeh',
         'tensorflow','keras','textgenrnn', 'sumy', 'drawnow',
