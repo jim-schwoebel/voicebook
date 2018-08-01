@@ -25,7 +25,7 @@ modules=['scikit-learn','tpot','numpy','nltk', 'SpeechRecognition',
         'spacy', 'librosa', 'TextBlob', 'matplotlib','bokeh',
         'tensorflow','keras','textgenrnn', 'sumy', 'drawnow',
         'matplotlib','seaborn', 'scipy', 'wordcloud', 'pybluez',
-        'wireless']
+        'wireless', 'pyserial']
 install(modules)
 
 os.system('python3 -m spacy.en.download all')
