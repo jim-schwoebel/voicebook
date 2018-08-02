@@ -7,3 +7,6 @@
 [submodule "chapter_4_modeling/train-diseases"]
 	path = chapter_4_modeling/train-diseases
 	url = https://github.com/NeuroLexDiagnostics/train-diseases
+[submodule "chapter_7_design/nala"]
+	path = chapter_7_design/nala
+	url = https://github.com/jim-schwoebel/nala
