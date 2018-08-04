@@ -18,6 +18,7 @@ def install(modules):
 os.system('brew install opus') 
 os.system('brew install portaudio')
 os.system('brew install sox')
+os.system('brew install nginx')
 os.system('pip3 install --upgrade setuptools')
 os.system('pip3 install -U pyobjc')
 
