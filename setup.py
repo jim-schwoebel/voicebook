@@ -22,7 +22,7 @@ def brew_install(modules):
 os.system('pip3 install --upgrade setuptools')
 os.system('pip3 install -U pyobjc')
 
-brew_modules=['opus','portaudio','sox','nginx']
+brew_modules=['opus','portaudio','sox','nginx', 'kafka']
 
 pip3_modules=['scikit-learn','tpot','numpy','nltk', 'SpeechRecognition',
               'spacy', 'librosa', 'TextBlob', 'matplotlib','bokeh',
