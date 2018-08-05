@@ -26,7 +26,8 @@ modules=['scikit-learn','tpot','numpy','nltk', 'SpeechRecognition',
         'spacy', 'librosa', 'TextBlob', 'matplotlib','bokeh',
         'tensorflow','keras','textgenrnn', 'sumy', 'drawnow',
         'matplotlib','seaborn', 'scipy', 'wordcloud', 'pybluez',
-        'wireless', 'pyserial', 'flask', 'django', 'uwsgi']
+        'wireless', 'pyserial', 'flask', 'django', 'uwsgi',
+        'virtualenv']
 
 install(modules)
 
