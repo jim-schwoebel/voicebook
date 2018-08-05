@@ -1,0 +1,15 @@
+http {
+…
+	server {
+	    listen 80;
+	    server_name server_domain_or_IP;
+	}
+
+    location / {
+        include uwsgi_params;
+        uwsgi_pass unix:/home/user/myproject/myproject.sock;
+    }
+
+…
+
+Edit these variables 
