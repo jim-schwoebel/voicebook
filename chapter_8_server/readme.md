@@ -1,4 +1,4 @@
-## Installation instructions
+## Chapter 8 setup instructions
 
 This is the only chapter with custom installation requirements. Here are some step-by-step instructions on how to install and configure everything.
 
