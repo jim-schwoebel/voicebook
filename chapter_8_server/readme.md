@@ -21,7 +21,11 @@ brew install kafka
 ```
 To run a kafka server all you need to do is:
 ```
-kafka up
+# run zookeeper
+bin/zookeeper-server-start.sh config/zookeeper.properties
+
+# run kafka 
+bin/kafka-server-start.sh config/server.properties 
 ```
 
 ### Kubernetes
