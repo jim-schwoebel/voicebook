@@ -39,4 +39,4 @@ pip3_install(pip3_modules)
 os.system('python3 -m spacy.en.download all')
 os.system("python3 -m spacy download 'en_core_web_sm'")
 # download all nltk packages 
-nltk.download()
+# nltk.download()
