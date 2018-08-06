@@ -28,6 +28,12 @@ bin/zookeeper-server-start.sh config/zookeeper.properties
 bin/kafka-server-start.sh config/server.properties 
 ```
 
+### Robo 3T 
+You can install Robo 3T directly from website: https://robomongo.org/download
+
+### Docker  
+You can install Docker directly from website: https://docs.docker.com/docker-for-mac/install/
+
 ### Kubernetes
 To install kubernetes, use homebrew:
 ```
@@ -37,12 +43,6 @@ To run kubernetes:
 ```
 kubectl run [imagename]
 ```
-
-### Robo 3T 
-You can install Robo 3T directly from website: https://robomongo.org/download
-
-### Docker  
-You can install Docker directly from website: https://docs.docker.com/docker-for-mac/install/
 
 ### Google cloud SDK
 You can install the Google Cloud SDK download and follow instructions on website: https://cloud.google.com/sdk/docs/quickstart-macos
