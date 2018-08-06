@@ -31,7 +31,7 @@ brew install kubernetes-cli
 ```
 To run kubernetes:
 ```
-test
+kubectl run [imagename]
 ```
 
 ### Robo 3T 
