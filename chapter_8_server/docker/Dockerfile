@@ -1,8 +1,7 @@
 # get python-node base iamage 
 FROM combos/python_node:3_8
-
-# install unittest 
-RUN pip3 install unittest
+WORKDIR /usr/src/app
+ADD . /usr/src/app
 
 # run tests
-RUN python3 unit_test.py
+RUN python unit_test.py
