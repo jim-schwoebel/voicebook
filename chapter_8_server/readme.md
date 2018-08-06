@@ -18,3 +18,8 @@ brew install kafka
 ### Docker 
 * install directly from website: 
 
+### Kubernetes
+*
+
+### Google cloud CLI 
+* 
