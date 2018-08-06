@@ -33,7 +33,7 @@ os.system('source %senv/bin/activate'%(foldername))
 #########################################################
 
 # install uwsgi and flask modules (and anything else you neeed for your app)
-os.system('pip3 install uwsgi flask')
+os.system('pip3 install gunicorn flask')
 
  # Paste this code inside the file
 os.system('open %s'%(homedir+'/data/flask_setup/flask.txt'))
@@ -79,107 +79,67 @@ if __name__ == "__main__":
     application.run()
 '''
 
-#########################################################
-##	              CONFIGURE uWSGI                      ##
-#########################################################
-
 ## FOR DEBUGGING 
 # # test uWSGI serving 
 # os.system('uwsgi --socket 0.0.0.0:8000 --protocol=http -w wsgi')
 # # When you have confirmed that it's functioning properly, press CTRL-C in your terminal window.
+os.system('gunicorn --bind 0.0.0.0:8000 wsgi')
 
 # We're now done with our virtual environment, so we can deactivate it:
 os.system('deactivate')
 
+
+#########################################################
+##	              CONFIGURE uWSGI                      ##
+#########################################################
+
 # Next, we'll make a uwsgi configuration file. Paste this in the file terminal and save/close.
-os.system('open %s'%(homedir+'/data/flask_setup/uwsgi.txt'))
-os.system('nano %s/%s.ini'%(flaskdir,foldername))
+os.system('open %s'%(homedir+'/data/flask_setup/gunicorn.txt'))
+os.system('sudo nano /etc/init/%s.conf'%(foldername))
 '''
-[uwsgi]
-module = wsgi
+description "Gunicorn application server running myproject"
 
-master = true
-processes = 5
+start on runlevel [2345]
+stop on runlevel [!2345]
 
-socket = myproject.sock
-chmod-socket = 660
-vacuum = true
+respawn
+setuid user
+setgid www-data
 
-die-on-term = true
+env PATH=/home/user/myproject/myprojectenv/bin
+chdir /home/user/myproject
+exec gunicorn --workers 3 --bind unix:myproject.sock -m 007 wsgi
 '''
-
-#########################################################
-##	              Systemd service unit file            ##
-#########################################################
-
-os.system('open %s'%(homedir+'/data/flask_setup/systemd.txt'))
-os.system('sudo nano /etc/systemd/system/%s.service'%(foldername))
-
-# Inside, we'll start with the [Unit] section, which is used to specify metadata and dependencies. 
-# We'll put a description of our service here and tell the init system to only start this after 
-# the networking target has been reached:
-
-'''
-[Unit]
-Description=uWSGI instance to serve myproject
-After=network.target
-
-[Service]
-User=user
-Group=nginx
-WorkingDirectory=/home/user/myproject
-Environment="PATH=/home/user/myproject/myprojectenv/bin"
-ExecStart=/home/user/myproject/myprojectenv/bin/uwsgi --ini myproject.ini
-
-[Install]
-WantedBy=multi-user.target
-'''
-
-# make sure the project is enabled and starts at boot process 
-os.system('sudo systemctl start %s'%(foldername))
-os.system('sudo systemctl enable %s'%(foldername))
+os.system('sudo start %s'%(foldername))
 
 #########################################################
 ##	     Configuring Nginx to Proxy Requests           ##
 #########################################################
 
-# need to configure NGINX config file now
-print('IMPORTANT VARIABLES TO ADD IN\n')
-print('uwsgi_pass_unix:%s'%(homedir+'/'+foldername+'/%s.sock'%(foldername)))
-os.system('open %s'%(homedir+'/data/flask_setup/nginx.txt'))
-os.system('sudo nano /etc/nginx/nginx.conf')
+# configure nginx
+os.system('sudo nano /etc/nginx/sites-available/%s'%(foldername))
 
 # Open up a server block just above the other server {} block that is already in the file and 
 # add in the following info (uwsgi pass needs to be set to right directory
 
 '''
-http {
-    . . .
-
-	server {
-	    listen 80;
-	    server_name server_domain_or_IP;
-	}
+...
+server {
+    listen 80;
+    server_name server_domain_or_IP;
 
     location / {
-        include uwsgi_params;
-        uwsgi_pass unix:/home/user/myproject/myproject.sock;
+        include proxy_params;
+        proxy_pass http://unix:/home/user/myproject/myproject.sock;
     }
-    . . .
-=
+}
+...
 '''
 
-# The nginx user must have access to our application directory in order to access the socket file there. 
-# By default, CentOS locks down each user's home directory very restrictively, so we will add the nginx user to our 
-# user's group so that we can then open up the minimum permissions necessary to grant access
-os.system('sudo usermod -a -G %s nginx'%(getpass.getuser()))
-# Now, we can give our user group execute permissions on our home directory. This will allow the Nginx process to enter and access content within:
-os.system('chmod 710 %s'%(flaskdir))
+os.system('sudo ln -s /etc/nginx/sites-available/%s /etc/nginx/sites-enabled'%(foldername))
 # test nginx config file for syntax errors
 os.system('sudo nginx -t')
-# If this returns without indicating any issues, we can start and enable the Nginx process so that it starts automatically at boot:
-os.system('sudo systemctl start nginx')
-os.system('sudo systemctl enable nginx')
+os.system('sudo service nginx restart')
 
 #########################################################
 ##	                LIVE SERVER!!                      ##
