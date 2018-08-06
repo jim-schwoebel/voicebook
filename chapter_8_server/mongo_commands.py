@@ -1,11 +1,8 @@
 '''
 mongo_commands.py
 
-Make sure you have mongodb installed:
-https://treehouse.github.io/installation-guides/mac/mongo-mac.html
-
 Taken from the pymongo documentation
-https://api.mongodb.com/python/current/
+
 '''
 import pymongo
 from pymongo import MongoClient
