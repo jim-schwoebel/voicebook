@@ -21,6 +21,7 @@ def brew_install(modules):
 # things that need some custom setup 
 os.system('pip3 install --upgrade setuptools')
 os.system('pip3 install -U pyobjc')
+os.system('brew install heroku/brew/heroku')
 
 brew_modules=['opus','portaudio','sox','nginx', 'kafka']
 
