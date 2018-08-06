@@ -3,42 +3,42 @@
 This is the only chapter with custom installation requirements. Here are some step-by-step instructions on how to install and configure everything.
 
 ### MongoDB 
-#### installing 
+You can instal mongodb with homebrew:
 ```
 brew install mongodb
 mkdir -p /data/db
 sudo chmod 777 /data/db
 ```
-#### running
+All you need to run a local server is to type in this into the CLI:
 ```
 mongod
 ```
 
 ### Kafka
-#### installing
+You can install kafka with homebrew:
 ```
 brew install kafka
 ```
-#### running 
+To run a kafka server all you need to do is:
 ```
 kafka up
 ```
 
 ### Kubernetes
-#### installing 
+To install kubernetes, use homebrew:
 ```
 brew install kubernetes-cli
 ```
-#### running 
+To run kubernetes:
+```
+test
+```
 
 ### Robo 3T 
-#### installing 
-* install directly from website: https://robomongo.org/download
+You can install Robo 3T directly from website: https://robomongo.org/download
 
-### Docker 
-#### installing 
-* install directly from website: https://docs.docker.com/docker-for-mac/install/
+### Docker  
+You can install Docker directly from website: https://docs.docker.com/docker-for-mac/install/
 
-### Google cloud CLI 
-#### installing 
-* download and follow instructions on website: https://cloud.google.com/sdk/docs/quickstart-macos
+### Google cloud SDK
+You can install the Google Cloud SDK download and follow instructions on website: https://cloud.google.com/sdk/docs/quickstart-macos
