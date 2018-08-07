@@ -19,6 +19,8 @@ def brew_install(modules):
       os.system('brew install %s'%(modules[i]))
       
 # things that need some custom setup 
+os.system('sudo pip3 uninstall crypto')
+os.system('pip3 uninstall pycryptodome')
 os.system('pip3 install --upgrade setuptools')
 os.system('pip3 install -U pyobjc')
 os.system('brew install heroku/brew/heroku')
