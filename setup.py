@@ -22,6 +22,7 @@ def brew_install(modules):
 os.system('pip3 install --upgrade setuptools')
 os.system('pip3 install -U pyobjc')
 os.system('brew install heroku/brew/heroku')
+os.system('brew cask info google-cloud-sdk')
 
 brew_modules=['opus','portaudio','sox','nginx', 'kafka']
 
