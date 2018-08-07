@@ -33,7 +33,7 @@ pip3_modules=['scikit-learn','tpot','numpy','nltk', 'SpeechRecognition',
               'matplotlib','seaborn', 'scipy', 'wordcloud', 'pybluez',
               'wireless', 'pyserial', 'flask', 'django', 'uwsgi',
               'virtualenv', 'minio','pymongo', 'auth0-python', 'google-cloud-storage',
-              'pycrypto']
+              'pycryptodome']
 
 brew_install(brew_modules)
 pip3_install(pip3_modules)
