@@ -62,7 +62,7 @@ def encrypt_file(key, in_filename, out_filename=None, chunksize=64*1024):
     picklefile.close()
 
 
-password = gp.generate_password(24)
-key = hashlib.sha256(password).digest()
-print(key)
-encrypt_file(key, 'piano2.wav', out_filename=None, chunksize=64*1024)
+#password = gp.generate_password(24)
+#key = hashlib.sha256(password).digest()
+#print(key)
+#encrypt_file(key, 'piano2.wav', out_filename=None, chunksize=64*1024)
