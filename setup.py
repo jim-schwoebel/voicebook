@@ -30,7 +30,7 @@ pip3_modules=['scikit-learn','tpot','numpy','nltk', 'SpeechRecognition',
               'tensorflow','keras','textgenrnn', 'sumy', 'drawnow',
               'matplotlib','seaborn', 'scipy', 'wordcloud', 'pybluez',
               'wireless', 'pyserial', 'flask', 'django', 'uwsgi',
-              'virtualenv']
+              'virtualenv', 'minio','pymongo', 'auth0-python']
 
 brew_install(brew_modules)
 pip3_install(pip3_modules)
