@@ -42,4 +42,4 @@ def decrypt_file(in_filename, out_filename=None, chunksize=24*1024):
 
             outfile.truncate(origsize)
 
-decrypt_file('piano2.wav.enc')
+#decrypt_file('piano2.wav.enc')
