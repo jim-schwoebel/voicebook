@@ -5,9 +5,6 @@ This is an assortment of all the scripts associated with [Intro to Voice Computi
 
 ![](https://media.giphy.com/media/2vjOYEirHFRjdZvhWR/giphy.gif)
 
-
---> CAN MAKE A STRING OF GIFS WITH https://ezgif.com/optimize/ezgif-3-a68184d62e.gif
-
 Check out the [wiki](https://github.com/jim-schwoebel/voicebook/wiki) for additional documentation around each chapter - including an overview of what the scripts do. The wiki can help guide where to look if you're just using this repo to get some starter scripts. 
 
 ## Getting started: setting up environment (mac)
