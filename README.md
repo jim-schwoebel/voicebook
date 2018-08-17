@@ -22,3 +22,13 @@ Now you have all the dependencies necessary to follow along with the chapters in
 
 ## Wiki for additional docs 
 Check out the [wiki](https://github.com/jim-schwoebel/voicebook/wiki) for additional documentation around each chapter - including an overview of what the scripts do. The wiki can help guide where to look if you're just using this repo to get some starter scripts. 
+* [Chapter 1: Fundamentals](https://github.com/jim-schwoebel/voicebook/wiki/0.1.-Fundamentals)
+* [Chapter 2: Collection](https://github.com/jim-schwoebel/voicebook/wiki/0.2.---Collection)
+* [Chapter 3: Featurization](https://github.com/jim-schwoebel/voicebook/wiki/0.3.-Featurization)
+* [Chapter 4: Modeling](https://github.com/jim-schwoebel/voicebook/wiki/0.4.-Data-modeling)
+* [Chapter 5: Generation](https://github.com/jim-schwoebel/voicebook/wiki/0.5.-Generation)
+* [Chapter 6: Visualization](https://github.com/jim-schwoebel/voicebook/wiki/0.6.-Visualization)
+* [Chapter 7: Designing Voice Computers](https://github.com/jim-schwoebel/voicebook/wiki/0.7.-Designing-Voice-Computers)
+* [Chapter 8: Designing Server Architectures](https://github.com/jim-schwoebel/voicebook/wiki/0.8.-Designing-server-architectures)
+* [Chapter 9: Legal, Security, and Ethical Considerations](https://github.com/jim-schwoebel/voicebook/wiki/0.9.-Security,-legal,-and-ethical-considerations)
+* [Chapter 10: Getting involved](https://github.com/jim-schwoebel/voicebook/wiki/1.0.-Getting-involved)
