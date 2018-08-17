@@ -30,5 +30,5 @@ Check out the [wiki](https://github.com/jim-schwoebel/voicebook/wiki) for additi
 * [Chapter 6: Visualization](https://github.com/jim-schwoebel/voicebook/wiki/0.6.-Visualization)
 * [Chapter 7: Designing Voice Computers](https://github.com/jim-schwoebel/voicebook/wiki/0.7.-Designing-Voice-Computers)
 * [Chapter 8: Designing Server Architectures](https://github.com/jim-schwoebel/voicebook/wiki/0.8.-Designing-server-architectures)
-* [Chapter 9: Legal, Security, and Ethical Considerations](https://github.com/jim-schwoebel/voicebook/wiki/0.9.-Security,-legal,-and-ethical-considerations)
+* [Chapter 9: Legal, Security, and Ethical Considerations](https://github.com/jim-schwoebel/voicebook/wiki/0.9.-Legal,-Ethical,-and-Security-Considerations)
 * [Chapter 10: Getting involved](https://github.com/jim-schwoebel/voicebook/wiki/1.0.-Getting-involved)
