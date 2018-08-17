@@ -1,3 +1,5 @@
+*This section documents all the scripts in the Chapter_8_server folder.*
+
 ## Chapter 8 setup instructions
 
 This is the only chapter with custom installation requirements. Here are some step-by-step instructions on how to install and configure everything.
@@ -46,8 +48,6 @@ kubectl run [imagename]
 
 ### Google cloud SDK
 You can install the Google Cloud SDK download and follow instructions on website: https://cloud.google.com/sdk/docs/quickstart-macos
-
-*This section documents all the scripts in the Chapter_8_server folder.*
 
 ## Python web frameworks 
 ### flask server
