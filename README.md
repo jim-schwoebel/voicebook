@@ -25,7 +25,7 @@ Check out the [wiki](https://github.com/jim-schwoebel/voicebook/wiki) for additi
 * [Chapter 1: Fundamentals](https://github.com/jim-schwoebel/voicebook/wiki/0.1.-Fundamentals)
 * [Chapter 2: Collection](https://github.com/jim-schwoebel/voicebook/wiki/0.2.---Collection)
 * [Chapter 3: Featurization](https://github.com/jim-schwoebel/voicebook/wiki/0.3.-Featurization)
-* [Chapter 4: Modeling](https://github.com/jim-schwoebel/voicebook/wiki/0.4.-Data-modeling)
+* [Chapter 4: Data Modeling](https://github.com/jim-schwoebel/voicebook/wiki/0.4.-Data-modeling)
 * [Chapter 5: Generation](https://github.com/jim-schwoebel/voicebook/wiki/0.5.-Generation)
 * [Chapter 6: Visualization](https://github.com/jim-schwoebel/voicebook/wiki/0.6.-Visualization)
 * [Chapter 7: Designing Voice Computers](https://github.com/jim-schwoebel/voicebook/wiki/0.7.-Designing-Voice-Computers)
