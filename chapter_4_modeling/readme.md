@@ -1,6 +1,6 @@
 *This section documents all the scripts in the chapter_4_modeling folder.*
 
-## Definitions 
+## Machine learning definitions 
 | Term | Definition | 
 | ------- | ------- |
 | [features](https://en.wikipedia.org/wiki/Feature_(machine_learning)) | descriptive numerical representations to describe an object. | 
