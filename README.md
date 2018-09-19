@@ -1,8 +1,10 @@
 # Voicebook
 
-This is an assortment of all the scripts associated with [Intro to Voice Computing Book](AMAZONLINK). These scripts should give you a jumpstart in learning how to write python code for voice-related applications. Click the image below for a short intro video as to how this book can be valuable to you! 
+This is an assortment of all the scripts associated with [Intro to Voice Computing Book](AMAZONLINK). These scripts should give you a jumpstart in learning how to write python code for voice-related applications. 
 
 [![Voicebook video](https://github.com/jim-schwoebel/voicebook/blob/master/references/Screen%20Shot%202018-09-19%20at%206.54.37%20PM.png)](https://www.youtube.com/watch?v=7QV-Vlqq2GE "Voicebook intro video")
+
+^^ Click the image above for a short intro video as to how this book can be valuable to you! 
 
 ## Getting started: setting up environment (mac)
 
