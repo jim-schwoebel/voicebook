@@ -2,7 +2,7 @@
 
 This is an assortment of all the scripts associated with [Intro to Voice Computing Book](). These scripts should give you a jumpstart in learning how to write python code for voice-related applications. 
 
-[![Voicebook video](https://github.com/jim-schwoebel/voicebook/blob/master/references/Screen%20Shot%202018-09-19%20at%206.53.27%20PM.png)](https://www.youtube.com/watch?v=7QV-Vlqq2GE "Voicebook intro video")
+[![Voicebook video](https://github.com/jim-schwoebel/voicebook/blob/master/references/Screen%20Shot%202018-09-19%20at%206.54.37%20PM.png)](https://www.youtube.com/watch?v=7QV-Vlqq2GE "Voicebook intro video")
 
 ## Getting started: setting up environment (mac)
 
