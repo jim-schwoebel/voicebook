@@ -26,8 +26,13 @@ os.system('pip3 install -U pyobjc')
 os.system('brew install heroku/brew/heroku')
 os.system('brew cask info google-cloud-sdk')
 
+# mongoDB setup
+os.system('brew install mongodb')
+os.system('mkdir -p /data/db')
+os.system('sudo chmod 777 /data/db')
+
 # install homebrew and pip modules 
-brew_modules=['opus','portaudio','sox','nginx', 'kafka']
+brew_modules=['opus','portaudio','sox','nginx', 'kafka', 'kubernetes-cli']
 
 pip3_modules=['scikit-learn','tpot','numpy','nltk', 'SpeechRecognition',
               'spacy', 'librosa', 'TextBlob', 'matplotlib','bokeh',
