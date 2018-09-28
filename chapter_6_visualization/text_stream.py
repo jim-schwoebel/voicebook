@@ -59,7 +59,7 @@ If you would like to work with us let us know @ js@neurolex.co.
 
 Transcribe an audio file every 1 second and then propagate it on the screen.
 
-Do this in an asyncronous manner, as transcription can take some time.
+Do this in an asynchronous manner, as transcription can take some time.
 '''
 ####################################################
 ##              IMPORT STATEMENTS                 ## 
