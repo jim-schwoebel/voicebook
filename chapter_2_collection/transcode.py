@@ -57,7 +57,7 @@ If you would like to work with us let us know @ js@neurolex.co.
 ##               TRANSCODE.PY                 ##    
 ================================================ 
 
-Usef ffmpy wrapper for FFmpeg to transcode file types.
+Uses ffmpy wrapper for FFmpeg to transcode file types.
 '''
 import ffmpy
 
