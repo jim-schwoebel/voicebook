@@ -53,7 +53,7 @@ researchers, enterprises, and/or independent developers.
 If you would like to work with us let us know @ js@neurolex.co. 
 
 ================================================ 
-##               PLAY_ASYNC.PY .              ##    
+##               PLAY_ASYNC.PY                ##    
 ================================================ 
 
 Play audio files back asynchronously.
