@@ -57,8 +57,7 @@ If you would like to work with us let us know @ js@neurolex.co.
 ##             GENERATE_SUMMARY.PY            ##    
 ================================================ 
 
-Short script that takes in all the poems I've written and summarizes them
-based on keyword frequencies. 
+Generate a summary from a URL link or link to text file locally.
 '''
 from __future__ import absolute_import
 from __future__ import division, print_function, unicode_literals
