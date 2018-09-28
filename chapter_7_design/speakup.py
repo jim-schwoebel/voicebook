@@ -54,7 +54,7 @@ researchers, enterprises, and/or independent developers.
 If you would like to work with us let us know @ js@neurolex.co. 
 
 ================================================ 
-##            SPEAKUP.PY            ##    
+##                  SPEAKUP.PY                ##    
 ================================================ 
 
 Speak function for Nala
