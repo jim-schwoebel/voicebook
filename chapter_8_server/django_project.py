@@ -56,6 +56,7 @@ If you would like to work with us let us know @ js@neurolex.co.
 ================================================ 
 ##             DJANGO_PROJECT.PY              ##    
 ================================================ 
+
 Start a django project (django_server) in current directory,
 list file contents, and then launch the server.
 
