@@ -57,7 +57,7 @@ If you would like to work with us let us know @ js@neurolex.co.
 ##              WAKE_PORCUPINE.PY             ##    
 ================================================ 
 
-Simple wrapper to call the porcupine wake script
+Simple wrapper to call the porcupine wake script.
 '''
 import os
 
