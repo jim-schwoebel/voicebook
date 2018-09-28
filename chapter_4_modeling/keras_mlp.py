@@ -54,7 +54,7 @@ researchers, enterprises, and/or independent developers.
 If you would like to work with us let us know @ js@neurolex.co. 
 
 ================================================ 
-##                 KERAS_MLP.PY                ##    
+##                 KERAS_MLP.PY               ##    
 ================================================ 
 
 Generate dummy data and build a multi-layer-perceptron
