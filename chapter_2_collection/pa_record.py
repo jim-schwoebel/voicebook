@@ -54,17 +54,12 @@ researchers, enterprises, and/or independent developers.
 If you would like to work with us let us know @ js@neurolex.co. 
 
 ================================================ 
-##               PS_RECORD.PY                 ##    
+##               PA_RECORD.PY                 ##    
 ================================================ 
 
-Quick example illustrating passive-synchronous mode (PS mode).
+Quick example illustrating passive-asynchronous mode (PA mode).
 
-Record a 2 second audio sample in background every 10 seconds. 
-
-Do this for 10 iterations. 
-
-It's a blocking example, meaning no other code can run when 
-the code is recording a sample.
+Get battery information while receiving a voice sample in background.
 '''
 import sounddevice as sd
 import soundfile as sf 
