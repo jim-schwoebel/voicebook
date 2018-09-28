@@ -54,7 +54,7 @@ researchers, enterprises, and/or independent developers.
 If you would like to work with us let us know @ js@neurolex.co. 
 
 ================================================ 
-##            MIXED_STREAM.PY            ##    
+##               MIXED_STREAM.PY              ##    
 ================================================ 
 
 Give some simple visual feedback when recording an audio stream.
