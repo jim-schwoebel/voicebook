@@ -57,10 +57,7 @@ If you would like to work with us let us know @ js@neurolex.co.
 ##                 AUDIO_PLOT.PY              ##    
 ================================================ 
 
-import library to make 
-audio_spectrogram look better for book :)
-
-Simple function to plot a spectrogram
+A simple function to plot a spectrogram with librosa.
 '''
 import librosa, os
 import matplotlib.pyplot as plt
