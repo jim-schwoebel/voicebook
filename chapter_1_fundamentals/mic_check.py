@@ -72,4 +72,4 @@ for i in range(len(mics)):
     print(mics[i])
 
 # can set default device easily with 
-sounddevice.default.device = 0
+sd.default.device = 0
