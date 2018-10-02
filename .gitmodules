@@ -10,3 +10,6 @@
 [submodule "chapter_7_design/nala"]
 	path = chapter_7_design/nala
 	url = https://github.com/jim-schwoebel/nala
+[submodule "chapter__10_gettinginvolved/ultimate-guide-to-voice-assistants"]
+	path = chapter__10_gettinginvolved/ultimate-guide-to-voice-assistants
+	url = https://github.com/bentossell/ultimate-guide-to-voice-assistants
