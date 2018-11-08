@@ -2,7 +2,7 @@
           VOICEBOOK REPOSITORY                     
 ================================================ 
 
-repository name: voicebook 
+repository name: Voicebook 
 repository version: 1.0 
 repository link: https://github.com/jim-schwoebel/voicebook 
 author: Jim Schwoebel 
