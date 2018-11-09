@@ -8,10 +8,10 @@ This is an assortment of all the scripts associated with [Intro to Voice Computi
 
 *Note that these are the instructions for Mac computers; you may need some custom setup of [FFmpeg](https://www.ffmpeg.org/) and/or [SoX](http://sox.sourceforge.net/) if you're using a Windows and/or Linux computer.* 
 
-First, clone the repository in the terminal application and 
+First, clone the repository and submodules:
 
     cd ~
-    git clone git@github.com:jim-schwoebel/voicebook.git
+    git clone --recurse-submodules -j8 https://github.com/jim-schwoebel/voicebook
 
 Now you need to run the setup.py script to make sure you have all the required dependencies for all the chapters of the book. To do this, run:
 
