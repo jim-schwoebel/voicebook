@@ -13,3 +13,9 @@
 [submodule "chapter__10_gettinginvolved/ultimate-guide-to-voice-assistants"]
 	path = chapter__10_gettinginvolved/ultimate-guide-to-voice-assistants
 	url = https://github.com/bentossell/ultimate-guide-to-voice-assistants
+[submodule "chapter_4_modeling/download_audioset"]
+	path = chapter_4_modeling/download_audioset
+	url = https://github.com/jim-schwoebel/download_audioset
+[submodule "chapter_4_modeling/audioset_models"]
+	path = chapter_4_modeling/audioset_models
+	url = https://github.com/jim-schwoebel/audioset_models
