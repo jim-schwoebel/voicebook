@@ -62,7 +62,7 @@ setup.py
 Custom script to install dependencies for voicebook.
 
 Requires homebrew to be installed on endpoint device
-and assumes an iOS operating system.
+and assumes an MacOS operating system.
 
 '''
 # Install dependencies
