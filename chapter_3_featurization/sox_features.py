@@ -94,7 +94,7 @@ def sox_featurize(filename):
     # get basic info 
     s1=open(soxifile).read()
     s1_labels=['channels','samplerate','precision',
-               'duration','filesize','bitrate','sample encoding']
+               'filesize','bitrate','sample encoding']
     s1=clean_text(s1)
     
     s2=open(statfile).read()
@@ -107,7 +107,7 @@ def sox_featurize(filename):
 
     labels=s1_labels+s2_labels
     features=np.array(s1+s2)
-    
+ 
     return features,labels
 
-features, labels = sox_featurize('test.wav')
+# features, labels = sox_featurize('test.wav')
