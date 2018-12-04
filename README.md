@@ -1,5 +1,5 @@
 # Voicebook
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Are%20you%20a%20developer%20looking%20to%20learn%20how%20to%20program%20voice%20applications%20in%20Python%20Check%20out%20the%20Voicebook%20@%20http://voicebook.neurolex.co!%20hashtags=voicecomputing,hackvoice,voicebook)
+[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Are%20you%20a%20developer%20looking%20to%20learn%20how%20to%20program%20voice%20applications%20in%20Python%20%20Check%20out%20the%20Voicebook%20@%20http://voicebook.neurolex.co.%20hashtags=voicecomputing,hackvoice,voicebook)
 
 This is an assortment of all the scripts associated with [Intro to Voice Computing Book](http://voicebook.neurolex.co). These scripts should give you a jumpstart in learning how to write Python code for voice-related applications. 
 
