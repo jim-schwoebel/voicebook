@@ -22,6 +22,12 @@ Now you need to run the setup.py script to make sure you have all the required d
 
 Now you have all the dependencies necessary to follow along with the chapters in the book. You don’t need to worry about any other installations. 
 
+## Feedback
+Any feedback about the book or this repository is greatlly appreciated. Please reach out by submitting a GitHub issue [here]().
+
+## License
+This repository is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
+
 ## Wiki for additional docs 
 Check out the [wiki](https://github.com/jim-schwoebel/voicebook/wiki) for additional documentation around each chapter. These are also included in each folder here in the readmes of each chapter. In this way, you can get quickly up to speed with the 200+ scripts included in this repository. 
 * [Chapter 1: Fundamentals](https://github.com/jim-schwoebel/voicebook/wiki/0.1.-Fundamentals)
