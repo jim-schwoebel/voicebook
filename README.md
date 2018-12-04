@@ -25,7 +25,7 @@ Now you have all the dependencies necessary to follow along with the chapters in
 ## Feedback
 Any feedback on the book or this repository is greatly appreciated. 
 
-If you find something that is missing or doesn't work, please consider opening a [GitHub issue]((https://github.com/jim-schwoebel/voicebook/issues).).
+If you find something that is missing or doesn't work, please consider opening a [GitHub issue](https://github.com/jim-schwoebel/voicebook/issues).
 
 If you want to talk to me directly, please send me an email @ js@neurolex.co. 
 
