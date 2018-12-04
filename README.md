@@ -32,7 +32,7 @@ Any feedback on the book or this repository is greatly appreciated.
 This repository is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
 
 ## References
-Check out the [wiki](https://github.com/jim-schwoebel/voicebook/wiki) for additional documentation around each chapter. These are also included in each folder here in the readmes of each chapter. In this way, you can get quickly up to speed with the 200+ scripts included in this repository. 
+Check out the [wiki](https://github.com/jim-schwoebel/voicebook/wiki) or readmes below for additional documentation around each chapter. In this way, you can get quickly up to speed with the 200+ scripts included in this repository. 
 * [Chapter 1: Fundamentals](https://github.com/jim-schwoebel/voicebook/wiki/0.1.-Fundamentals)
 * [Chapter 2: Collection](https://github.com/jim-schwoebel/voicebook/wiki/0.2.---Collection)
 * [Chapter 3: Featurization](https://github.com/jim-schwoebel/voicebook/wiki/0.3.-Featurization)
