@@ -1,5 +1,4 @@
 # Voicebook
-[![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=&url=https://github.com/jim-schwoebel/voicebook/&hashtags=voicecomputing,hackvoice, voicebook)
 
 This is an assortment of all the scripts associated with [Intro to Voice Computing Book](http://voicebook.neurolex.co). These scripts should give you a jumpstart in learning how to write Python code for voice-related applications. 
 
