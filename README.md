@@ -23,7 +23,7 @@ Now you need to run the setup.py script to make sure you have all the required d
 Now you have all the dependencies necessary to follow along with the chapters in the book. You don’t need to worry about any other installations. 
 
 ## Feedback
-Any feedback about the book or this repository is greatlly appreciated. Please reach out to me [here](https://github.com/jim-schwoebel/voicebook/issues).
+Any feedback about how I can improve the book or this repository is greatly appreciated. Please reach out to me [here](https://github.com/jim-schwoebel/voicebook/issues).
 
 ## License
 This repository is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
