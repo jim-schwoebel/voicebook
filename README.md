@@ -26,7 +26,9 @@ Now you have all the dependencies necessary to follow along with the chapters in
 Any feedback on the book or this repository is greatly appreciated. 
 * If you find something that is missing or doesn't work, please consider opening a [GitHub issue](https://github.com/jim-schwoebel/voicebook/issues).
 * If you want to talk to me directly, please send me an email @ js@neurolex.co. 
-* If you'd like to be mentored by our team, check out the [Innovation Fellows Program](http://innovate.neurolex.co).
+
+## Innovation Fellows Program
+If you're interested to engage with us as an Innovation Fellow, check out [this link](innovate.neurolex.co). So far we've engaged >80 outstanding individuals in our company across 20 universities and regions. It's a way to get hands-on experience through a focused demo project (research, data science, or software demo) to reach your career goals faster. 
 
 ## License
 This repository is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
