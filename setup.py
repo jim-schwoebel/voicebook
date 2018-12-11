@@ -90,7 +90,8 @@ os.system('mkdir -p /data/db')
 os.system('sudo chmod 777 /data/db')
 
 # install homebrew and pip modules 
-brew_modules=['opus','portaudio','sox','nginx', 'kafka', 'kubernetes-cli']
+brew_modules=['opus','portaudio','sox','nginx', 'kafka', 'kubernetes-cli', 
+              'ffmpeg']
 
 pip3_modules=['scikit-learn','tpot','numpy','nltk', 'SpeechRecognition',
               'spacy', 'librosa', 'TextBlob', 'matplotlib','bokeh',
