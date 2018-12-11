@@ -59,11 +59,15 @@ If you would like to work with us let us know @ js@neurolex.co.
 
 setup.py
 
-Custom script to install dependencies for voicebook.
+Custom script to install dependencies for Voicebook.
+
+Since I wrote this book in 1.5 months, I may be missing some 
+dependencies. If you find something that is missing, please let me
+know as an issue @ https://github.com/jim-schwoebel/voicebook/issues
+and I can add it here. 
 
 Requires homebrew to be installed on endpoint device
 and assumes an MacOS operating system.
-
 '''
 # Install dependencies
 import os
