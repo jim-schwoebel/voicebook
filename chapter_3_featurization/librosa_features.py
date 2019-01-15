@@ -79,11 +79,29 @@ def stats(matrix):
     
     return output
 
+# get labels for later 
+def stats_labels(label, sample_list):
+    mean=label+'_mean'
+    std=label+'_std'
+    maxv=label+'_maxv'
+    minv=label+'_minv'
+    median=label+'_median'
+    sample_list.append(mean)
+    sample_list.append(std)
+    sample_list.append(maxv)
+    sample_list.append(minv)
+    sample_list.append(median)
+
+    return sample_list
+
 # featurize with librosa following documentation
 # https://librosa.github.io/librosa/feature.html 
 def librosa_featurize(filename, categorize):
     # if categorize == True, output feature categories 
     print('librosa featurizing: %s'%(filename))
+
+    # initialize lists 
+    onset_labels=list()
 
     y, sr = librosa.load(filename)
 
@@ -104,9 +122,18 @@ def librosa_featurize(filename, categorize):
     spectral_rolloff=librosa.feature.spectral_rolloff(y)[0]
     onset=librosa.onset.onset_detect(y)
     onset=np.append(len(onset),stats(onset))
+    # append labels 
+    onset_labels.append('onset_length')
+    onset_labels=stats_labels('onset_detect', onset_labels)
+
     tempo=librosa.beat.tempo(y)[0]
     onset_features=np.append(onset,tempo)
+
+    # append labels
+    onset_labels.append('tempo')
+
     onset_strength=librosa.onset.onset_strength(y)
+    onset_labels=stats_labels('onset_strength', onset_labels)
     zero_crossings=librosa.feature.zero_crossing_rate(y)[0]
     rmse=librosa.feature.rmse(y)[0]
 
@@ -115,6 +142,7 @@ def librosa_featurize(filename, categorize):
 
     # onset detection features
     onset_features=np.append(onset_features,stats(onset_strength))
+
 
     # rhythm features (384) - take the first 13
     rhythm_features=np.concatenate(np.array([stats(tempogram[0]),
@@ -130,6 +158,9 @@ def librosa_featurize(filename, categorize):
                                       stats(tempogram[10]),
                                       stats(tempogram[11]),
                                       stats(tempogram[12])]))
+    rhythm_labels=list()
+    for i in range(13):
+        rhythm_labels=stats_labels('rhythm_'+str(i), rhythm_labels)
 
     # spectral features (first 13 mfccs)
     spectral_features=np.concatenate(np.array([stats(mfcc[0]),
@@ -153,9 +184,23 @@ def librosa_featurize(filename, categorize):
                                         stats(spectral_flatness),
                                         stats(spectral_rolloff)])) 
 
+    spectral_labels=list()
+    for i in range(13):
+        spectral_labels=stats_labels('mfcc_'+str(i), spectral_labels)
+    for i in range(2):
+        spectral_labels=stats_labels('poly_'+str(i), spectral_labels)
+    spectral_labels=stats_labels('spectral_cenroid', spectral_labels)
+    spectral_labels=stats_labels('spectral_bandwidth', spectral_labels)
+    spectral_labels=stats_labels('spectral_contrast', spectral_labels)
+    spectral_labels=stats_labels('spectral_flatness', spectral_labels)
+    spectral_labels=stats_labels('spectral_rolloff', spectral_labels)
+
     # power features
     power_features=np.concatenate(np.array([stats(zero_crossings),
-                                         stats(rmse)])) 
+                                         stats(rmse)]))
+    power_labels=list()
+    power_labels=stats_labels('zero_crossings',power_labels)
+    power_labels=stats_labels('RMSE', power_labels) 
 
     # you can also concatenate the features
     if categorize == True:
@@ -164,13 +209,21 @@ def librosa_featurize(filename, categorize):
                   'rhythm':rhythm_features,
                   'spectral':spectral_features,
                   'power':power_features}
+
+        labels={'onset':onset_labels,
+                'rhythm':rhythm_labels,
+                'spectral':spectral_labels,
+                'power': power_labels}
     else:
         # can output numpy array of everything if we don't need categorizations 
         features = np.concatenate(np.array([onset_features,
                                        rhythm_features,
                                        spectral_features,
                                        power_features]))
+        labels=onset_labels+rhythm_labels+spectral_labels+power_labels
 
-    return features
+    return features, labels
 
-features=librosa_featurize('test.wav', False)
+# features, labels =librosa_featurize('test.wav', True)
+# print(len(features['power']))
+# print(len(labels['power']))
