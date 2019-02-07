@@ -88,6 +88,10 @@ os.system('pip3 install -U pyobjc')
 os.system('brew install heroku/brew/heroku')
 os.system('brew cask info google-cloud-sdk')
 
+# scikit-learn needs to be version 0.19.1 because some things break in newest versions
+os.system('sudo pip3 uninstall scikit-learn')
+os.system('pip3 install scikit-learn==0.19.1')
+
 # mongoDB setup
 os.system('brew install mongodb')
 os.system('mkdir -p /data/db')
@@ -97,7 +101,7 @@ os.system('sudo chmod 777 /data/db')
 brew_modules=['opus','portaudio','sox','nginx', 'kafka', 'kubernetes-cli', 
               'ffmpeg']
 
-pip3_modules=['scikit-learn','tpot','numpy','nltk', 'SpeechRecognition',
+pip3_modules=['tpot','numpy','nltk', 'SpeechRecognition',
               'spacy', 'librosa', 'TextBlob', 'matplotlib','bokeh',
               'tensorflow','keras','textgenrnn', 'sumy', 'drawnow',
               'matplotlib','seaborn', 'scipy', 'wordcloud', 'pybluez',
