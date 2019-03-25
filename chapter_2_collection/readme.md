@@ -85,8 +85,6 @@ def sync_playback(filename):
     pygame.mixer.music.load(filename)
     pygame.mixer.music.play()
 
-
-
 def speak_text(text):
     engine=pyttsx3.init()
     engine.say(text)
