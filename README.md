@@ -3,6 +3,8 @@
 
 This is an assortment of all the scripts associated with the [Intro to Voice Computing Book](http://voicebook.neurolex.co). These scripts should give you a jumpstart in learning how to write Python code for voice-related applications. 
 
+^^ Note: If you find this code useful, please leave a star :) ^^
+
 [![Voicebook video](https://github.com/jim-schwoebel/voicebook/blob/master/references/Screen%20Shot%202018-09-30%20at%207.15.03%20AM.png)](https://www.youtube.com/watch?v=7QV-Vlqq2GE "Voicebook intro video")
 
 ## Getting started: setting up environment (mac)
