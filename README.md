@@ -24,14 +24,14 @@ Now you need to run the setup.py script to make sure you have all the required d
 
 Now you have all the dependencies necessary to follow along with the chapters in the book. You don’t need to worry about any other installations. 
 
+## License
+This repository is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
+
 ## Feedback
 Any feedback on the book or this repository is greatly appreciated. 
 * If you find something that is missing or doesn't work, please consider opening a [GitHub issue](https://github.com/jim-schwoebel/voicebook/issues).
 * If you'd like to be mentored by someone on our team, check out the [Innovation Fellows Program](http://neurolex.ai/research).
 * If you want to talk to me directly, please send me an email @ js@neurolex.co. 
-
-## License
-This repository is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
 
 ## Citation
 Please use the following citation when citing this book in your research work:
