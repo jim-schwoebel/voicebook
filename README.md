@@ -35,7 +35,7 @@ Any feedback on the book or this repository is greatly appreciated.
 
 ## Citation
 Please use the following citation when citing this book in your research work:
-- Schwoebel, J. (2018). *An Introduction to Voice Computing in Python.* Boston; Seattle; Atlanta: NeuroLex Laboratories. https://github.com/jimschwoebel/voicebook
+- Schwoebel, J. (2018). *An Introduction to Voice Computing in Python.* Boston; Seattle; Atlanta: NeuroLex Laboratories. https://github.com/jim-schwoebel/voicebook
 
 ## References
 Check out the [wiki](https://github.com/jim-schwoebel/voicebook/wiki) or documentation below to follow along with each chapter in the book. In this way, you can get quickly up to speed with the 200+ scripts included in this repository. 
