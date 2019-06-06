@@ -30,12 +30,12 @@ Any feedback on the book or this repository is greatly appreciated.
 * If you'd like to be mentored by someone on our team, check out the [Innovation Fellows Program](http://neurolex.ai/research).
 * If you want to talk to me directly, please send me an email @ js@neurolex.co. 
 
+## License
+This repository is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
+
 ## Citation
 Please use the following citation when citing this book in your research work:
 - Schwoebel, J. (2018). *An Introduction to Voice Computing in Python.* Boston; Seattle; Atlanta: NeuroLex Laboratories. https://github.com/jimschwoebel/voicebook
-
-## License
-This repository is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
 
 ## References
 Check out the [wiki](https://github.com/jim-schwoebel/voicebook/wiki) or documentation below to follow along with each chapter in the book. In this way, you can get quickly up to speed with the 200+ scripts included in this repository. 
