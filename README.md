@@ -31,9 +31,11 @@ Any feedback on the book or this repository is greatly appreciated.
 * If you want to talk to me directly, please send me an email @ js@neurolex.co. 
 
 ## Citation
-If you are publishing a research paper, please cite our book with this information:
+If you are publishing a research paper and found this repo useful, please cite this book as follows:
 
+```
 Schwoebel, J. (2018). *An Introduction to Voice Computing in Python.* Boston; Seattle; Atlanta: NeuroLex Laboratories. https://github.com/jimschwoebel/voicebook
+```
 
 ## License
 This repository is licensed under the [Apache 2.0 License](https://www.apache.org/licenses/LICENSE-2.0). 
