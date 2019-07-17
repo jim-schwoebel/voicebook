@@ -113,7 +113,7 @@ brew_install(brew_modules)
 pip3_install(pip3_modules)
 
 # customize spacy packages 
-os.system('python3 -m spacy.en.download all')
+os.system('python3 -m spacy download en')
 os.system("python3 -m spacy download 'en_core_web_sm'")
 # download all nltk packages 
 import nltk 
