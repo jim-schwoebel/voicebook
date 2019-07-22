@@ -1,4 +1,29 @@
-                                 Apache License
+================================================ 
+          VOICEBOOK REPOSITORY                     
+================================================ 
+
+repository name: voicebook 
+repository version: 1.0 
+repository link: https://github.com/jim-schwoebel/voicebook 
+author: Jim Schwoebel 
+author contact: js@neurolex.co 
+description: a book and repo to get you started programming voice applications in Python - 10 chapters and 200+ scripts. 
+license category: opensource 
+license: Apache 2.0 license 
+organization name: NeuroLex Laboratories, Inc. 
+location: Seattle, WA 
+website: https://neurolex.ai 
+release date: 2018-09-28 
+
+This code (voicebook) is hereby released under a Apache 2.0 license license. 
+
+For more information, check out the license terms below. 
+
+================================================ 
+                LICENSE TERMS                      
+================================================ 
+
+                                Apache License
                            Version 2.0, January 2004
                         http://www.apache.org/licenses/
 
