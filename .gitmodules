@@ -19,3 +19,6 @@
 [submodule "chapter_4_modeling/audioset_models"]
 	path = chapter_4_modeling/audioset_models
 	url = https://github.com/jim-schwoebel/audioset_models
+[submodule "voice_datasets"]
+	path = voice_datasets
+	url = https://github.com/jim-schwoebel/voice_datasets
