@@ -62,6 +62,8 @@ Useful pydub commands for manipulating audio.
 
 Taken directly from pydub documentation here:
 https://github.com/jiaaro/pydub
+
+Additional examples: https://www.programcreek.com/python/example/89506/pydub.AudioSegment.from_file
 '''
 
 from pydub import AudioSegment
