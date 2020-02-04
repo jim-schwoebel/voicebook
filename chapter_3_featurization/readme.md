@@ -909,7 +909,7 @@ lsvc = LinearSVC(C=0.01, penalty="l1", dual=False).fit(X_train, y_train)
 model = SelectFromModel(lsvc, prefit=True)
 X_new = model.transform(X_train)
 print(X_new.shape)
-# (238, 208) --> (238, 22), draamtic reduction of features using LASSO
+# (238, 208) --> (238, 22), dramatic reduction of features using LASSO
 ```
 ## References
 If you are interested to read more on any of these topics, check out the documentation below.
