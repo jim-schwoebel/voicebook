@@ -13,13 +13,14 @@ This is an assortment of all the scripts associated with the [Intro to Voice Com
 
 First, clone the repository and submodules:
 
-    cd ~
     git clone --recurse-submodules -j8 https://github.com/jim-schwoebel/voicebook
 
 Now you need to run the setup.py script to make sure you have all the required dependencies for all the chapters of the book. To do this, run:
-
-    cd ~
+    
     cd voicebook
+    pip3 install virtualenv
+    virtualenv env 
+    source env/bin/activate
     python3 setup.py
 
 Now you have all the dependencies necessary to follow along with the chapters in the book. You don’t need to worry about any other installations. 
