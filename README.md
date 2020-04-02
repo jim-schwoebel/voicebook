@@ -15,7 +15,7 @@ First, clone the repository and submodules:
 
     git clone --recurse-submodules -j8 https://github.com/jim-schwoebel/voicebook
 
-Now you need to run the setup.py script to make sure you have all the required dependencies for all the chapters of the book. To do this, run:
+Now you need to run the setup.py script in a [virtual environment](https://docs.python.org/3/tutorial/venv.html) to make sure you have all the required dependencies for all the chapters of the book. To do this, run:
     
     cd voicebook
     pip3 install virtualenv
