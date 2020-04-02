@@ -72,9 +72,8 @@ and assumes an MacOS operating system.
 # Install dependencies
 import os
 
-def pip3_install(modules):
-  for i in range(len(modules)):
-    os.system('pip3 install %s'%(modules[i]))
+def pip3_install():
+  os.system('pip3 install -r requirements.txt')
 
 def brew_install(modules):
   for i in range(len(modules)):
@@ -88,10 +87,6 @@ os.system('pip3 install -U pyobjc')
 os.system('brew install heroku/brew/heroku')
 os.system('brew cask info google-cloud-sdk')
 
-# scikit-learn needs to be version 0.19.1 because some things break in newest versions
-os.system('sudo pip3 uninstall scikit-learn')
-os.system('pip3 install scikit-learn==0.19.1')
-
 # mongoDB setup
 os.system('brew install mongodb')
 os.system('mkdir -p /data/db')
@@ -101,16 +96,11 @@ os.system('sudo chmod 777 /data/db')
 brew_modules=['opus','portaudio','sox','nginx', 'kafka', 'kubernetes-cli', 
               'ffmpeg','opus-tools','opus']
 
-pip3_modules=['tpot','numpy','nltk', 'SpeechRecognition',
-              'spacy', 'librosa', 'TextBlob', 'matplotlib','bokeh',
-              'tensorflow','keras','textgenrnn', 'sumy', 'drawnow',
-              'matplotlib','seaborn', 'scipy', 'wordcloud', 'pybluez',
-              'wireless', 'pyserial', 'flask', 'django', 'uwsgi',
-              'virtualenv', 'minio','pymongo', 'auth0-python', 'google-cloud-storage',
-              'pycryptodome', 'flask-pymongo', 'pyaudio', 'pocketsphinx']
-
 brew_install(brew_modules)
-pip3_install(pip3_modules)
+pip3_install()
+# scikit-learn needs to be version 0.19.1 because some things break in newest versions
+os.system('sudo pip3 uninstall scikit-learn')
+os.system('pip3 install scikit-learn==0.19.1')
 
 # customize spacy packages 
 os.system('python3 -m spacy download en')
