@@ -1,13 +1,15 @@
 # Voicebook
 [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Are%20you%20a%20developer%20looking%20to%20learn%20how%20to%20program%20voice%20applications%20in%20Python?%20Check%20out%20the%20Voicebook%20@%20http://voicebook.neurolex.co.&hashtags=voicecomputing,hackvoice,voicebook)
 
-This is an assortment of all the scripts associated with the [Intro to Voice Computing Book](https://neurolex.ai/voicebook). These scripts should give you a jumpstart in learning how to write Python code for voice-related applications. Watch the overview video for this book [here](https://www.youtube.com/watch?v=7QV-Vlqq2GE).
+This is an assortment of all the scripts associated with the [Intro to Voice Computing Book](https://neurolex.ai/voicebook). These scripts should give you a jumpstart in learning how to write Python code for voice-related applications. 
 
 **^^** **Note:** If you find this code useful, please leave a star :) **^^**
 
 [![Voicebook video](https://github.com/jim-schwoebel/voicebook/blob/master/references/image_1586812277.gif)](https://www.youtube.com/watch?v=7QV-Vlqq2GE "Voicebook intro video")
 
 ## Getting started: setting up environment (mac)
+
+Watch the overview video for this book [here](https://www.youtube.com/watch?v=7QV-Vlqq2GE).
 
 *Note that these are the instructions for Mac computers; you may need some custom setup of [FFmpeg](https://www.ffmpeg.org/) and/or [SoX](http://sox.sourceforge.net/) if you're using a Windows and/or Linux computer.* 
 
