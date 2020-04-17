@@ -11,7 +11,7 @@ This is an assortment of all the scripts associated with the [Intro to Voice Com
 
 Watch the overview video for this book [here](https://www.youtube.com/watch?v=7QV-Vlqq2GE).
 
-*Note that these are the instructions for Mac computers; you may need some custom setup of [FFmpeg](https://www.ffmpeg.org/) and/or [SoX](http://sox.sourceforge.net/) if you're using a Windows and/or Linux computer.* 
+*Note that these are the instructions for Mac computers; you may need some custom setup for [FFmpeg](https://www.ffmpeg.org/) and/or [SoX](http://sox.sourceforge.net/) if you're using a Windows and/or Linux computer.* 
 
 First, clone the repository and submodules:
 
