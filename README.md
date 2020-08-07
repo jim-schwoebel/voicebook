@@ -34,7 +34,7 @@ This repository is licensed under the [Apache 2.0 License](https://www.apache.or
 Any feedback on the book or this repository is greatly appreciated. 
 * If you find something that is missing or doesn't work, please consider opening a [GitHub issue](https://github.com/jim-schwoebel/voicebook/issues).
 * If you'd like to be mentored by someone on our team, check out the [Innovation Fellows Program](https://neurolex.ai/research).
-* If you are looking for a framework to start building ML application with voice, check out [Allie](https://github.com/jim-schwoebel/allie)
+* If you are looking for a framework to start building machine learning applications with voice, check out [Allie](https://github.com/jim-schwoebel/allie)
 * If you want to talk to me directly, please send me an email @ js@neurolex.co.
 
 ## Citation
