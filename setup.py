@@ -67,7 +67,7 @@ know as an issue @ https://github.com/jim-schwoebel/voicebook/issues
 and I can add it here. 
 
 Requires homebrew to be installed on endpoint device
-and assumes an MacOS operating system.
+and assumes a MacOS operating system.
 '''
 # Install dependencies
 import os
