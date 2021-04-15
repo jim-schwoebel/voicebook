@@ -22,3 +22,6 @@
 [submodule "voice_datasets"]
 	path = voice_datasets
 	url = https://github.com/jim-schwoebel/voice_datasets
+[submodule "chapter_4_modeling/voice_gender_detection"]
+	path = chapter_4_modeling/voice_gender_detection
+	url = https://github.com/jim-schwoebel/voice_gender_detection
