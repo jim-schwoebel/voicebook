@@ -25,3 +25,6 @@
 [submodule "chapter_4_modeling/voice_gender_detection"]
 	path = chapter_4_modeling/voice_gender_detection
 	url = https://github.com/jim-schwoebel/voice_gender_detection
+[submodule "chapter_4_modeling/sample_voice_data"]
+	path = chapter_4_modeling/sample_voice_data
+	url = https://github.com/jim-schwoebel/sample_voice_data
