@@ -220,7 +220,7 @@ TPOT==0.11.1
 tqdm==4.45.0
 typing-extensions==3.7.4.1
 update-checker==0.16
-urllib3==1.25.8
+urllib3==1.26.5
 uWSGI==2.0.18
 virtualenv==20.0.15
 wasabi==0.6.0
