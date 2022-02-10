@@ -209,7 +209,7 @@ srsly==1.0.2
 stopit==1.1.2
 sumy==0.8.1
 tensorboard==2.1.1
-tensorflow==2.1.2
+tensorflow==2.5.3
 tensorflow-estimator==2.1.0
 termcolor==1.1.0
 textblob==0.15.3
